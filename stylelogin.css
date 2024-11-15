@@ -21,8 +21,11 @@ body{
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
+    align-content: center;
     margin: 150px 250px;
     padding: 150px;
 }
+.form
