@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lora', sans-serif;
 }
 
 
@@ -19,7 +19,7 @@ body{
 }
 .container{
     position: absolute;
-    max-width: 320px;
+    max-width: 420px;
     width: 100%;                  
     background-color: #fff;
     display: inline-block;
@@ -58,9 +58,20 @@ body{
 .input-box i{
     position: absolute;
     top: 50%;
+    left: -7%;
     transform: translateY(-50%);
     font-size: 20px;
     color: #000080;
+
+}
+#hide-pw{
+    position: absolute;
+    top: 50%;
+    margin-left: 350px;
+    
+    font-size: 15px;
+    color: #000080;
+
 }
 .input-box button{
     position: relative;
