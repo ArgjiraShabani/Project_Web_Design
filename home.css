@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    
+   background-position: center;
+   background-size: cover;
+   height: 109vh;
+}
+.navbar{
+    width: 100%;
+    height: 75px;
+    margin: auto;
+    display: inline-flex;
+    
+}
+.icon{
+    width: 50px;
+    float: left;
+    height: 70px;
+    margin: 0px 15ex;
+
+}
+
+.logo{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif ;
+    float: left;
+    padding-top: 20px;
+}
+.l1{
+    color: #000000;
+    font-size: large;
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+    padding-top:10px;
+    
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ ul li{
+    list-style: none;
+    margin-left: 100px;
+    margin-top: 27px;
+    font-size: 19px;
+ }
+ ul li a{
+    text-decoration: none;
+    color: rgb(221, 215, 215);
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.1s ease-in-out;
+    font-weight: 800;
+ }
+ ul li a:hover{
+    color:rgb(55, 77, 83)
+ }
+
+ .search{
+    width: 380px;
+    float: left;
+    margin-left: 400px;
+    padding-top: 10px;
+    display: inline;
+
+    
+ }
+ .sr{
+   height: 43px;
+   margin-top: 18px;
+   font-weight: bold;
+   border-radius: 5px;
+   
+   border-color: #000000;
+   
+
+
+  }
+  .bt1{
+    
+    width: 90px;
+    height: 44px;
+    margin-top: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-style:inherit;
+
+  }
+ 
+  .bt2{
+    width: 100px;
+    height: 44px;
+    margin-top: 18px;
+   font-weight: bold;
+   border-radius: 5px;
+   border-style: inherit;
+  }
+  .container{
+    background-color: #000000;
+  }
