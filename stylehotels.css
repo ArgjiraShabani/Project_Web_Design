@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Luna;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: url('hotels.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color:white;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+}
+
+.sr, .bt1, .bt2 {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.box {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.box1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.box2 {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    max-width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+#f1, #f2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.dep {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    outline: none;
+}
+
+input[type="date"], .guests, .rooms {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: rgb(28, 111, 163);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: rgb(28, 111, 163);
+}
