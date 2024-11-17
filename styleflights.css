@@ -14,10 +14,11 @@
     width: 100%;
     height: 75px;
     margin: auto;
+    display: inline-flex;
     
 }
 .icon{
-    width: 100px;
+    width: 50px;
     float: left;
     height: 70px;
     margin: 0px 15ex;
@@ -68,7 +69,7 @@ ul{
  .search{
     width: 380px;
     float: left;
-    margin-left: 600px;
+    margin-left: 400px;
     padding-top: 10px;
     display: inline;
 
