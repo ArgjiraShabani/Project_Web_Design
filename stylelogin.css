@@ -6,6 +6,27 @@
     box-sizing: border-box;
     font-family: 'Lora', sans-serif;
 }
+.header{
+    background:#f9f8eb;
+    color: #000080;
+    height: 100px;
+    display: block;      
+    font-size: 19px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.header a{
+    text-decoration: none;
+    color: #000080;
+    margin: 25px;
+    
+
+}
+.header h6{
+    margin-left: 140px;
+    font-size: 14px;
+}
 
 
 body{
@@ -21,12 +42,12 @@ body{
     position: absolute;
     max-width: 420px;
     width: 100%;                  
-    background-color: #fff;
+    background-color: #f9f8eb;
     display: inline-block;
     flex-direction: column;
     flex-wrap: wrap;    
     align-items: center;    
-    margin: 30px auto;
+    margin: 60px auto;
     padding: 35px;
     border-radius: 12px;    
     top: 50%;
@@ -40,6 +61,7 @@ body{
 
 }
 .input-box{
+   
     position: relative;
     margin: 40px 0;
     width: 100%;
@@ -48,7 +70,7 @@ body{
 
 }
 .input-box input{
-    
+    background-color: #f9f8eb;
     height: 100%;
     width: 100%;
     border: none;
@@ -103,7 +125,7 @@ p{
     width: 100%;
     height: 40px;
     background-color: #000080; 
-    color: #fff;
+    color:   #f9f8eb;
     font-size: 20px;
     border-radius: 8px; 
     transition: background-color 0.3s ease;
@@ -111,7 +133,7 @@ p{
 
 }
 .form_container-register button:hover{
-    background-color: #fff;
+    background-color:  #f9f8eb;
     color: #000080;
 }
 
