@@ -150,29 +150,26 @@ ul{
     text-align: center;
     
 }
-#f2 .outgoing{
+#f2 .s1{
     height: 50px;
     width: 250px;
     margin-top: 60px;
-    margin-left: 60px;
+    margin-left: 80px;
     border-radius: 10px;
+    text-align: center;
+    border-color: black;
 }
-#f2 .return{
-    height: 50px;
-    width: 250px;
-    border-radius: 10px;
-    margin-left: 10px;
 
 
     
-}
+
 #f2 .people{
     height: 50px;
     width: 250px;
     border-radius: 10px;
     font-weight: bold;
     text-align: center;
-    margin-left: 10px;
+    margin-left: 240px;
 }
 #f2 .bt3{
     height: 50px;
