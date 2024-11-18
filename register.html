@@ -6,40 +6,41 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Register</title>
     <link rel="stylesheet" href="stylelogin.css">
+    <script src="login.js"></script>
     
 <body>
     <div class="header">
-        <h1><a href="#">HERMES</a></h1>
+        <h1><a href="Home.html">HERMES</a></h1>
         <h6>TRAVEL</h6>
     </div>
 
     <div class="container">
         <div class="form_container-register">
-            <form >
+            <form id="form">
                 <h1>Register</h1>
                 
                 <div class="input-box">                   
                 
-                    <input type="text" class="name-register" placeholder="Enter your name">
+                    <input type="text" class="name-register" placeholder="Enter your name" required>
                     <i class="fa-solid fa-user"></i>
                 </div>
                 
                 <div class="input-box">                   
                 
-                    <input type="email" class="email-login" placeholder="Enter your email">
+                    <input type="email" class="email-login" placeholder="Enter your email" required>
                     <i class="fa-regular fa-envelope"></i>
                 </div>
                 
                 <div class="input-box">                   
                 
-                    <input type="password" class="password-login" placeholder="Enter your password">
+                    <input type="password" class="password-login" placeholder="Enter your password" required>
                     <i class="fa-solid fa-lock" ></i>
                     <i class="fa-solid fa-eye-slash" id="hide-pw"></i>
                 </div>
                 
                 <div class="input-box">                   
                 
-                    <input type="password" class="password-login" placeholder="Confirm your password">
+                    <input type="password" class="password-login" placeholder="Confirm your password" required>
                     <i class="fa-solid fa-lock" ></i>
                     <i class="fa-solid fa-eye-slash" id="hide-pw"></i>
                 </div>

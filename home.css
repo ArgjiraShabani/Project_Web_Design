@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', sans-serif;
 }
 
 .main{
@@ -100,6 +103,7 @@ ul{
     font-weight: bold;
     border-radius: 5px;
     border-style:inherit;
+    cursor: pointer;
 
   }
  
@@ -110,6 +114,7 @@ ul{
    font-weight: bold;
    border-radius: 5px;
    border-style: inherit;
+   cursor: pointer;
   }
   .container-img img{
     max-width: 100%;
@@ -118,4 +123,53 @@ ul{
   .footer{
     background-color: aliceblue;
     height: 500px;
+    clear: both;
   }
+  .content{
+    
+    display: block;
+    align-items: center;
+    width: 60%;
+    padding: 5px;    
+    text-align: center;
+    margin: 150px 250px;
+    font-size: 22px;
+    color: #000080;
+    
+    
+    
+
+  }
+
+.gallery-section {
+  background-color: #f9f8eb;
+  width: 100%;
+  position: absolute;
+  color: #000080;
+  font-size: 22px;
+}
+.galleryh2{
+  display: block;
+  width: 50%;
+  padding: 10px;
+  margin: 150px 30px;
+  float: left;
+
+}
+
+.gallery{
+ display: inline-block;
+ width: 400px;
+ position: relative;
+ 
+  
+ 
+
+
+.gallery img{
+  width: 100%;
+  height: auto;
+}
+
+  
+  
