@@ -131,10 +131,36 @@ ul{
     text-align: center;
     margin: 150px 250px;
     font-size: 22px;
-    color: #000080;  
+    color: #000080; 
+    
+    
     
 
   }
+.gallery-section {
+  background-color: #000080;
+  width: 100%;
+}
+.galleryh2{
+  display: block;
+  width: 40%;
+  padding: 10px;
+  margin: 10px 30px;
+  float: left;
+}
+
+.gallery{
+  display: inline-block;
+  width: 400px;
+  float: right;
   
+ 
+
+}
+.gallery img{
+  width: 100%;
+  height: auto;
+}
+
   
   
