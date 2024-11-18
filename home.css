@@ -103,6 +103,7 @@ ul{
     font-weight: bold;
     border-radius: 5px;
     border-style:inherit;
+    cursor: pointer;
 
   }
  
@@ -113,6 +114,7 @@ ul{
    font-weight: bold;
    border-radius: 5px;
    border-style: inherit;
+   cursor: pointer;
   }
   .container-img img{
     max-width: 100%;
