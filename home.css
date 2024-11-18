@@ -57,7 +57,7 @@ ul{
  }
  ul li a{
     text-decoration: none;
-    color: rgb(221, 215, 215);
+    color: rgb(17, 16, 16);
     font-family: 'Times New Roman', Times, serif;
     transition: 0.1s ease-in-out;
     font-weight: 800;
@@ -66,6 +66,12 @@ ul{
     color:rgb(55, 77, 83)
  }
 
+ .fl{
+  text-decoration: underline;
+  text-decoration-color: #000000;
+  text-decoration-thickness: 3px;
+  
+}
  .search{
     width: 380px;
     float: left;
@@ -80,7 +86,7 @@ ul{
    margin-top: 18px;
    font-weight: bold;
    border-radius: 5px;
-   
+   padding-left: 10px;
    border-color: #000000;
    
 
