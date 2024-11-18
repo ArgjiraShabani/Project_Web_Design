@@ -124,6 +124,7 @@ ul{
     clear: both;
   }
   .content{
+    
     display: block;
     align-items: center;
     width: 60%;
@@ -131,32 +132,38 @@ ul{
     text-align: center;
     margin: 150px 250px;
     font-size: 22px;
-    color: #000080; 
+    color: #000080;
     
     
     
 
   }
+
 .gallery-section {
-  background-color: #000080;
+  background-color: #f9f8eb;
   width: 100%;
+  position: absolute;
+  color: #000080;
+  font-size: 22px;
 }
 .galleryh2{
   display: block;
-  width: 40%;
+  width: 50%;
   padding: 10px;
-  margin: 10px 30px;
+  margin: 150px 30px;
   float: left;
+
 }
 
 .gallery{
-  display: inline-block;
-  width: 400px;
-  float: right;
+ display: inline-block;
+ width: 400px;
+ position: relative;
+ 
   
  
 
-}
+
 .gallery img{
   width: 100%;
   height: auto;
