@@ -139,8 +139,7 @@ ul{
   }
   .content{
     
-    display: block;
-    align-items: center;
+    
     width: 60%;
     padding: 5px;    
     text-align: center;
@@ -156,11 +155,16 @@ ul{
 .gallery-section {
   background-color: #f9f8eb;
   position: relative;
-  width: 100%;
-  
+  width: 100%;  
   color: #000080;
   font-size: 22px;
   display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+  align-items: center;
+	
+	
   
  
 }
@@ -177,7 +181,8 @@ ul{
 
 .gallery{
   height: auto;
-  width: 100%;
+  max-width: 100px;
+  margin-left: 20px;
   
   
 
