@@ -121,16 +121,20 @@ ul{
     height: 150vh;
   }
   .footer{
+    position: absolute;
+   
     background-color: #000080;    
     clear: both;
     width: 100%;
     height: 100px;
     color: #f9f8eb;
+    
 
   }
   .contact{
     text-align: end;
     margin: 0 30px;
+    
     
   }
   .content{
