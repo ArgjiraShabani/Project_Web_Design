@@ -143,33 +143,35 @@ ul{
 
 .gallery-section {
   background-color: #f9f8eb;
+  position: relative;
   width: 100%;
-  position: absolute;
+  justify-content: flex-end;
   color: #000080;
   font-size: 22px;
+  display: flex;
+  
+ 
 }
 .galleryh2{
-  display: block;
+  
   width: 50%;
-  padding: 10px;
-  margin: 150px 30px;
+  padding: 20px;
+  margin: 150px 0px;
   float: left;
+  
 
 }
+
 
 .gallery{
- display: inline-block;
- width: 400px;
- position: relative;
- 
-  
- 
-
-
-.gallery img{
-  width: 100%;
   height: auto;
+  width: 100%;
+  align-items: ;
+  
+
 }
 
-  
+
+
+
   
