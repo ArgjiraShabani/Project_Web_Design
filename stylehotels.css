@@ -10,59 +10,77 @@ body {
 
 .main {
     width: 100%;
-    height: 100vh;
-    background: url('hotels.jpg') no-repeat center center/cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.navbar {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color:white;
-}
-
-.menu ul {
-    list-style: none;
-    display: flex;
-    gap: 50px;
-}
-
-.menu ul li {
-    display: inline;
-}
-
-.menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
+    height: 160vh;
+    background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url('hotels.jpg') ;
+    background-position: center;
+    background-size: cover;
     
 }
 
+.navbar{
+   
+    display:flex;
 
-.search {
-    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+    
 }
+.navbar .icon h2{
+    padding-top: 20px;
+    font-size: 40px;
+    color: black;
+    
 
-.sr, .bt1, .bt2 {
-    padding: 5px 10px;
-    border: none;
+    
+}
+.navbar .icon a{
+  text-decoration: none;   
+}
+.navbar .icon h5{
+    font-size: 18px;
+}
+.navbar .menu a{
+    color: black;
+    text-decoration:none;
+    font-size:20px
+    
+}
+.navbar .menu .flights{
+    text-decoration: underline;
+}
+.navbar .menu a:hover{
+    color:rgb(120, 158, 168);
+}
+.navbar .menu{
+    display:inline-flex;
+   flex-wrap: wrap;
+    gap: 145px;
+
+    
+    
+}
+.navbar .search input{
+    height: 34px;
+    width: 200px;
     border-radius: 5px;
+    background-color:rgb(255, 255, 255);
+    border-style: outset;
+    border-color: rgb(207, 207, 207);
+    padding-left: 10px;
+    
+}
+.navbar .search a button{
+    height: 38px;
+    width: 60px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border-color: #cccaca;
+    cursor: pointer;
+    
 }
 
 .box {
