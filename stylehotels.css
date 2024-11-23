@@ -73,7 +73,7 @@ body {
     padding-left: 10px;
     
 }
-.navbar .search a button{
+.navbar .search .login a button{
     height: 38px;
     width: 60px;
     border-radius: 5px;
@@ -92,6 +92,10 @@ body {
     font-size: 3rem;
     margin-bottom: 20px;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 200px;
 }
 
 .box2 {
