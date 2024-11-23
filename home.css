@@ -121,26 +121,24 @@ ul{
     height: 150vh;
   }
  
-  .footer{
-    display: flex;
-    flex-direction: column;
-    background-color: #000080;
-    color: #f9f8eb;
+  footer{
+    display: flex;  
+    flex-direction: row;  
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0ecd7;
+    color: #000080;
     width: 100%;
+    padding: 20px ;
+    
   }
+ 
+ 
+ 
   
-  .location  {
-    float: left;
-    margin: 15px;
-    
-    font-size: 18px;
-  }
-  .contact{
-    text-align: end;
-    margin: 0 30px;
-    
-    
-  }
+
+  
+  
   .content{
     
     

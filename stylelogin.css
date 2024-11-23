@@ -7,61 +7,69 @@
     font-family: 'Lora', sans-serif;
 }
 .navbar{
-    display: flex;
-    justify-content: space-evenly;
-    background:#f9f8eb;
+   
+    display:flex;
+
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
+    
     align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
     
 }
-
-.logo{
-    
-   
-    color: #000080;
-    height: 70px;
-    display: block;      
-    font-size: 19px;
-    position: sticky;
-    top: 10px;
-    z-index: 999;
-   
-}
-.logo a{
-    text-decoration: none;
-    color: #000080;
-    margin: 25px;
+.navbar .icon h2{
+    padding-top: 20px;
+    font-size: 40px;
+    color: black;
     
 
-}
-.nav-menu{
-    color: #000080;
-    height: 100px;
-    display: flex;      
-    font-size: 19px;    
-    align-items: center;
-    gap: 40px;
-   
     
+}
+.navbar .icon a{
+  text-decoration: none;   
+}
+.navbar .icon h5{
+    font-size: 18px;
+}
+.navbar .menu a{
+    color: black;
+    text-decoration:none;
+    font-size:20px
+    
+}
+.navbar .menu .flights{
+    text-decoration: underline;
+}
+.navbar .menu a:hover{
+    color:rgb(120, 158, 168);
+}
+.navbar .menu{
+    display:inline-flex;
+   flex-wrap: wrap;
+    gap: 145px;
 
-   
+    
     
 }
-.nav-menu a{
-    text-decoration: none;
-    color: #000080;
-    font-size: 20px;
+.navbar .search input{
+    height: 34px;
+    width: 200px;
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255);
+    border-style: outset;
+    border-color: rgb(207, 207, 207);
+    padding-left: 10px;
+    
 }
-.navbar h6{
-    margin-left: 140px;
-    font-size: 14px;
-}
-.search-bar .button-1{
-    background-color: #000080;
-    color: #f9f8eb;
-    border-radius: 3px;
-    width: 50px
+.navbar .search a button{
+    height: 38px;
+    width: 60px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border-color: #cccaca;
+    cursor: pointer;
+    
 }
 
 
