@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="login.js"></script>
+    
     <title>LogIn</title>
     <link rel="stylesheet" href="stylelogin.css">
     
@@ -40,14 +40,16 @@
                 <h1>Login</h1>
                 <div class="input-box">                   
                 
-                    <input type="email" class="email-login" placeholder="Enter your email" required>
+                    <input id="email" class="email-login" placeholder="Enter your email">
                     <i class="fa-regular fa-envelope"></i>
+                    <div class="error"></div>
                 </div>
                 <div class="input-box">                   
                 
-                    <input type="password" class="password-login" placeholder="Enter your password">
+                    <input id="password" class="password-login" type="password" placeholder="Enter your password">
                     <i class="fa-solid fa-eye-slash" id="hide-pw"></i>
                     <i class="fa-solid fa-lock"></i>
+                    <div class="error"></div>
                 </div>
                 <div class="input-box">                   
                 

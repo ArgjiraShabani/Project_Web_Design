@@ -82,8 +82,7 @@ text-decoration: none;
 }
 
 
-<<<<<<< HEAD
-  }
+  
   .bt1{
     
     width: 90px;
@@ -110,25 +109,17 @@ text-decoration: none;
     height: 150vh;
   }
  
-  footer{
+ /* footer{
     display: flex;  
     flex-direction: row;  
     justify-content: space-between;
     align-items: center;
     background-color: #f0ecd7;
     color: #000080;
-=======
-/*
-  .footer{
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    color: #f9f8eb;
->>>>>>> 948617e682cf865b6e57bb819bf2f7e7ba257eaa
     width: 100%;
     padding: 20px ;
     
-  }
+  }*/
  
  
  
@@ -136,22 +127,6 @@ text-decoration: none;
 
   
   
-<<<<<<< HEAD
-=======
-  .location  {
-    float: left;
-    margin: 15px;
-    
-    font-size: 18px;
-  }
-  .contact{
-    text-align: end;
-    margin: 0 30px;
-    
-    
-  }
-  */
->>>>>>> 948617e682cf865b6e57bb819bf2f7e7ba257eaa
   .content{
     
     

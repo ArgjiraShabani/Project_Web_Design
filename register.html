@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Register</title>
     <link rel="stylesheet" href="stylelogin.css">
-    <script src="login.js"></script>
+    
     
 <body>
     <div class="navbar">
@@ -35,33 +35,37 @@
 
     <div class="container">
         <div class="form_container-register">
-            <form id="form">
+            <form id="form" action="/">
                 <h1>Register</h1>
                 
                 <div class="input-box">                   
                 
-                    <input type="text" class="name-register" placeholder="Enter your name" required>
+                    <input id="name" class="name-register" placeholder="Enter your name">
                     <i class="fa-solid fa-user"></i>
+                    <div class="error"></div>
                 </div>
                 
                 <div class="input-box">                   
                 
-                    <input type="email" class="email-login" placeholder="Enter your email" required>
+                    <input id="email" class="email-login" placeholder="Enter your email" >
                     <i class="fa-regular fa-envelope"></i>
+                    <div class="error"></div>
                 </div>
                 
                 <div class="input-box">                   
                 
-                    <input type="password" class="password-login" placeholder="Enter your password" required>
+                    <input id="password" class="password-login" type="password" placeholder="Enter your password" >
                     <i class="fa-solid fa-lock" ></i>
                     <i class="fa-solid fa-eye-slash" id="hide-pw"></i>
+                    <div class="error"></div>
                 </div>
                 
                 <div class="input-box">                   
                 
-                    <input type="password" class="password-login" placeholder="Confirm your password" required>
+                    <input id="password2" class="password-login" type="password" placeholder="Confirm your password" >
                     <i class="fa-solid fa-lock" ></i>
                     <i class="fa-solid fa-eye-slash" id="hide-pw"></i>
+                    <div class="error"></div>
                 </div>
             </form>
             <button type="submit">Register</button>
@@ -71,6 +75,7 @@
         </div>
     </div>
     <section class="home"></section>  
+    <script src="login.js"></script>
     
 </body>
 </html>
