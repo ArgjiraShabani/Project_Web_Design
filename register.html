@@ -47,7 +47,7 @@
                 
                 <div class="input-box">                   
                 
-                    <input type="email" id="email" class="email-login" placeholder="Enter your email" >
+                    <input type="email" name="femail" id="email" class="email-login" placeholder="Enter your email" >
                     <i class="fa-regular fa-envelope"></i>
                     <div class="error"></div>
                 </div>
@@ -87,6 +87,21 @@
                 alert("Name must be filled out");
                 return false;
             }
+            let y=document.forms["myForm"]["femail"].value;
+            const isValidEmail = (y) => {
+            const re =s =  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return re.test(String(y).toLowerCase());
+            if(y==""){
+                alert("Email must be filled out");
+                return false;
+            }else if(!isValidEmail(y)){
+
+                alert("Provide a valid email address");
+                return false;
+            }
+            return true;
+
+}
 
         }
     </script>
