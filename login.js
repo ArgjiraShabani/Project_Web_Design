@@ -37,7 +37,7 @@ const validateInputs =() => {
     const passwordValue = password.value.trim();
     const password2Value = password2.value.trim();
     
-    if(username===''){
+    if(usernameValue===''){
         setError(username,'Username is required')
     }
     else{
@@ -46,7 +46,7 @@ const validateInputs =() => {
     }
    
     if(emailValue === ''){
-        setError(username,'Email is required')
+        setError(email,'Email is required')
 
     }else if(!isValidEmail(emailValue)){
         setError(email,'Provide a valid email address');
