@@ -38,9 +38,7 @@
     font-size:20px
     
 }
-.navbar .menu .flights{
-    text-decoration: underline;
-}
+
 .navbar .menu a:hover{
     color:rgb(120, 158, 168);
 }
@@ -53,7 +51,7 @@
     
 }
 .navbar .search input{
-    height: 34px;
+    height: 39px;
     width: 200px;
     border-radius: 5px;
     background-color:rgb(255, 255, 255);
