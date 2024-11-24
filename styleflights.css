@@ -93,14 +93,14 @@
 .box p{
     
     text-align: center;
-    font-size:x-large;
+    font-size:30px;
     font-weight: bold;
-    padding-top: 20px;
+    padding-top: 15px;
     padding-bottom: 20px;
     
 }
 .box2{
-    background-color: rgb(240, 238, 238);
+    background-color: rgb(247, 245, 245);
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
