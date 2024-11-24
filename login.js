@@ -26,7 +26,7 @@ const setSuccess = element =>{
     inputBox.classList.remove('error');
 }
 const isValidEmail = email => {
-   const re =s = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>([\\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+   const re =s =  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
    return re.test(String(email).toLowerCase());
 
 }
