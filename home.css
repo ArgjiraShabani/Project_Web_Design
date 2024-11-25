@@ -91,6 +91,9 @@ text-decoration: none;
   position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
+              
+  width: 100%; 
 }
 .home-page img{
   width: 100%;
@@ -115,13 +118,16 @@ text-decoration: none;
 
   .content{
     
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 60%;
     padding: 5px;    
     text-align: center;
     margin: 150px 250px;
     font-size: 22px;
-    color: #000080;
+    color: #002349;
     
     
     
@@ -219,6 +225,7 @@ text-decoration: none;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   
   margin: 15px 140px;
   
@@ -236,6 +243,8 @@ text-decoration: none;
 .title{
   display: flex;
   justify-content: center;
+  align-items: center;
+
   margin-top: 150px;
   font-size: 25px;
   color: #002349;
