@@ -60,7 +60,7 @@
     padding-left: 10px;
     
 }
-.navbar .search a button{
+.navbar .search  button{
     height: 38px;
     width: 60px;
     border-radius: 5px;
@@ -201,8 +201,6 @@ p{
     }
   }
 
-#incorrect input{
-    border-color: rgb(206, 7, 7);
-}
+
 
 
