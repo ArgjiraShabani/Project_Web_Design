@@ -1,4 +1,75 @@
+
 const form =document.getElementById('form');
+const username=document.getElementById('name');
+const email=document.getElementById('email');
+const password=document.getElementById('password');
+const password2=document.getElementById('password2');
+const error_message=document.getElementById('error-message');
+form.addEventListener('submit',(e)=>{
+   // e.preventDefault()
+
+   let errors =[]
+
+   if(username){
+    errors= getRegisterFormErrors(username.value,email.value,password.value,password2.value)
+   }
+   else{
+    errors= getLogInFormErrors(email.value,password.value)
+   }
+   if(errors.length>0){
+    e.preventDefault()
+    error_message.innerText=errors.join(". ")
+   }
+})
+
+function getRegisterFormErrors(name,email,password,password2){
+    let error=[]
+
+    if(name==='' || name==null){
+        errors.push('Name is required')
+        username.parentElement.classList.add('incorrect')
+    }
+    if(email==='' || email==null){
+        errors.push('Email is required')
+        email.parentElement.classList.add('incorrect')
+    }
+    if(password==='' || password==null){
+        errors.push('Password is required')
+        password.parentElement.classList.add('incorrect')
+    }
+
+    return errors;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*const form =document.getElementById('form');
 const username=document.getElementById('name');
 const email=document.getElementById('email');
 const password=document.getElementById('password');
@@ -77,4 +148,4 @@ const validateInputs =() => {
     
 
     
-};
+};*/

@@ -6,8 +6,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Register</title>
     <link rel="stylesheet" href="stylelogin.css">
+    <script type="text/javascript" src="login.js" defer></script>
     
-    
+</head>   
 <body>
     <div class="navbar">
         <div class="icon">
@@ -37,35 +38,36 @@
         <div class="form_container-register">
             <form id="form" action="/" name="myForm" onsubmit="return validateForm()" method="post">
                 <h1>Register</h1>
+                <p id="error-message"></p>
                 
-                <div class="input-box">                   
+                <div class="input-box" id="incorrect">                   
                 
-                    <input type="text" name="fname" id="name" class="name-register" placeholder="Enter your name">
+                    <input type="text" name="fname"  class="name-register" placeholder="Enter your name">
                     <i class="fa-solid fa-user"></i>
                     <div class="error"></div>
                 </div>
                 
-                <div class="input-box">                   
+                <div class="input-box" id="incorrect">                   
                 
                     <input type="email" name="femail" id="email" class="email-login" placeholder="Enter your email" >
                     <i class="fa-regular fa-envelope"></i>
-                    <div class="error"></div>
+                    
                 </div>
                 
-                <div class="input-box">                   
+                <div class="input-box" id="incorrect">                   
                 
                     <input id="password" class="password-login" type="password" placeholder="Enter your password" >
                     <i class="fa-solid fa-lock" ></i>
                     <i class="fa-solid fa-eye-slash" id="hide-pw"></i>
-                    <div class="error"></div>
+                  
                 </div>
                 
-                <div class="input-box">                   
+                <div class="input-box" >                   
                 
                     <input id="password2" class="password-login" type="password" placeholder="Confirm your password" >
                     <i class="fa-solid fa-lock" ></i>
                     <i class="fa-solid fa-eye-slash" id="hide-pw"></i>
-                    <div class="error"></div>
+                    
                     
                 </div>
                 <div class="button">
@@ -80,7 +82,7 @@
         </div>
     </div>
     <section class="home"></section>  
-    <script >
+   <!-- <script >
         function validateForm(){
             let x=document.forms["myForm"]["fname"].value;
             if(x==""){
@@ -104,7 +106,7 @@
 }
 
         }
-    </script>
+    </script>-->
     
 </body>
 </html>
