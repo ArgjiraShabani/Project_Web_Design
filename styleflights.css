@@ -89,6 +89,7 @@
     flex-direction: column;
     display:block;
     flex-wrap: wrap;
+    
     background-color: rgb(255, 255, 255);
     justify-content:center;
     align-items: center;
@@ -107,14 +108,14 @@
     
 }
 .box2{
-    background-color: #002349;
+    background-color:#002349;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
     justify-content: center;
     text-align: center;
-    padding-top: 150px;
-    height: 376px;
+    padding-top: 130px;
+    height: 380px;
     
 }
 
