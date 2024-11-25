@@ -92,7 +92,7 @@ body{
     position: absolute;
     max-width: 420px;
     width: 100%;                  
-    background-color: ;
+    
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;    
@@ -121,7 +121,7 @@ body{
 
 }
 .input-box input{
-    background-color: ;
+    
     padding: 10px;
     height: 100%;
     width: 300px;
