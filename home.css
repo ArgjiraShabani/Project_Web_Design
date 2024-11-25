@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Italiana&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Forum", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    
    
 }
 
@@ -25,13 +29,14 @@
   
   align-items: center;
   justify-content: space-around;
-  background-color: #ffffff;
+  background-color: #002349;
+  color: #f9f8eb;
   
 }
 .navbar .icon h2{
   padding-top: 20px;
   font-size: 40px;
-  color: black;
+  color: #f9f8eb;
   
 
   
@@ -43,7 +48,7 @@ text-decoration: none;
   font-size: 18px;
 }
 .navbar .menu a{
-  color: black;
+  color: #f9f8eb;
   text-decoration:none;
   font-size:20px
   
@@ -99,10 +104,10 @@ text-decoration: none;
   }
 
 .gallery-section {
-  background-color: #f9f8eb;
+  background-color: #002349;
   position: relative;
   width: 100%;  
-  color: #000080;
+  color: #fff;
   font-size: 22px;
   display: flex;
   flex-direction: row;
@@ -142,6 +147,7 @@ text-decoration: none;
   margin-top: 110px;
    justify-content: space-around;
    align-items: center;
+   color: #002349;
 }
 .follow{
   font-weight:200;
@@ -153,8 +159,8 @@ text-decoration: none;
   font-weight: bold;
 }
 .follow p a{
-  color: black;
-  text-decoration:underline;
+  color: #002349;
+  text-decoration:none;
 }
 .services{
   font-weight:200;
@@ -164,21 +170,23 @@ text-decoration: none;
   font-weight:bold ;
 }
 .services p a{
-  color: black;
-  text-decoration:underline;
+  color: #002349;
+  text-decoration:none;
 }
 .contact{
   font-weight:200;
   font-size: large;
+  
 
 
 }
 .contact h3 {
   font-weight: bold;
+  color: #002349;
 }
 .contact p a{
-  color: black;
-  text-decoration:underline;
+  color: #002349;
+  text-decoration:none;
 }
 .container-destinations{
   display: flex;
@@ -205,6 +213,16 @@ text-decoration: none;
   justify-content: center;
   margin-top: 150px;
   font-size: 25px;
+  color: #002349;
+  
+}
+.horizontal-line{
+  width: 100%;
+  border: none;
+  border-top: 2px solid #000080;
+  margin-top: 150px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 
