@@ -23,13 +23,13 @@
     
     align-items: center;
     justify-content: space-around;
-    background-color: #ffffff;
+    background-color: #002349;
     
 }
 .navbar .icon h2{
     padding-top: 20px;
     font-size: 40px;
-    color: black;
+    color: rgb(255, 255, 255);
     
 
     
@@ -39,9 +39,10 @@
 }
 .navbar .icon h5{
     font-size: 18px;
+    color: #ffffff;
 }
 .navbar .menu a{
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration:none;
     font-size:20px
     
@@ -100,7 +101,7 @@
     
 }
 .box2{
-    background-color: rgb(247, 245, 245);
+    background-color: #002349;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
