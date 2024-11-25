@@ -86,6 +86,31 @@ text-decoration: none;
   cursor: pointer;
   
 }
+.home-page{
+  
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.home-page img{
+  width: 100%;
+  max-width: 1550px;
+  height: auto;
+}
+.home-page h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 2px #002349;
+  background-color:rgba(0, 35, 73, 0.5);
+  text-align: center;  
+  color: #fff;
+  padding: 20px;
+  width: 50%;
+  
+
+}
 
 
   .content{
