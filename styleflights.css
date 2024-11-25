@@ -103,6 +103,7 @@
     font-weight: bold;
     padding-top: 15px;
     padding-bottom: 20px;
+    color: #002349;
     
 }
 .box2{
@@ -185,6 +186,7 @@
     margin-top: 110px;
      justify-content: space-around;
      align-items: center;
+     color: #002349;
 }
 .follow{
     font-weight:200;
@@ -196,8 +198,8 @@
     font-weight: bold;
 }
 .follow p a{
-    color: black;
-    text-decoration:underline;
+    color: #002349;
+    text-decoration:none;
 }
 .services{
     font-weight:200;
@@ -207,8 +209,8 @@
     font-weight:bold ;
 }
 .services p a{
-    color: black;
-    text-decoration:underline;
+    color: #002349;
+    text-decoration:none;
 }
 .contact{
     font-weight:200;
@@ -220,6 +222,6 @@
     font-weight: bold;
 }
 .contact p a{
-    color: black;
-    text-decoration:underline;
+    color: #002349;
+    text-decoration:none;
 }
