@@ -1,28 +1,19 @@
-const sInput = document.getElementById("sInput");
-const sButton = document.getElementById("sButton");
-const lButton = document.getElementById("lButton");
 
-
-sButton.addEventListener("click", function(event) {
-  
-  if (sInput.value.trim() === "") {
+function searchButtonClicked() {
+  const searchTerm = document.getElementById('sInput').value.trim(); // Get the search input value
+  if (searchTerm === "") {
     alert("Please enter a search term.");
-    event.preventDefault(); 
   } else {
-   
-    alert("Searching for: " + sInput.value);
+    alert("Searching for: " + searchTerm);
+    // Optionally, you can perform an action such as redirecting to a search results page:
+    // window.location.href = "searchResults.html?query=" + encodeURIComponent(searchTerm);
   }
-});
+}
 
-
-lButton.addEventListener("click", function(event) {
-  
-  const isLoggedIn = false;
-
-  if (!isLoggedIn) {
-    alert("You need to log in first.");
-    event.preventDefault(); 
-  } else {
-    alert("Redirecting to login page...");
-  }
-});
+// JavaScript function for the Login button click
+function loginButtonClicked() {
+  // Display a message or perform any login action
+  alert("Login button clicked!");
+  // You can add more logic for the login process or redirect to the login page
+  // Example: window.location.href = "login.html";
+}
