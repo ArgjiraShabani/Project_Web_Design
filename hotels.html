@@ -47,22 +47,10 @@
                     <input type ="date" id="check-in" >
                     <label for="check-out">Check-out:</label>
                     <input type="date" id="check-out">
-                    <select class="guests">
-                        <option value=""disabled selected>Guests</option>
-                        <option value="1">1 Guest</option>
-                        <option value="2">2 Guests</option>
-                        <option value="3">3 Guests</option>
-                        <option value="4">4 Guests</option>
-                        <option value="5">5 Guests</option>
-                    </select>
-                    <select class="rooms">
-                        <option value=""disabled selected>Rooms</option>  
-                      <option value="1">1 Room</option>
-                      <option value="2">2 Rooms</option>
-                      <option value="3">3 Rooms</option>
-                      <option value="4">4 Rooms</option>
-                      <option value="5">5 rooms</option>
-                    </select>
+                   
+                    <input type="number" min="1" placeholder="Guests" class="guests" id="guests">
+                    <input type="number" min="1" placeholder="Rooms" class="rooms" id="rooms">
+
                     <button type="button" class="b">Search Hotels</button>
                 </form>
             </div>
