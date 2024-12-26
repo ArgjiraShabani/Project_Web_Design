@@ -118,6 +118,7 @@ body {
     max-width: 80%;
     margin: auto;
     flex-wrap: wrap;
+    height: 300px;
     
 }
 
