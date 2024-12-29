@@ -11,6 +11,7 @@
    
 }
 
+
 .side-bar{
     margin: 16px;
     padding: 0;
@@ -31,6 +32,9 @@
 
     
 }
+.admin{
+    
+ }
 .side-bar h3{
     padding: 20px;
 
