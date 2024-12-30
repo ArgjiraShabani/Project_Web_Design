@@ -24,14 +24,19 @@
                             
                         
                       </div>
-                      <div class="search">
-                          <input class="sr" type="text" placeholder="Search" id="sInput">
-                          <a href="#" id="searchLink"><button class="bt1" id="sButton" onclick="searchButtonClicked()">Search</button></a>       
-                    
-                    
-                        <a href="login.html" id="loginLink"><button class="bt2" id="lButton" onclick="loginButtonClicked()">Login</button></a> 
-
+                      <div class="button2">
+                      <a href="login.html" id="loginLink"><button class="bt2" id="lButton" onclick="loginButtonClicked()">Login</button></a>
                       </div>
+                      <div class="search">
+                       
+                        <form>
+                          <input class="sr" type="text" placeholder="Search" id="sInput" required>
+                          <a href="#" id="searchLink"><button class="bt1" id="sButton" onclick="searchButtonClicked()">Search</button></a>       
+                        
+                        </form>
+                      
+                      </div>
+                   
                 </div>
                 
               <div class="box">
@@ -40,47 +45,40 @@
                 
                 <div class="box2">
                     
-                      <form id="f1">
-                      <select class="dep" size="1" id="dep">
-                          <option>Departure Airport</option>
-                          <option>Prishtina</option>
-                          <option>London</option>
-                          <option>France</option>
-                          <option>Istanbul</option>
-                        <option>Bangkok</option>
-                        <option>Dubai</option>
-                        <option>Paris</option>
-                      </select>
-                      <select class="des" size="1" id="des">
-                        <option>Destination Airport</option>
-                        <option>Basel</option>
-                        <option>Berlin</option>
-                        <option>Dortmund</option>
-                        <option>Tokyo</option>
-                        <option>Delhi</option>
-                        <option>Cairo</option>
-                        <option>Osaka</option>
-                      </select>
-                      </form>
+                    <form id="f1">
+                                    <select class="dep" size="1" id="dep" required>
+                                        <option>Departure Airport</option>
+                                        <option>Prishtina</option>
+                                        <option>London</option>
+                                        <option>France</option>
+                                        <option>Istanbul</option>
+                                      <option>Bangkok</option>
+                                      <option>Dubai</option>
+                                      <option>Paris</option>
+                                    </select>
+                                    <select class="des" size="1" id="des" required>
+                                      <option>Destination Airport</option>
+                                      <option>Basel</option>
+                                      <option>Berlin</option>
+                                      <option>Dortmund</option>
+                                      <option>Tokyo</option>
+                                      <option>Delhi</option>
+                                      <option>Cairo</option>
+                                      <option>Osaka</option>
+                                    </select>
+                                    <select class="s1" id="roundtrip" required>
+                                      <option>RoundTrip</option>
+                                      <option>One Way</option>
+                                      <option>Multi-City</option>
+                                    </select>
+                                  <input type="number" min="1" placeholder="How many people?" class="people" id="people" required>
+                                  <a href="#"><button class="bt3" id="sFlight">Search for flight</button></a>
+                  </form>
                   
-                        <form id="f2">
-                          <select class="s1" id="roundtrip">
-                              <option>RoundTrip</option>
-                              <option>One Way</option>
-                              <option>Multi-City</option>
-                          </select>
-                        <input type="number" min="1" placeholder="How many people?" class="people" id="people"><br>
-                        
-                        </form>
-                    </div>
-              
-
-                </div>
-                      <div class="sf">
-                        <a href="#"><button class="bt3" id="sFlight">Search for flight</button></a>
-                      </div>
-      </div>
-            
+                      
+             </div>
+        </div>
+    
            
 
            <div class="footer">

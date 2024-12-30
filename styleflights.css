@@ -61,11 +61,12 @@
 .navbar .menu{
     display:inline-flex;
    flex-wrap: wrap;
-    gap: 145px;
+    gap: 185px;
 
     
     
 }
+
 .navbar .search input{
     height: 39px;
     width: 200px;
@@ -76,6 +77,7 @@
     padding-left: 10px;
     
 }
+
 .navbar .search a button{
     height: 38px;
     width: 60px;
@@ -83,6 +85,21 @@
     background-color: #ffffff;
     border-color: #cccaca;
     cursor: pointer;
+    
+    
+}
+.navbar .button2{
+    display: inline-block;
+    margin-left: 100px
+}
+.navbar .button2 a button{
+    height: 38px;
+    width: 60px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border-color: #cccaca;
+    cursor: pointer;
+    
     
 }
 .box{
@@ -93,6 +110,7 @@
     background: rgba(172, 172, 172, 0.2);
     justify-content:center;
     align-items: center;
+    
     margin-top: 200px;
     height: 49vh;
     
@@ -114,12 +132,13 @@
     gap: 40px;
     justify-content: center;
     text-align: center;
-    padding-top: 130px;
+    padding-top: 120px;
     height: 380px;
+
     
 }
 
-#f1 .dep{
+.dep{
     
     width: 320px;
     height: 50px;
@@ -129,7 +148,7 @@
     text-align: center;
     
 }
-#f1 .des{
+.des{
     width: 320px;
     height: 50px;
 
@@ -138,7 +157,7 @@
     text-align: center;
     
 }
-#f2 .s1{
+.s1{
     height: 50px;
     width: 320px;
     font-weight: bold;
@@ -149,7 +168,7 @@
 }
 
 
-#f2 .people{
+.people{
     height: 50px;
     width: 320px;
     border-radius: 10px;
@@ -158,16 +177,8 @@
     border-color: rgb(204, 202, 202);
    
 }
-.sf{
-    background: rgba(172, 172, 172, 0.2);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 100px;
-    align-items: center;
-    padding-bottom: 150px;
-}
-.sf a button{
+
+ a button{
     background-color: rgb(255, 255, 255);
     width: 200px;
     height:50px;
