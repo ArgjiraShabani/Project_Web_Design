@@ -10,6 +10,15 @@
     
    
 }
+.container{
+    display: flex;
+    height: 100vh;
+}
+.admin{
+    padding: 20px;
+    font-size: 54px;
+    margin-bottom: 0;
+}
 
 
 .side-bar{
@@ -32,9 +41,6 @@
 
     
 }
-.admin{
-    
- }
 .side-bar h3{
     padding: 20px;
 
@@ -52,3 +58,36 @@
     color: white;
     font-size: 16px;
 }
+.main_content{
+    margin-top: 16px;
+    margin-left: 250px;
+   
+    padding: 20px;
+    width: 100%;
+    background-color: #002349;
+    height: 100vh;
+    overflow-y: auto;
+}
+.cards{
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.cards p{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.main-title p{
+    font-size: 36px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+
+
+}
+
+
