@@ -14,7 +14,7 @@
     background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(photo.jpg);
    background-position: center;
    background-size: cover;
-   height: 110vh;
+   height: 170vh;
    
   
 
@@ -201,9 +201,9 @@
 .footer{
     display:flex;
     flex-wrap: wrap;
-    height: 40vh;
+    height: 50vh;
     background-color: rgb(255, 255, 255);
-    margin-top: 110px;
+    margin-top: 450px;
      justify-content: space-around;
      align-items: center;
      color: #002349;
