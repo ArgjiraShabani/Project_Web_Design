@@ -59,6 +59,7 @@
     height: 39px;
     width: 200px;
     border-radius: 5px;
+    font-weight: bold;
     background-color:rgb(255, 255, 255);
     border-style: outset;
     border-color: rgb(207, 207, 207);
@@ -68,6 +69,7 @@
 .navbar .search  button{
     height: 38px;
     width: 60px;
+    font-weight: bold;
     border-radius: 5px;
     background-color: #ffffff;
     border-color: #cccaca;

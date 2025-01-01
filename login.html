@@ -25,12 +25,10 @@
           
         </div>
         <div class="search">
-            <input class="sr" type="text" placeholder="Search">
-            <a href="#"><button class="bt1">Search</button></a>       
-      
-      
-          
-
+            <form>
+            <input class="sr" id="sr" type="text" placeholder="Search" required>
+            <button class="bt1" onclick="searchButtonClicked()">Search</button>       
+            </form>
         </div>
   </div>
     
@@ -38,7 +36,7 @@
        
         <div class="form_container-login">
             <form id="form" onsubmit="return getLogInFormErrors(event)">
-                <h1>Login</h1>
+                <h1 style="font-weight: bold;">Login</h1>
                 <p id="error-message"></p>
                 <div class="input-box">                   
                 

@@ -42,17 +42,17 @@
             
             <div class="box2">
                 <form id="f1">
-                    <input class="dep" type="text" placeholder="Enter Destination or Hotel NAME">
+                    <input class="dep" type="text" placeholder="Enter Destination or Hotel NAME" required>
                 
                     <label for="check-in">Check-in:</label>
-                    <input type ="date" id="check-in" >
+                    <input type ="date" id="check-in" required >
                     <label for="check-out">Check-out:</label>
-                    <input type="date" id="check-out">
+                    <input type="date" id="check-out" required>
                    
-                    <input type="number" min="1" placeholder="Guests" class="guests" id="guests">
-                    <input type="number" min="1" placeholder="Rooms" class="rooms" id="rooms">
+                    <input type="number" min="1" placeholder="Guests" class="guests" id="guests" required>
+                    <input type="number" min="1" placeholder="Rooms" class="rooms" id="rooms" required>
 
-                    <button type="button" class="b">Search Hotels</button>
+                    <button type="submit" class="b">Search Hotels</button>
                 </form>
             </div>
         </div>
