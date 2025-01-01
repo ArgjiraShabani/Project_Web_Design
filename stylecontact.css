@@ -9,3 +9,10 @@
     font-style: normal;
     
 }
+
+.main{
+    width: 100%;
+   background-position: center;
+   background-size: cover;
+   flex-wrap: wrap;
+}
