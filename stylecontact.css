@@ -58,9 +58,12 @@
     gap: 145px;
 }
 .navbar .search input{
+    height: 39px;
+    width: 200px;
+    border-radius: 5px;
 
 }
 
 .navbar .search input{
-    
+
 }
