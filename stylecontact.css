@@ -52,3 +52,8 @@
 .navbar .menu a:hover{
     color:rgb(120, 158, 168);
 }
+.navbar .menu{
+    display:inline-flex;
+   flex-wrap:wrap;
+    gap: 145px;
+}
