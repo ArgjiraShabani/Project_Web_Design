@@ -64,7 +64,7 @@
     background-color:rgb(255, 255, 255);
     border-style: outset;
     border-color: rgb(207, 207, 207);
-
+    padding-left: 10px;
 }
 
 .navbar .search input{
