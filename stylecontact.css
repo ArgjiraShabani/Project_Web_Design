@@ -30,20 +30,23 @@
     
   }
 
-  .navbar .icon h2{
+.navbar .icon h2{
     padding-top: 20px;
     font-size: 40px;
     color: #f9f8eb;
   }
-  .navbar .icon a{
+.navbar .icon a{
     text-decoration: none;   
     }
- .navbar .icon h5{
+.navbar .icon h5{
         font-size: 18px;
       }  
- .navbar .menu a{
+.navbar .menu a{
         color: #f9f8eb;
         text-decoration:none;
         font-size:20px
         
       }    
+.navbar .menu .home{
+        text-decoration: underline;
+      }
