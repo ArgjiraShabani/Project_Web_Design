@@ -71,5 +71,8 @@
     height: 38px;
     width: 60px;
     border-radius: 5px;
+    background-color: #ffffff;
+    border-color: #cccaca;
+    cursor: pointer;
 
 }
