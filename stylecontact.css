@@ -37,4 +37,7 @@
   }
   .navbar .icon a{
     text-decoration: none;   
-    }  
+    }
+ .navbar .icon h5{
+        font-size: 18px;
+      }  
