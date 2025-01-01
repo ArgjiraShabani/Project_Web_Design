@@ -1,3 +1,13 @@
+function searchButtonClicked() {
+    const searchTerm = document.getElementById('sr').value.trim();
+    if (searchTerm === "") {
+      alert("You have not written anything to search for.Please write something!");
+    }
+  }
+  
+
+
+
 function getRegisterFormErrors(event) {
    
     event.preventDefault();
