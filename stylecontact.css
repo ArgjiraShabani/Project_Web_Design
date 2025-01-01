@@ -49,3 +49,6 @@
 .navbar .menu .home{
         text-decoration: underline;
 }
+.navbar .menu a:hover{
+    color:rgb(120, 158, 168);
+}
