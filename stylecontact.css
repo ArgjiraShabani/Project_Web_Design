@@ -129,5 +129,7 @@
     text-decoration: underline;
 }
 .footer {
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
