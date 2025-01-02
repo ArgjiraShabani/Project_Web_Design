@@ -103,5 +103,7 @@
     z-index: 1;
 }
 .text-overlay {
-    
+    position: relative;
+    z-index: 2;
+    text-align: left;
 }
