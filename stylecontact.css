@@ -125,5 +125,6 @@
     line-height: 1.6;
 }
 .text-overlay .info a {
-    
+    color: #f9f8eb;
+    text-decoration: underline;
 }
