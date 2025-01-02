@@ -14,31 +14,63 @@
             <div class="side-bar">
             
                 <h3>Menu</h3>
-                <button><a href="#">Dashboard</a></button>
-                <button><a href="#">Bookings</a></button>
-                <button><a href="#">Reports</a></button>
-                <button><a href="#">Settings</a></button>
+                <ul>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#bookings">Bookings</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#customers">Customers</a></li>
+                    <li><a href="#reports">Reports</a></li>
+                    <li><a href="#settings">Settings</a></li>
+                </ul>
                
                
     
             </div>
         </aside>
        <div class="main_content">
-        <div class="main-title">
-            <p>Dashboard</p>
-        </div>
-        <div class="cards">
-            <p>Flights Bookings</p>
-            <p>Hotel Bookings</p>
-            <p>Inventory alerts</p>
-            
+             <header>
+                  <h1>Welcome Admin!</h1>
+                  <button onclick="logout()">Logout</button>
+            </header>
+            <section id="dashboard" class="section">
+                <div class="cards">
+                    <h3>Total Bookings</h3>
+                    <p id="total_bookings">Loading...</p>           
 
+                </div>
+                <div class="cards">
+                    <h3>Total revenue</h3>
+                    <p id="total_revenue">Loading...</p>           
+
+                </div>
+                <div class="cards">
+                    <h3>Popular Destinations</h3>
+                    <p id="popular_destinations">Loading...</p>           
+
+                </div>
+                <div class="charts">
+               
+            
+            </section>
+            <section id="bookings" class="section">
+                <h2>Manage bookings</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Customer</th>
+                            <th>Destinations</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bookingTable">
+                        <!--php-->
+                    </tbody>
+                </table>
+
+            </section>
         </div>
-        <div class="charts">
-            <p>Most visited places</p>
-            <p>Most booked hotels</p>
-        </div>
-       </div>
 
 
     </div>
