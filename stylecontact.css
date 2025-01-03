@@ -213,3 +213,7 @@ background-color: #002349;
     background-color: white;
     color: #002349;
   }
+
+  .footer h1 {
+    font-size: 36px;
+  }
