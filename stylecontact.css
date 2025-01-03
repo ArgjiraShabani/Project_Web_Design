@@ -194,5 +194,6 @@ background-color: #002349;
 }
 
 .text-overlay .info p {
-    
+    font-size: 16px;
+    line-height: 1.6;
 }
