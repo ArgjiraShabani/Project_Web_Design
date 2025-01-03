@@ -189,5 +189,6 @@ background-color: #002349;
 }
 
 .text-overlay .info h2 {
-    
+    font-size: 24px;
+    margin-top: 15px;
 }
