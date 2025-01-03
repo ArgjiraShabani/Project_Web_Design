@@ -163,6 +163,7 @@ color: white;
 background-color: #002349;
 }
 
+
 .background-image {
     width: 100%;
     height: 100%;
@@ -175,4 +176,7 @@ background-color: #002349;
     position:relative;
     z-index: 2;
     text-align: left;
+    padding: 20px;
+    background: rgba(0, 35, 73, 0.8);
+    color: #f9f8eb;
 }
