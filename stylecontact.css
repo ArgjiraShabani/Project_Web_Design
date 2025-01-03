@@ -199,5 +199,6 @@ background-color: #002349;
 }
 
 .text-overlay .info a {
-    
+    color: #f9f8eb;
+    text-decoration: underline;
 }
