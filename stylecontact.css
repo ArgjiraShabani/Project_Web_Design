@@ -46,7 +46,7 @@
         text-decoration:none;
         font-size:20px
 }    
-.navbar .menu .home{
+.navbar .menu .contact{
         text-decoration: underline;
 }
 .navbar .menu a:hover{
@@ -76,3 +76,159 @@
     cursor: pointer;
 
 }
+.contact-section {
+    position: relative;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Forum", sans-serif;
+    }
+
+.contact-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #002349;
+}
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; 
+    z-index: 1;
+}
+.text-overlay {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    padding: 20px;
+    background: rgba(0, 35, 73, 0.8);
+    color: #f9f8eb;
+    max-width: 400px;
+    border-radius: 10px;
+}
+.text-overlay h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.text-overlay .info h2 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+.text-overlay .info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.text-overlay .info a {
+    color: #f9f8eb;
+    text-decoration: underline;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    background-color: white;
+    color: #002349;
+}
+.footer h1 {
+    font-size: 36px;
+}
+.footer .follow,
+.footer .services {
+    font-size: large;
+}
+
+.footer .follow h3,
+.foorer .services h3 {
+   font-weight: bold; 
+}
+
+.footer a {
+    color: #002349;
+    text-decoration: none;
+}
+
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+color: white;
+background-color: #002349;
+}
+
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+
+}
+.text-overlay {
+    position:relative;
+    z-index: 2;
+    text-align: left;
+    padding: 20px;
+    background: rgba(0, 35, 73, 0.8);
+    color: #f9f8eb;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.text-overlay h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.text-overlay .info h2 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.text-overlay .info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.text-overlay .info a {
+    color: #f9f8eb;
+    text-decoration: underline;
+}
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    background-color: white;
+    color: #002349;
+  }
+
+  .footer h1 {
+    font-size: 36px;
+  }
+
+  .footer .follow,
+  .footer .services {
+    font-size: large;
+  }
+
+  .footer .follow h3,
+  .footer .services h3 {
+    font-weight: bold;
+  }
+
+  .footer a {
+    color: #002349;
+    text-decoration: none;
+  }

@@ -120,6 +120,16 @@ function getLogInFormErrors(event) {
         password.classList.remove('error');
     }
 
+   if(errors.length===0){
+    if(email.value ==='admin@gmail.com' && password.value==='adminpassword'){
+        alert('Admin log in succesful!');
+        window.location.href="admin.html";
+        return true;
+    }else{
+        errors.push("Invalid email or password");
+    }
+   }
+
    
     if (errors.length > 0) {
         errorMessage.innerHTML = errors.join('<br>');
