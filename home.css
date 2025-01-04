@@ -78,7 +78,7 @@ text-decoration: none;
   
 }
 
-.navbar .search a button{
+.navbar .search button{
   height: 38px;
   width: 60px;
   border-radius: 5px;
@@ -93,10 +93,7 @@ text-decoration: none;
   display: inline-block;
   margin-left: 100px
 }
-.navbar .button2{
-  display: inline-block;
-  margin-left: 100px
-}
+
 .navbar .button2 a button{
   height: 38px;
   width: 60px;
