@@ -12,9 +12,9 @@
 }
 
 .main{
+  
     width: 100%;
-    
-   background-position: center;
+    background-position: center;
    background-size: cover;
    flex-wrap: wrap;
    
@@ -23,10 +23,8 @@
 .navbar{
    
   display:flex;
-
   flex-wrap: wrap;
   gap: 10px;
-  
   align-items: center;
   justify-content: space-around;
   background-color: #002349;
