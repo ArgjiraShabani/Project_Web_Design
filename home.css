@@ -241,7 +241,7 @@ text-decoration: none;
   color: #002349;
   text-decoration:none;
 }
-
+/*
 .container2{
   padding: 2rem;
   padding-top: 200px;
@@ -282,7 +282,44 @@ text-decoration: none;
   opacity: 0.75;
   transition: opacity ease 250ms;
 }
+*/
+.slider{
+	margin:100px auto;
+	width:50%;
+  height: 10%;
+}
 
+.img-box img{
+	width:100%;
+}
+
+.btn1{
+	border:none;
+	outline:none;
+	background:#002349;
+	padding:10px 30px;
+	font-size: 20px;
+	color:#ddd;
+	cursor: pointer;
+	margin:10px auto;	
+  float: left;	
+  	 
+}
+.btn2{
+	border:none;
+	outline:none;
+	background:#002349;
+	padding:10px 30px;
+	font-size: 20px;
+	color:#ddd;
+	cursor: pointer;
+	margin:10px auto;			 
+  float: right;
+}
+
+.btn:hover{
+	background: #111;
+}
 
 .container-destinations{
   display: flex;
