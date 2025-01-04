@@ -105,6 +105,9 @@ text-decoration: none;
   
   
 }
+.marquee{
+  font-size: 50px;
+}
 .home-page{
   
   position: relative;
@@ -279,6 +282,8 @@ text-decoration: none;
   opacity: 0.75;
   transition: opacity ease 250ms;
 }
+
+
 .container-destinations{
   display: flex;
   width: 100%;
