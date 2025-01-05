@@ -46,22 +46,22 @@
     font-size: 18px;
     color: #ffffff;
 }
-.navbar .menu a{
+.navbar .menu li a{
     color: rgb(255, 255, 255);
     text-decoration:none;
     font-size:20px
     
 }
-.navbar .menu .flights{
+.navbar .menu li .flights{
     text-decoration: underline;
 }
-.navbar .menu a:hover{
+.navbar .menu li a:hover{
     color:rgb(120, 158, 168);
 }
-.navbar .menu{
+.navbar .menu li{
     display:inline-flex;
    flex-wrap: wrap;
-    gap: 145px;
+    margin: 50px;
 
     
     

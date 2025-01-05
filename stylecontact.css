@@ -41,21 +41,21 @@
 .navbar .icon h5{
         font-size: 18px;
 }  
-.navbar .menu a{
+.navbar .menu li a{
         color: #f9f8eb;
         text-decoration:none;
         font-size:20px
 }    
-.navbar .menu .contact{
+.navbar .menu li .contact{
         text-decoration: underline;
 }
-.navbar .menu a:hover{
+.navbar .menu li a:hover{
     color:rgb(120, 158, 168);
 }
-.navbar .menu{
+.navbar .menu li{
     display:inline-flex;
    flex-wrap:wrap;
-    gap: 145px;
+    margin: 50px;
 }
 .navbar .search input{
     height: 39px;
@@ -65,6 +65,7 @@
     border-style: outset;
     border-color: rgb(207, 207, 207);
     padding-left: 10px;
+    font-weight: bold
 }
 
 .navbar .search button{
@@ -74,6 +75,7 @@
     background-color: #ffffff;
     border-color: #cccaca;
     cursor: pointer;
+    font-weight: bold;
 
 }
 .navbar .button2{

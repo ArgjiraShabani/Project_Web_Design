@@ -45,7 +45,7 @@ text-decoration: none;
 .navbar .icon h5{
   font-size: 18px;
 }
-.navbar .menu a{
+.navbar .menu li a{
   color: #f9f8eb;
   text-decoration:none;
   font-size:20px
@@ -54,13 +54,13 @@ text-decoration: none;
 .navbar .menu .home{
   text-decoration: underline;
 }
-.navbar .menu a:hover{
+.navbar .menu li a:hover{
   color:rgb(120, 158, 168);
 }
-.navbar .menu{
+.navbar .menu li{
   display:inline-flex;
  flex-wrap:wrap;
-  gap: 145px;
+  margin: 50px;
 
 
   
