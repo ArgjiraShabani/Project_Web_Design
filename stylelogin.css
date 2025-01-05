@@ -209,12 +209,6 @@ p{
 
 }
 
-@media(max-width: 1100px){
-    .container{
-      width: min(600px, 100%);
-      
-    }
-  }
 
 
   input.error {
@@ -234,6 +228,69 @@ p{
     
     
     
+}
+
+@media (max-width: 1200px){
+    .navbar .menu{
+        gap:50px;
+    }
+    .navbar .search input{
+        width: 150px;
+    }
+    .container{
+        width: 150px;
+    }
+    .input-box input{
+        font-size: 18px;
+    }
+    
+}
+@media (max-width:480px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .navbar .menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .search input{
+        width: 100%;
+    }
+    .container{
+        padding: 15px;
+        margin: 300px auto;
+
+    }
+    .input-box input{
+        width: 100%;
+        font-size: 14px;
+    }
+    .input-box button{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 18px;
+    }
+   
+
+}
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        width: 80%;
+    }
+   
 }
 
 
