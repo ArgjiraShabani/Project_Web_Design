@@ -392,5 +392,20 @@ text-decoration: none;
     font-size: 18px;
     margin: 100px auto;
   }
+  .gallery-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .galleryh2{
+    width: 90%;
+    font-size: 18px;
+    margin: 100px auto;
+  }
+  .gallery{
+    width: 100%;
+    height: auto;
+    max-width: 50px;
+  }
+  
   
 }
