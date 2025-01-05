@@ -46,7 +46,7 @@
         text-decoration:none;
         font-size:20px
 }    
-.navbar .menu .home{
+.navbar .menu .contact{
         text-decoration: underline;
 }
 .navbar .menu a:hover{
@@ -76,6 +76,22 @@
     cursor: pointer;
 
 }
+.navbar .button2{
+    display: inline-block;
+    margin-left: 100px
+  }
+  
+.navbar .button2 button{
+    height: 38px;
+    width: 60px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border-color: #cccaca;
+    cursor: pointer;
+    
+    
+ }
 .contact-section {
     position: relative;
     * {
@@ -209,7 +225,7 @@ background-color: #002349;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 30vh;
+    height: 40vh;
     background-color: white;
     color: #002349;
   }

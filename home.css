@@ -12,9 +12,9 @@
 }
 
 .main{
+  
     width: 100%;
-    
-   background-position: center;
+    background-position: center;
    background-size: cover;
    flex-wrap: wrap;
    
@@ -23,10 +23,8 @@
 .navbar{
    
   display:flex;
-
   flex-wrap: wrap;
   gap: 10px;
-  
   align-items: center;
   justify-content: space-around;
   background-color: #002349;
@@ -80,7 +78,7 @@ text-decoration: none;
   
 }
 
-.navbar .search a button{
+.navbar .search button{
   height: 38px;
   width: 60px;
   border-radius: 5px;
@@ -95,10 +93,7 @@ text-decoration: none;
   display: inline-block;
   margin-left: 100px
 }
-.navbar .button2{
-  display: inline-block;
-  margin-left: 100px
-}
+
 .navbar .button2 a button{
   height: 38px;
   width: 60px;
@@ -109,6 +104,9 @@ text-decoration: none;
   cursor: pointer;
   
   
+}
+.marquee{
+  font-size: 50px;
 }
 .home-page{
   
@@ -243,7 +241,7 @@ text-decoration: none;
   color: #002349;
   text-decoration:none;
 }
-
+/*
 .container2{
   padding: 2rem;
   padding-top: 200px;
@@ -284,6 +282,45 @@ text-decoration: none;
   opacity: 0.75;
   transition: opacity ease 250ms;
 }
+*/
+.slider{
+	margin:100px auto;
+	width:50%;
+  height: 10%;
+}
+
+.img-box img{
+	width:100%;
+}
+
+.btn1{
+	border:none;
+	outline:none;
+	background:#002349;
+	padding:10px 30px;
+	font-size: 20px;
+	color:#ddd;
+	cursor: pointer;
+	margin:10px auto;	
+  float: left;	
+  	 
+}
+.btn2{
+	border:none;
+	outline:none;
+	background:#002349;
+	padding:10px 30px;
+	font-size: 20px;
+	color:#ddd;
+	cursor: pointer;
+	margin:10px auto;			 
+  float: right;
+}
+
+.btn:hover{
+	background: #111;
+}
+
 .container-destinations{
   display: flex;
   width: 100%;
