@@ -9,7 +9,7 @@ function searchButtonClicked() {
 }
 
 var slider_img = document.querySelector('.slider-img');
-var images = ['lake-como-MOSTBEAUTIFUL0921-cb08f3beff1041e4beefc67b5e956b23.jpg','Paris.jpg', 'amazing-places-to-see-before-you-die-coverimage.jpg'];
+var images = ['lake-como-MOSTBEAUTIFUL0921-cb08f3beff1041e4beefc67b5e956b23.jpg','gettyimages-1089728672-scaled.jpg', 'amazing-places-to-see-before-you-die-coverimage.jpg'];
 var i = 0;
 
 function prev(){
