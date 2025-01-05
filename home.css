@@ -369,5 +369,28 @@ text-decoration: none;
     align-items: center;
     gap: 20px;
   }
+  .navbar .menu{
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .navbar .search input{
+    width: 75px;
+  }
+  .home-page img{
+    width: 100%;
+    height: auto;
+  }
+  .home-page h2{
+    width: 80%;
+    font-size: 15px;
+  }
+  .content{
+    width: 90%;
+    font-size: 18px;
+    margin: 100px auto;
+  }
   
 }
