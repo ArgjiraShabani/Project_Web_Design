@@ -30,7 +30,7 @@ include("connect.php");
                             
                           </div>
                           <div class="button2">
-                            <a href="login.html" id="loginLink"><button class="bt2" id="lButton" type="submit" onclick="loginButtonClicked()">Login</button></a>
+                            <a href="login.php" id="loginLink"><button class="bt2" id="lButton" type="submit" onclick="loginButtonClicked()">Login</button></a>
                           </div>
                            <div class="search">
                             <form>
