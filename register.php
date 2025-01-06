@@ -36,28 +36,28 @@
   </div>
 
     <div class="container">
-        <div class="form_container-register">
-            <form id="form" onsubmit="return getRegisterFormErrors(event)">
+        <div class="form_container-register" >
+            <form id="form" onsubmit="return getRegisterFormErrors(event)" method="post" action="register1.php">
                 <h1 style="font-weight: bold;">Register</h1>
                 <p id="error-message"></p>
                 
                 <div class="input-box" >                   
                 
-                    <input type="text" id="name"  class="name-register" placeholder="Enter your name" >
+                    <input type="text" id="name"  class="name-register" placeholder="Enter your name" name="name" >
                     <i class="fa-solid fa-user"></i>
                     
                 </div>
                 
                 <div class="input-box" >                   
                 
-                    <input type="email" id="email" class="email-login" placeholder="Enter your email"  >
+                    <input type="email" id="email" class="email-login" placeholder="Enter your email"  name="email">
                     <i class="fa-regular fa-envelope"></i>
                     
                 </div>
                 
                 <div class="input-box">                   
                 
-                    <input id="password" class="password-login" type="password" placeholder="Enter your password" >
+                    <input id="password" class="password-login" type="password" placeholder="Enter your password" name="password">
                     <i class="fa-solid fa-lock" ></i>
                     <!--<i class="fa-solid fa-eye-slash" id="hide-pw"></i>-->
                   
@@ -65,7 +65,7 @@
                 
                 <div class="input-box">                   
                 
-                    <input id="password2" class="password-login" type="password" placeholder="Confirm your password" >
+                    <input id="password2" class="password-login" type="password" placeholder="Confirm your password" name="password-confirm">
                     <i class="fa-solid fa-lock" ></i>
                 <!--<i class="fa-solid fa-eye-slash" id="hide-pw"></i>-->
                     
@@ -73,7 +73,7 @@
                 </div>
                 <div class="button">
                     
-                    <button  type="submit">Register</button>
+                    <button  type="submit" name="register">Register</button>
                 </div>
             </form>
            
