@@ -18,7 +18,7 @@ if(isset($_POST['register'])){
                        VALUES ('$name','$email','$password')";
 
                        if($conn->query($insertQuery)==TRUE){
-                        header("location: register.php");
+                        header("location: home.php");
 
                        }
                        else{

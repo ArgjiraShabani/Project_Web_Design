@@ -63,7 +63,7 @@
             
     
             </form>
-            <p>New here?<a href="register.html"> Create Account</a></p>
+            <p>New here?<a href="register.php"> Create Account</a></p>
             
         </div>
     </div>
