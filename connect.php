@@ -2,11 +2,13 @@
 
 $host="localhost";
 $user="root";
-$pass="password";
+$pass="";
 $db="travel_agency";
 $conn=new mysqli($host,$user,$pass,$db);
+
 if($conn->connect_error){
-    echo "Failed to connect DB".$conn->connect_error;
+    die("Connection failed: " .$conn->connect_error);
 }
+$conn->set_charset("utf8");
 
 ?>
