@@ -24,7 +24,7 @@ if(isset($_POST['register'])){
         $stmt->bind_param("sss",$name,$email,$password);
 
         if($stmt->execute()){
-            header("Location: home.php");
+            header("Location: Home.php");
             exit();
         }else{
             echo "Error: " .$conn->error;
@@ -50,7 +50,7 @@ if(isset($_POST['login'])){
         if(password_verify($password,$row['password'])){
             session_start();
             $_SESSION['email']=$row['email'];
-            header("Location: home.php");
+            header("Location: Home.php");
             exit();
         }else{
             echo "Incorrect password!";
