@@ -1,4 +1,4 @@
-<?php
+/*?php
 
 include 'connect.php';
 
@@ -19,7 +19,7 @@ if(isset($_POST['register'])){
                        VALUES ('$name','$email','$password')";
 
                        if($conn->query($insertQuery)==TRUE){
-                        header("location: home.php");
+                        header("Location: home.php");
                         exit();
 
                        }
@@ -41,7 +41,7 @@ if(isset($_POST['login'])){
         session_start();
         $row=$result->fetch_assoc();
         $_SESSION['email']=$row['email'];
-        header("Location : home.php");
+        header("Location: home.php");
         exit();
     }
     else{
@@ -55,4 +55,44 @@ else{
 }
 
 
+?>
+*/
+
+<?php
+include 'connect.php';
+$message="";
+$toastClass="";
+
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+    $name= $_POST['name'];
+    $email=$_POST['email'];
+    $password=$_POST['password'];
+
+    $checkEmailStmt->bind_param("s",$email);
+    $checkEmailStmt->execute();
+    $checkEmailStmt->store_result();
+
+    if($checkEmailStmt->num_rows>0){
+        $message="Email already exists";
+        $toastClass="#007bff";
+    }else{
+        $stmt=$conn->prepare("INSERT INTO users($name,$email,$password) VALUES(?,?,?)");
+        $stmt->bind_param("sss",$name,$email,$password);
+
+        if($smt->execute()){
+            $message="Account created successfully";
+            $toastClass="#28a745";
+        }
+        else{
+            $message="Error: ".$stmt->error;
+            $toastClass="#dc3545";
+        }
+        $stmt->close();
+
+        
+    }
+    $checkEmailStmt->close();
+    $conn->close();
+
+}
 ?>
