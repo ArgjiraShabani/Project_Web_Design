@@ -122,8 +122,8 @@ function getLogInFormErrors(event) {
 
    if(errors.length===0){
     if(email.value ==='admin@gmail.com' && password.value==='adminpassword'){
-        alert('Admin log in succesful!');
-        window.location.href="admin.html";
+        
+        window.location.href="admin.php";
         return true;
     }else{
         errors.push("Invalid email or password");

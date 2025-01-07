@@ -1,5 +1,7 @@
-const logoutBtn=document.querySelector('.logout-btn')
-
-logoutBtn.addEventListener('click',()=>{
-    window.location.replace("login.html")
-})
+<?php
+session_start();
+$_SESSION=array();
+session_destroy();
+header("Location: login.php");
+exit();
+?>

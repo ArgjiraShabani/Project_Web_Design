@@ -34,7 +34,8 @@
        <div class="main_content">
              <header>
                   <h1>Welcome Admin!</h1>
-                  <button onclick="logout()" class="logout-btn">Logout</button>
+                  <button><a href="logout.php">Logout</a></button>
+                  <!--<button onclick="logout()" class="logout-btn">Logout</button>-->
             </header>
             <section id="dashboard" class="section">
                 <div class="cards">
