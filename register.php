@@ -37,7 +37,7 @@
 
     <div class="container">
         <div class="form_container-register" >
-            <form id="form" onsubmit="return getRegisterFormErrors(event)" method="post" action="register1.php">
+            <form id="form" onsubmit="return getRegisterFormErrors(event)" method="POST" action="/register1.php">
                 <h1 style="font-weight: bold;">Register</h1>
                 <p id="error-message"></p>
                 
