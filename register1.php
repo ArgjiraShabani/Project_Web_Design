@@ -2,6 +2,7 @@
 
 include 'connect.php';
 
+if($_SERVER['REQUEST_METHOD']==='POST'){
 if(isset($_POST['register'])){
     $name=$_POST['name'];
     $email=$_POST['email'];
@@ -48,5 +49,10 @@ if(isset($_POST['login'])){
     }
 
 }
+}
+else{
+    echo "Incorrect email or password";
+}
+
 
 ?>
