@@ -4,7 +4,7 @@ include 'connect.php';
 
 if(isset($_POST['register'])){
     $name=$_POST['name'];
-    $emai=$_POST['email'];
+    $email=$_POST['email'];
     $password=$_POST['password'];
     $password= md5($password);
 
@@ -19,6 +19,7 @@ if(isset($_POST['register'])){
 
                        if($conn->query($insertQuery)==TRUE){
                         header("location: home.php");
+                        exit();
 
                        }
                        else{

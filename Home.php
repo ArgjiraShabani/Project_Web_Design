@@ -13,6 +13,7 @@ include("connect.php");
   
 </head>
 <body>
+
   
       <div class="main">
                       <div class="navbar">
