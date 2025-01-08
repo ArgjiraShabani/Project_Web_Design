@@ -47,7 +47,7 @@
                     
                     <form id="f1">
                                     <select class="dep" size="1" id="dep" required>
-                                        <option>Departure Airport</option>
+                                      <option value="" disabled selected>Departure Airport</option>
                                         <option>Prishtina</option>
                                         <option>London</option>
                                         <option>France</option>
@@ -57,7 +57,7 @@
                                       <option>Paris</option>
                                     </select>
                                     <select class="des" size="1" id="des" required>
-                                      <option>Destination Airport</option>
+                                      <option value="" disabled selected>Destination Airport</option>
                                       <option>Basel</option>
                                       <option>Berlin</option>
                                       <option>Dortmund</option>
@@ -66,12 +66,16 @@
                                       <option>Cairo</option>
                                       <option>Osaka</option>
                                     </select>
+                                    <br>
+                                    <label for="date" class="labeld">Date:</label>
+                                    <input type="date" id="date" name="date" class="date">
                                     <select class="s1" id="roundtrip" required>
+                                      <option value="" disabled selected>Trip</option>
                                       <option>RoundTrip</option>
                                       <option>One Way</option>
                                       <option>Multi-City</option>
                                     </select>
-                                  <input type="number" min="1" placeholder="How many people?" class="people" id="people" required>
+                                  <input type="number" min="1" placeholder="How many people?" class="people" id="people" required><br>
                                   <button class="bt3" id="sFlight" type="submit">Search for flight</button>
                   </form>
                   
