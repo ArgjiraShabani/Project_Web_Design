@@ -268,7 +268,7 @@
         align-items: center;
         gap: 20px;
       }
-      .navbar .menu{
+      .navbar .menu li{
         flex-direction: column;
         gap: 15px;
         justify-content: center;
@@ -290,7 +290,7 @@
           align-items: center;
           gap: 10px;
         }
-        .navbar .menu{
+        .navbar .menu li{
           flex-direction: column;
           align-items: center;
           gap: 10px;
