@@ -3,7 +3,7 @@
 include 'connect.php';
 
 if($_SERVER['REQUEST_METHOD']==='POST'){
-if(isset($_POST['register'])){
+if(isset($_POST['register.php'])){
     $name=$_POST['name'];
     $email=$_POST['email'];
     $password=password_hash($_POST['password'],PASSWORD_DEFAULT);
@@ -35,7 +35,7 @@ if(isset($_POST['register'])){
 
 
 }
-if(isset($_POST['login'])){
+if(isset($_POST['login.php'])){
     $email=$_POST['email'];
     $password=$_POST['password'];
    

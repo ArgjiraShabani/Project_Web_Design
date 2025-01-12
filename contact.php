@@ -67,21 +67,25 @@
         
         </div>
         <div class="message-section">
-            <form action="">
+            <form action="contactfunction.php" method="POST">
                 <label for="firstname">First name:</label>
-                <input type="text" id="firstname" class="first_name" placeholder="Enter your first name">
+                <input type="text" id="firstname" class="first_name" name="firstname" placeholder="Enter your first name">
                 <label for="lasttname">Last name:</label>
-                <input type="text" id="lastname" class="last_name" placeholder="Enter your last name">
+                <input type="text" id="lastname" class="last_name" name="lastname" placeholder="Enter your last name">
                 <label for="email">Email:</label>
-                <input type="email" id="email" class="email" placeholder="Enter your email">
+                <input type="email" id="email" class="email" name="email" placeholder="Enter your email">
                 <label for="number">Phone number:</label>
-                <input type="tel" id="number" class="number" placeholder="Enter your phone number">
+                <input type="tel" id="number" class="number" name="number" placeholder="Enter your phone number">
                 <label for="message">Message:</label>
-                <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+                <textarea name="message" id="message"  placeholder="Enter your message"></textarea>
                 <button>Submit</button>
     
     
             </form>
+            <?php
+
+                if(isset($_POST))
+            ?>
         </div>
     </div>
         
