@@ -8,13 +8,15 @@ function searchButtonClicked() {
   }
 
 function contactForm(){
+  event.preventDefault();
   const first_name = document.getElementById('firstname');
   const last_name = document.getElementById('lastname');
   const email = document.getElementById('email');
   const phone_number = document.getElementById('number');
   const message = document.getElementById('message');
+  const errorMessage = document.getElementById('error-message'); 
 
-  let errors=[]
+  let errors=[];
 
   errorMessage.innerHTML = '';
   errorMessage.style.display = 'none'; 
@@ -56,12 +58,22 @@ function contactForm(){
   }
   if(message.value.trim()==""){
     errors.push("Please write your message!");
-    phomessagene_number.classList.add('error');
+    message.classList.add('error');
     
 
   }else{
     message.classList.remove('error');
   }
+
+  if (errors.length > 0) {
+    errorMessage.innerHTML = errors.join('<br>');
+    errorMessage.style.display = 'block'; 
+    return false;  
+}
+document.getElementById("form").submit(); 
+
+
+return true; 
   
 
 }

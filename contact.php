@@ -67,7 +67,9 @@
         
         </div>
         <div class="message-section">
-            <form action="contactfunction.php" method="POST">
+            <form action="contactfunction.php" method="POST" onsubmit="return contactForm(event)">
+            <p id="error-message" style="color:rgb(162, 30, 30); font-size: 15px;margin-top:10px;
+            padding:5px;border:1px solid rgb(162, 30, 30);background-color:#f8d7da;border-radius: 5px;display: none;"></p>
                 <label for="firstname">First name:</label>
                 <input type="text" id="firstname" class="first_name" name="firstname" placeholder="Enter your first name">
                 <label for="lasttname">Last name:</label>
@@ -82,10 +84,7 @@
     
     
             </form>
-            <?php
 
-                if(isset($_POST))
-            ?>
         </div>
     </div>
         
