@@ -22,7 +22,7 @@
                 <li><a href="Home.html">HOME</a></li>
                 <li><a href="flights.html" class="flights">FLIGHTS</a></li>
                 <li><a href="hotels.html">HOTELS</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="contact.php">CONTACT US</a></li>
               
           
         </div>
