@@ -7,7 +7,7 @@ function searchButtonClicked() {
     }
   }
 
-function contactForm(){
+function contactForm(event){
   event.preventDefault();
   const first_name = document.getElementById('firstname');
   const last_name = document.getElementById('lastname');

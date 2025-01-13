@@ -67,7 +67,7 @@
         
         </div>
         <div class="message-section">
-            <form action="contactfunction.php" method="POST" onsubmit="return contactForm(event)">
+            <form action="contactfunction.php" method="POST" onsubmit="return contactForm(event)" id="form">
             <p id="error-message" style="color:rgb(162, 30, 30); font-size: 15px;margin-top:10px;
             padding:5px;border:1px solid rgb(162, 30, 30);background-color:#f8d7da;border-radius: 5px;display: none;"></p>
                 <label for="firstname">First name:</label>
