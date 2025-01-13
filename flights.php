@@ -16,14 +16,56 @@ if ($result->num_rows > 0) {
 
  $query2= "Select TripName from trip";
  $result2=$conn->query($query2);
+
  if ($result2->num_rows > 0) {
-  $trip = [];
+  $tripType = [];
   while ($row = $result2->fetch_assoc()) {
-      $trip[] = $row['TripName'];
+      $tripType[] = $row['TripName'];
   }
 } else {
-  $trip = [];
+  $tripType = [];
 }
+
+
+?>
+<?php
+
+$destination ="";
+$departure = "";
+$dateDep="";
+$people=0;
+$trip="";
+$errorMessage="";
+$successMessage="";
+
+if($_SERVER['REQUEST_METHOD']=='POST'){
+  $destination = $_POST['destination'];
+  $departure = $_POST['departure'];
+  $dateDep=$_POST['dateDep'];
+  $people=$_POST['people'];
+  $trip=$_POST['trip'];
+
+  if(empty($destination) || empty($departure) || empty($dateDep) || empty($people) || empty($trip) ) {
+    $errorMessage="Ju lutem plotesoni te gjitha fushat e kerkuara!";
+}else{
+    $sql = "INSERT INTO flight (DepID, ArrivalID, Depature_date, People, TripID)values ('$destination','$departure','$dateDep','$people','$trip')";
+    $result = $conn->query($sql);
+
+    if(!$result){
+        $errorMessage = "Nuk keni rezervuar bileten!";
+     } else{
+          $destination="";
+          $departure="";
+          $dateDep="";
+          $people=0;
+          $trip="";
+          $successMessage = "Bileta eshte shtuar me sukses!";
+          header("Location:index.php");
+          exit;
+      }
+    }
+  }
+
 
 
 ?>
@@ -78,8 +120,8 @@ if ($result->num_rows > 0) {
                 
                 <div class="box2">
                     
-                    <form id="f1">
-                                    <select class="dep" size="1" id="dep" required>
+                    <form id="f1" method="POST">
+                                    <select class="dep" size="1" id="dep" required name="departure">
                                       <option value="" disabled selected>Departure Airport</option>
                                       <?php
                                         foreach($airports as $airport){
@@ -87,7 +129,7 @@ if ($result->num_rows > 0) {
                                         }
                                       ?>
                                     </select>
-                                    <select class="des" size="1" id="des" required>
+                                    <select class="des" size="1" id="des" required name="destination">
                                       <option value="" disabled selected>Destination Airport</option>
                                       <?php
                                         foreach($airports as $airport){
@@ -98,17 +140,17 @@ if ($result->num_rows > 0) {
                                     </select>
                                     <br>
                                     <label for="date" class="labeld">&nbsp;&nbsp; Date&nbsp;&nbsp;</label>
-                                    <input type="date" id="date" name="date"class="date" >
-                                    <select class="s1" id="roundtrip" required>
+                                    <input type="date" id="date" name="dateDep" class="date" >
+                                    <select class="s1" id="roundtrip" required name="trip">
                                       <option value="" disabled selected>Trip</option>
                                       <?php
-                                       foreach($trip as $trips){
-                                          echo "<option values=\$trips\">$trips</option>";
+                                       foreach($tripType as $trip){
+                                          echo "<option values=\$trip\">$trip</option>";
                                          }
                             
                                       ?>
                                     </select>
-                                  <input type="number" min="1" placeholder="How many people?" class="people" id="people" required><br>
+                                  <input type="number" min="1" placeholder="How many people?" class="people" id="people" required name="people"><br>
                                   <button class="bt3" id="sFlight" type="submit">Book Now</button>
                   </form>
                   
