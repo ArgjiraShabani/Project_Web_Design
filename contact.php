@@ -67,21 +67,24 @@
         
         </div>
         <div class="message-section">
-            <form action="">
+            <form action="contactfunction.php" method="POST" onsubmit="return contactForm(event)" id="form">
+            <p id="error-message" style="color:rgb(162, 30, 30); font-size: 15px;margin-top:10px;
+            padding:5px;border:1px solid rgb(162, 30, 30);background-color:#f8d7da;border-radius: 5px;display: none;"></p>
                 <label for="firstname">First name:</label>
-                <input type="text" id="firstname" class="first_name" placeholder="Enter your first name">
+                <input type="text" id="firstname" class="first_name" name="firstname" placeholder="Enter your first name">
                 <label for="lasttname">Last name:</label>
-                <input type="text" id="lastname" class="last_name" placeholder="Enter your last name">
+                <input type="text" id="lastname" class="last_name" name="lastname" placeholder="Enter your last name">
                 <label for="email">Email:</label>
-                <input type="email" id="email" class="email" placeholder="Enter your email">
-                <label for="number">Number:</label>
-                <input type="tel" id="number" class="number" placeholder="Enter your phone number">
+                <input type="email" id="email" class="email" name="email" placeholder="Enter your email">
+                <label for="number">Phone number:</label>
+                <input type="tel" id="number" class="number" name="number" placeholder="Enter your phone number">
                 <label for="message">Message:</label>
-                <textarea name="message" id="message" placeholder="Enter your message,up to 200 characters"></textarea>
+                <textarea name="message" id="message"  placeholder="Enter your message"></textarea>
                 <button>Submit</button>
     
     
             </form>
+
         </div>
     </div>
         

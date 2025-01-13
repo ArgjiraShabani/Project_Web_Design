@@ -26,7 +26,7 @@ include("connect.php");
                                   <li><a href="#" class="home">HOME</a></li>
                                   <li><a href="flights.html">FLIGHTS</a></li>
                                   <li><a href="hotels.html">HOTELS</a></li>
-                                  <li><a href="contact.html">CONTACT US</a></li>
+                                  <li><a href="contact.php">CONTACT US</a></li>
                             </ul>
                             
                           </div>
