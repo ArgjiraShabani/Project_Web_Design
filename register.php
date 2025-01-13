@@ -13,12 +13,12 @@
 <body>
     <div class="navbar">
         <div class="icon">
-            <a href="Home.html"><h2 class="logo">HERMES</h2></a>
+            <a href="Home.php"><h2 class="logo">HERMES</h2></a>
             <h5 class="l1">TRAVEL</h5>
         </div>
         <div class="menu">
           <ul>
-               <li><a href="Home.html">HOME</a></li>
+               <li><a href="Home.php">HOME</a></li>
                <li><a href="flights.html" class="flights">FLIGHTS</a></li>
                <li><a href="hotels.html">HOTELS</a></li>
                <li><a href="contact.html">CONTACT US</a></li>

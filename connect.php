@@ -3,7 +3,7 @@
 $host="localhost";
 $user="root";
 $pass="";
-$db="travel_agency";
+$db="travelagency";
 $conn=new mysqli($host,$user,$pass,$db);
 
 if($conn->connect_error){
