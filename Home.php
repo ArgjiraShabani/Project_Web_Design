@@ -18,7 +18,7 @@ include("connect.php");
       <div class="main">
                       <div class="navbar">
                           <div class="icon">
-                              <a href="Home.html"><h2 class="logo">HERMES</h2></a>
+                              <a href="Home.php"><h2 class="logo">HERMES</h2></a>
                               <h5 class="l1">TRAVEL</h5>
                           </div>
                           <div class="menu"> 

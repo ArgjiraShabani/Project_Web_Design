@@ -20,8 +20,8 @@
         <div class="menu">
           <ul>
                 <li><a href="Home.php">HOME</a></li>
-                <li><a href="flights.php" class="flights">FLIGHTS</a></li>
-                <li><a href="hotels.php">HOTELS</a></li>
+                <li><a href="flights.html" class="flights">FLIGHTS</a></li>
+                <li><a href="hotels.html">HOTELS</a></li>
                 <li><a href="contact.php">CONTACT US</a></li>
               
           
