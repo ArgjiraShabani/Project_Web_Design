@@ -2,7 +2,7 @@
   include "connect.php";
  
   $query = "SELECT AirportName from airports";
-
+  
 $result = $conn->query($query);
 
 if ($result->num_rows > 0) {
@@ -14,6 +14,16 @@ if ($result->num_rows > 0) {
     $airports = [];
 }
 
+ $query2= "Select TripName from trip";
+ $result2=$conn->query($query2);
+ if ($result2->num_rows > 0) {
+  $trip = [];
+  while ($row = $result2->fetch_assoc()) {
+      $trip[] = $row['TripName'];
+  }
+} else {
+  $trip = [];
+}
 
 
 ?>
@@ -72,15 +82,18 @@ if ($result->num_rows > 0) {
                                     <select class="dep" size="1" id="dep" required>
                                       <option value="" disabled selected>Departure Airport</option>
                                       <?php
-                                        foreach($airports as $airport)
-                                        echo "<option value=\"$airport\">$airport</option>"
+                                        foreach($airports as $airport){
+                                        echo "<option value=\"$airport\">$airport</option>";
+                                        }
                                       ?>
                                     </select>
                                     <select class="des" size="1" id="des" required>
                                       <option value="" disabled selected>Destination Airport</option>
                                       <?php
-                                        foreach($airports as $airport)
-                                        echo "<option value=\"$airport\">$airport</option>"
+                                        foreach($airports as $airport){
+                                        
+                                        echo "<option value=\"$airport\">$airport</option>";
+                                        }
                                       ?>                                
                                     </select>
                                     <br>
@@ -88,9 +101,12 @@ if ($result->num_rows > 0) {
                                     <input type="date" id="date" name="date"class="date" >
                                     <select class="s1" id="roundtrip" required>
                                       <option value="" disabled selected>Trip</option>
-                                      <option>RoundTrip</option>
-                                      <option>One Way</option>
-                                      <option>Multi-City</option>
+                                      <?php
+                                       foreach($trip as $trips){
+                                          echo "<option values=\$trips\">$trips</option>";
+                                         }
+                            
+                                      ?>
                                     </select>
                                   <input type="number" min="1" placeholder="How many people?" class="people" id="people" required><br>
                                   <button class="bt3" id="sFlight" type="submit">Book Now</button>
