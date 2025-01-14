@@ -45,33 +45,68 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
   $people=$_POST['people'];
   $trip=$_POST['trip'];
 
-  if(empty($destination) || empty($departure) || empty($dateDep) || empty($people) || empty($trip) ) {
-    $errorMessage="Ju lutem plotesoni te gjitha fushat e kerkuara!";
-}else{
-    $sql = "INSERT INTO flight (DepID, ArrivalID, Depature_date, People, TripID)values ('$destination','$departure','$dateDep','$people','$trip')";
-    $result = $conn->query($sql);
+  
+$stmt = $conn->prepare("SELECT * FROM airports WHERE AirportName = ? OR AirportName = ?");
+$stmt->bind_param("ss", $destination, $departure);  // "ss" means two strings are being passed
+$stmt->execute();
+$result = $stmt->get_result();
 
-    if(!$result){
-        $errorMessage = "Nuk keni rezervuar bileten!";
-     } else{
-          $destination="";
-          $departure="";
-          $dateDep="";
-          $people=0;
-          $trip="";
-          $successMessage = "Bileta eshte shtuar me sukses!";
-          header("Location:index.php");
-          exit;
-      }
+$destination_found = false;
+$departure_found = false;
+$dep_id = null;
+$destination_id = null;
+
+while ($row = $result->fetch_assoc()) {
+    if ($row['AirportName'] == $destination) {
+        $destination_found = true;
+        $destination_id = $row['AirportID'];  // Assuming the column for airport ID is AirportID
     }
-  }
+    if ($row['AirportName'] == $departure) {
+        $departure_found = true;
+        $dep_id = $row['AirportID'];  // Assuming the column for airport ID is AirportID
+    }
+
+}
+// Output the results
+$trip_valid = false;
+$trip_stmt = $conn->prepare("SELECT * FROM trip WHERE TripName = ?");
+$trip_stmt->bind_param("s", $trip);
+$trip_stmt->execute();
+$trip_result = $trip_stmt->get_result();
+$trip_id = null;
+if ($trip_result->num_rows > 0) {
+    $trip_valid = true;  // Trip type exists in the database
+    $row = $trip_result->fetch_assoc();
+    $trip_id = $row['TripID'];
+}
+
+$trip_stmt->close();
 
 
+if ($destination_found && $departure_found) {
+    // Prepare SQL to insert the flight
+    $insert_stmt = $conn->prepare("INSERT INTO flight (DepID, ArrivalID, Depature_date, People, TripID ) VALUES (?, ?, ?, ?, ?)");
+    $insert_stmt->bind_param("sssss", $dep_id, $destination_id, $dateDep, $people, $trip_id);
 
+   if (!$insert_stmt->execute()) {
+        die('Error executing insert statement: ' . $insert_stmt->error);
+    }
+
+
+    $insert_stmt->close();
+
+}  elseif ($destination_found) {
+    echo "Destination airport '$destination' found, but departure airport '$dep' is not found.";
+} elseif ($departure_found) {
+    echo "Departure airport '$dep' found, but destination airport '$destination' is not found.";
+} else {
+    echo "Neither the destination nor departure airport is found in the database.";
+}
+
+
+$conn->close();
+}
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
