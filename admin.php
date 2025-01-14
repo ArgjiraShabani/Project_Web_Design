@@ -25,6 +25,7 @@
                     <li><a href="#customers">Customers</a></li>
                     <li><a href="#reports">Reports</a></li>
                     <li><a href="#settings">Settings</a></li>
+                    <li><a href="adminflights.html">Flights</a></li>
                 </ul>
                
                
