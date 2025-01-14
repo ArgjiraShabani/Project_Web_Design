@@ -61,6 +61,7 @@ while ($row = $result->fetch_assoc()) {
        // $destination_found = true;
         $destination_id = $row['AirportID'];  // Assuming the column for airport ID is AirportID
     }
+
     if ($row['AirportName'] == $departure) {
        // $departure_found = true;
         $dep_id = $row['AirportID'];  // Assuming the column for airport ID is AirportID
@@ -129,7 +130,7 @@ $conn->close();
                         <ul>
                              <li><a href="Home.php">HOME</a></li>
                              <li><a href="#" class="flights">FLIGHTS</a></li>
-                             <li><a href="hotels.html">HOTELS</a></li>
+                             <li><a href="hotels.php">HOTELS</a></li>
                              <li><a href="contact.php">CONTACT US</a></li>
                             
                         </ul>

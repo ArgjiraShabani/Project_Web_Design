@@ -1,3 +1,65 @@
+<?php
+
+    include "connect.php";
+
+    $query = "SELECT HotelName from hotels";
+  
+    $result = $conn->query($query);
+    
+    if ($result->num_rows > 0) {
+        $hotels = [];
+        while ($row = $result->fetch_assoc()) {
+            $hotels[] = $row['HotelName'];
+        }
+    } else {
+        $hotels = [];
+    }
+
+    if($_SERVER['REQUEST_METHOD']=='POST'){
+        $hotel=$_POST['hotel'];
+        $checkin=$_POST['checkin'];
+        $checkout=$_POST['checkout'];
+        $guests=$_POST['guests'];
+        $rooms=$_POST['rooms'];
+
+        $stmt = $conn->prepare("SELECT * FROM hotels WHERE HotelName = ?");
+        $stmt->bind_param("s", $hotel);  // "ss" means two strings are being passed
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        while ($row = $result->fetch_assoc()) {
+          if ($row['HotelName'] == $hotel) {
+             
+              $hotel_id = $row['ID'];
+          }
+        }
+
+
+    if($checkin>$checkout){
+      echo "Kontrolloni daten e rezervimit!";
+    }else{
+
+    $insert_stmt = $conn->prepare("INSERT INTO hotelbook (HotelID, CheckIn, CheckOut, Rooms, Guests ) VALUES (?, ?, ?, ?, ?)");
+    $insert_stmt->bind_param("sssss", $hotel_id, $checkin, $checkout, $rooms, $guests);
+
+    if (!$insert_stmt->execute()) {
+      die('Error executing insert statement: ' . $insert_stmt->error);
+    }
+    $insert_stmt->close();
+  }
+
+
+  
+   
+  $conn->close();
+}
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,18 +104,27 @@
                <h1>Find the Right Hotel</h1>
             
             <div class="box2">
-                <form id="f1">
-                    <input class="dep" type="text" placeholder="Enter Destination or Hotel NAME" required>
+                <form id="f1" method="POST">
+                  <select class="dep" size="1" id="des" required name="hotel">
+                    <option value="" disabled selected>Hotels</option>
+                    <?php
+                             foreach($hotels as $hotel){
+                                echo "<option value=\"$hotel\">$hotel</option>";
+                              }
+                    ?>                   
+                  </select>
                 
                     <label for="check-in">Check-in:</label>
-                    <input type ="date" id="check-in" required >
+                    <input type ="date" id="check-in" name="checkin" required >
                     <label for="check-out">Check-out:</label>
-                    <input type="date" id="check-out" required>
+                    <input type="date" id="check-out" name="checkout" required>
                    
-                    <input type="number" min="1" placeholder="Guests" class="guests" id="guests" required>
-                    <input type="number" min="1" placeholder="Rooms" class="rooms" id="rooms" required>
+                    <input type="number" min="1" placeholder="Guests" class="guests" id="guests" name="guests" required>
+                    <input type="number" min="1" placeholder="Rooms" class="rooms" id="rooms" name="rooms" required>
 
-                    <button type="submit" class="b">Search Hotels</button>
+                    
+                    <button type="submit" class="b">Book</button>
+                    
                 </form>
             </div>
         </div>
