@@ -14,11 +14,9 @@ body{
     background-color: rgb(253, 251, 240);
     flex-wrap: wrap;
 }
-.heading{
+.airport{
     display: flex;
-    flex-direction: row;
-    justify-content:center;
-
+    justify-content: center;
     margin-top: 8vh;
     font-size: 30px;
     padding-left: 10px;
@@ -64,12 +62,21 @@ body{
     padding: 10px;
     width: 270px;
     align-items: center;
+
+    
     
 }
 .table td{
     font-size: larger;
     border: 1px solid #002349;
     text-align: center;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
 }
 .heading2{
     display: flex;
@@ -82,3 +89,5 @@ body{
     
     
 }
+
+

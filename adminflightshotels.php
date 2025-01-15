@@ -23,7 +23,7 @@
   </div>
 
 
-<div class="flighttable">
+<div class="table">
     <table>
         <thead>
             <tr >
@@ -87,7 +87,7 @@
 
    </div>
     
-    <div class="flighttable">
+    <div class="table">
         <table>
             <thead>
                 <tr>
