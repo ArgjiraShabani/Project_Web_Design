@@ -26,7 +26,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
-    
+    background-color: #002349;
     margin-top: 150px;
 
 }.button button a{
@@ -54,15 +54,18 @@ body{
 .form1 input{
     height: 40px;
     width: 270px;
+    font-size: large;
 
 }
 .form2 input{
     height: 40px;
     width: 270px;
+    font-size: large;
 
 }
 label{
     font-size: larger;
+    color: aliceblue;
 }
 
 .submit{
@@ -71,4 +74,9 @@ label{
     width: 270px;
     height: 40px;
     color: white;
+    border-color: aliceblue;
+}
+h1{
+    color: aliceblue;
+    
 }
