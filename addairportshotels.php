@@ -3,9 +3,6 @@
     include 'connect.php';
 
 
-
-
-
 ?>
 
 

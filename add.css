@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Italiana&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Forum", sans-serif;
+    
+    font-style: normal;
+    
+   
+}
+body{
+    background-color: rgb(253, 251, 240);
+    flex-wrap: wrap;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
+    font-size: 30px;
+    padding-left: 10px;
+    
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    
+    margin-top: 150px;
+
+}.button button a{
+    background-color: #002349;
+    color: white;
+    text-decoration: none;
+    
+    
+}
+
+.button button{
+    background-color:#002349; ;
+    
+    width: 100px;
+    height: 40px;
+    
+}
+.button {
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+    padding-right: 15px;
+    
+}
+.form1 input{
+    height: 40px;
+    width: 270px;
+
+}
+.form2 input{
+    height: 40px;
+    width: 270px;
+
+}
+label{
+    font-size: larger;
+}
+
+.submit{
+    background-color:#002349; ;
+    
+    width: 270px;
+    height: 40px;
+    color: white;
+}
