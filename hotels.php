@@ -67,6 +67,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotels</title>
     <link rel="stylesheet" href="stylehotels.css">
+
+    <style>
+      @media (max-width: 768px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+      .navbar .menu ul{
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    
+      }
+      .navbar .search input{
+        width: 75px;
+      }
+      .footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+    }
+      @media(max-width: 480px){
+        .navbar{
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+        .navbar .menu ul{
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+        .navbar .search input{
+          width: 90%;
+        }
+        .box2{
+          margin-bottom: 50px;
+        }
+      
+        .footer{
+          flex-direction: column;
+          gap: 15px;
+          text-align: center;
+          margin-top: 50px;
+        }
+       
+       input,button{
+            max-width: 100%;
+        }
+        }
+        
+        
+        
+      
+      
+
+    </style>
   
    
 </head>

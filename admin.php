@@ -1,5 +1,7 @@
 <?php
-
+    include "connect.php";
+    $sql="SELECT ID,Name,Email,Password,registration_date FROM users";
+    $result=$conn->query($sql);
 ?>
 
 <!DOCTYPE html>
@@ -64,14 +66,31 @@
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Customer</th>
-                            <th>Destinations</th>
-                            <th>Status</th>
-                            <th>Action</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>Registration date</th>
+                            
                         </tr>
                     </thead>
                     <tbody id="bookingTable">
-                        <!--php-->
+                        <?php
+                        if($result->num_rows>0){
+                            while($row=$result->fetch_assoc()){
+                                echo "<tr>
+                                        <td>{$row['ID']}</td>
+                                        <td>{$row['Name']}</td>
+                                        <td>{$row['Email']}</td>
+                                        <td>{$row['Password']}</td>
+                                        <td>{$row['registration_date']}</td>
+                                    </tr>";
+                            }
+                        }else{
+                            echo "<tr>
+                                    <td colspan='4' >No users found</td>
+                            </tr>"
+                        }
+                        ?>
                     </tbody>
                 </table>
 
@@ -84,3 +103,6 @@
     
 </body>
 </html>
+<?php
+$conn->close();
+?>
