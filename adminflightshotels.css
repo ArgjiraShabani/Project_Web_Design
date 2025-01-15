@@ -60,12 +60,14 @@ body{
     font-size: 25px;
     background: #002349;
     color: white;
-    border: 7px solid #002349; ;
+    border: 7px solid #002349; 
+    padding: 10px;
+    
     
 }
 .flighttable td{
     font-size: larger;
-    border: 3px solid #002349;
+    border: 1px solid #002349;
 }
 .heading2{
     display: flex;
@@ -73,8 +75,16 @@ body{
     justify-content:space-around;
     align-items: center;
     margin-top: 8vh;
-    font-size: 37px;
+    font-size: 30px;
+    padding-right: 80px;
     
     
 }
+th{
+    width: 270px;
+    align-items: center;
 
+}
+td{
+    text-align: center;
+}

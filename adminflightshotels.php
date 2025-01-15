@@ -11,14 +11,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="adminflights.css" rel="stylesheet" >
+    <link href="adminflightshotels.css" rel="stylesheet" >
 </head>
 <body>
     <div class="button">
        <button type="button" ><a href="admin.php">Dashboard</a></button>
     </div>
   <div class="heading">
-  <h2>Flights</h2>
+  <h2>Flight Booking</h2>
   
   </div>
 
@@ -26,12 +26,12 @@
 <div class="flighttable">
     <table>
         <thead>
-            <tr>
-                <th>ID</th>
-                <th>Departure</th>
-                <th>Destionation</th>
-                <th>DepartureDate</th>
-                <th>Trip</th>
+            <tr >
+                <th >ID</th>
+                <th >Departure</th>
+                <th >Destionation</th>
+                <th >DepartureDate</th>
+                <th >Trip</th>
                 <th>People</th>
            </tr>
         </thead>
@@ -56,11 +56,11 @@
                         <tr>
                             
                         
-                            <td>{$row['FlightID']}</td>
-                            <td>{$row['DepartureAirport']}</td>
-                            <td>{$row['ArrivalAirport']}</td>
-                            <td>{$row['Depature_date']}</td>
-                            <td>{$row['Trip']}</td>
+                            <td >{$row['FlightID']}</td>
+                            <td >{$row['DepartureAirport']}</td>
+                            <td >{$row['ArrivalAirport']}</td>
+                            <td >{$row['Depature_date']}</td>
+                            <td >{$row['Trip']}</td>
                             <td>{$row['People']}</td>
                              
 
@@ -82,15 +82,18 @@
                  </table>
     </div>
 
+   <div class="heading2">
+   <h2 >Hotel Reservations</h2>
 
-    <h2 class="heading2">Hotels</h2>
+   </div>
+    
     <div class="flighttable">
         <table>
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Hotel</th>
-                    <th>CheckIN</th>
+                    <th>CheckIn</th>
                     <th>CheckOut</th>
                     <th>Rooms</th>
                     <th>Guests</th>
