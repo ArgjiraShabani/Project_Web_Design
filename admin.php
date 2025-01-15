@@ -61,7 +61,12 @@
             
             </section>
             <section id="bookings" class="section">
-                <h2>Manage bookings</h2>
+                <h2>Manage users</h2>
+                <button style="border: none;
+                        padding: 10px 20px;
+                        cursor: pointer;
+                        background-color:  #002349;margin-bottom: 50px;
+                        "><a style="text-decoration: none;font: size 16px;color: #fff;" href="create.php">Add a user</a></button>
                 <table>
                     <thead>
                         <tr>
@@ -88,7 +93,7 @@
                         }else{
                             echo "<tr>
                                     <td colspan='4' >No users found</td>
-                            </tr>"
+                            </tr>";
                         }
                         ?>
                     </tbody>
