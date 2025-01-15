@@ -21,6 +21,7 @@ body{
     align-items: center;
     margin-top: 8vh;
     font-size: 30px;
+    padding-left: 10px;
     
 }
 
@@ -65,5 +66,14 @@ body{
 .flighttable td{
     font-size: larger;
     border: 3px solid #002349;
+}
+.heading2{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin-top: 8vh;
+    font-size: 37px;
+    
 }
 
