@@ -25,7 +25,7 @@
                 <th>ID</th>
                 <th>Departure</th>
                 <th>Destionation</th>
-                <th>Departure Date</th>
+                <th>DepartureDate</th>
                 <th>Trip</th>
                 <th>People</th>
            </tr>
@@ -35,9 +35,13 @@
                     
                    
 
-                    $sql='Select * From flight';
                     
-                    $result =$conn->query($sql);
+                    $sql1='Select flight.FlightID,  flight.DepID,flight.ArrivalID,flight.Depature_date,(SELECT TripName FROM trip WHERE TripID = flight.TripID) as Trip,flight.People,(SELECT AirportName FROM airports WHERE AirportID = flight.DepID) as DepartureAirport,
+                            (SELECT AirportName FROM airports WHERE AirportID = flight.ArrivalID) as ArrivalAirport
+                            FROM flight';
+                            
+
+                    $result =$conn->query($sql1);
                     if(!$result){
                         die("Query invalid:".$conn->error);
                     }
@@ -48,11 +52,11 @@
                             
                         
                             <td>{$row['FlightID']}</td>
-                            <td>{$row['DepID']}</td>
-                            <td>{$row['ArrivalID']}</td>
+                            <td>{$row['DepartureAirport']}</td>
+                            <td>{$row['ArrivalAirport']}</td>
                             <td>{$row['Depature_date']}</td>
-                             <td>{$row['People']}</td>
-                             <td>{$row['TripID']}</td> 
+                            <td>{$row['Trip']}</td>
+                            <td>{$row['People']}</td>
                              
 
                         
