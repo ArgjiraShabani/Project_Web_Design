@@ -61,11 +61,14 @@
             
             </section>
             <section id="bookings" class="section">
-                <h2>Manage users</h2>
+                <h2 style="display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+                margin-bottom: 20px;" >Manage users</h2>
                 <button style="border: none;
                         padding: 10px 20px;
                         cursor: pointer;
-                        background-color:  #002349;margin-bottom: 50px;
+                        background-color:  #002349;margin-bottom: 40px;
                         "><a style="text-decoration: none;font: size 16px;color: #fff;" href="create.php">Add a user</a></button>
                 <table>
                     <thead>
