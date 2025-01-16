@@ -25,7 +25,7 @@
         <h2>Available Airports</h2>
     </div>
     <div class="button">
-        <button type="button"><a href="add.html">Add new Airport/Hotel</a></button>
+        <button type="button"><a href="add.php">Add new Airport/Hotel</a></button>
     </div>
     <div class="table">
         <table>
