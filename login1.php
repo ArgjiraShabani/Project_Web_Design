@@ -3,8 +3,8 @@
     $errorMessage="";
 
     if($_SERVER['REQUEST_METHOD']=='POST'){
-        if(isset($_POST['action']) && $_POST['action']==='login'){
-            if(!empty($_POST['Email'])&& !empty($_POST['Password'])){
+        if(isset($_POST['Email']) && isset( $_POST['Password'])){
+            
                 $email=$_POST['Email'];
                 $password=$_POST['Password'];
 
@@ -15,7 +15,7 @@
                 $result=$statement->get_result();
 
                 if($result->num_rows>0){
-                    $row=$result->fetch_all();
+                    $row=$result->fetch_assoc();
 
                     if(password_verify($password,$row['Password'])){
                         session_start();
@@ -31,9 +31,9 @@
 
                 }
                 
-            }else{
-                $errorMessage="Please fill in all the fields!";
-            }
+            
+        }else{
+            $errorMessage="Please fill in all the fields!";
         }
     }
 ?>

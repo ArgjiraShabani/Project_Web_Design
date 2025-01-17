@@ -42,13 +42,13 @@
                 <p id="error-message"></p>
                 <div class="input-box">                   
                 
-                    <input type="email" id="email" class="email-login" placeholder="Enter your email" name="email">
+                    <input type="email" id="email" class="email-login" placeholder="Enter your email" name="Email">
                     <i class="fa-regular fa-envelope"></i>
                     <div class="error"></div>
                 </div>
                 <div class="input-box">                   
                 
-                    <input id="password" class="password-login" type="password" placeholder="Enter your password" name="password">
+                    <input id="password" class="password-login" type="password" placeholder="Enter your password" name="Password">
                    
                     <i class="fa-solid fa-lock"></i>
                     <div class="error"></div>

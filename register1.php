@@ -35,6 +35,7 @@ if(isset($_POST['name']) && $_POST['email'] && $_POST['password']){
 
 
 }
+/*
 if(isset($_POST['email']) && isset($_POST['password'])){
     $email=$_POST['email'];
     $password=$_POST['password'];
@@ -62,9 +63,10 @@ if(isset($_POST['email']) && isset($_POST['password'])){
     }
 
 }
-}
+}*/
 else{
     echo "Invalid request method.";
+}
 }
 
 
