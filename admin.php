@@ -43,6 +43,7 @@
                     <li><a href="#customers">Customers</a></li>
                     <li><a href="#reports">Reports</a></li>
                     <li><a href="#settings">Settings</a></li>
+                    
                     <li><a href="adminflightshotels.php">Flight Booking/Hotel Reservations</a></li>
                     <li><a href="airportshotels.php">Airport/Hotel</a></li>
                 </ul>
@@ -108,10 +109,10 @@
                                         <td>{$row['Email']}</td>
                                         <td>{$row['Password']}</td>
                                         <td>{$row['registration_date']}</td>
-                                        <td><a href='updateUsers.php?id=" . $row['ID'] . "'>
+                                        <td><a href='updateUsers.php?ID=" . $row['ID'] . "'>
                                      <button>Update</button>
                                     </a> </td>
-                                        <td><a href='deleteUsers.php?id=" . $row['ID'] . "'>
+                                        <td><a href='deleteUsers.php?ID=" . $row['ID'] . "'>
                                        <button>Delete</button>
                                     </a> </td>
                                     </tr>";
