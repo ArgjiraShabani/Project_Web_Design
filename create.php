@@ -15,11 +15,11 @@ include "connect.php";
         }else{
             $hashedPassword=password_hash($Password,PASSWORD_BCRYPT);
             $sql="INSERT INTO users(Name,Email,Password) VALUES(?,?,?)";
-            $statement=$connection->prepare($sql);
+            $statement=$conn->prepare($sql);
 
             if($statement){
                 $statement->bind_param("sss",$Name,$Email,$hashedPassword);
-                $executeResult = $stmt->execute();
+                $executeResult = $statement->execute();
 
                 
                 if($executeResult){
