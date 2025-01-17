@@ -37,7 +37,7 @@
     <div class="container" id="container">
        
         <div class="form_container-login">
-            <form id="form" onsubmit="return getLogInFormErrors(event)" method="post" action="register1.php">
+            <form id="form" onsubmit="return getLogInFormErrors(event)" method="post" action="login1.php">
                 <h1 style="font-weight: bold;">Login</h1>
                 <p id="error-message"></p>
                 <div class="input-box">                   
@@ -63,6 +63,11 @@
             
     
             </form>
+            <?php
+                if(!empty($errorMessage)){
+                    echo "<strong>$errorMessage</strong>";
+                }
+            ?>
             <p>New here?<a href="register.php"> Create Account</a></p>
             
         </div>
