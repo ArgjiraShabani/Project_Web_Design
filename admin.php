@@ -59,26 +59,7 @@
                   <button class="logout_btn"><a href="logout.php" style="text-decoration: none;color: #fff;font: size 16px;">Logout</a></button>
                   
             </header>
-            <section id="dashboard" class="section">
-                <div class="cards">
-                    <h3>Total Bookings</h3>
-                    <p id="total_bookings">Loading...</p>           
-
-                </div>
-                <div class="cards">
-                    <h3>Total revenue</h3>
-                    <p id="total_revenue">Loading...</p>           
-
-                </div>
-                <div class="cards">
-                    <h3>Popular Destinations</h3>
-                    <p id="popular_destinations">Loading...</p>           
-
-                </div>
-                <div class="charts">
-               
-            
-            </section>
+           
             <section id="bookings" class="section">
                 <h2 style="display: flex;
                  justify-content: space-between;
