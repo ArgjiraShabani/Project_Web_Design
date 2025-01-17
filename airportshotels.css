@@ -37,11 +37,17 @@ body{
     height: 40px;
     
 }
-.button {
+/*.button {
     flex-direction: row;
     float: right;
     padding-right: 15px;
     
+}*/
+.button{
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+    padding-right: 15px;
 }
 
 .table{

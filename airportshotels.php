@@ -20,14 +20,15 @@
 <body>
     <div class="button">
        <button type="button" ><a href="admin.php">Dashboard</a></button>
+       <button type="button"><a href="addAirportHotel.php">Add new Airport/Hotel</a></button>
     </div>
     <div class="airport">
         <h2>Available Airports</h2>
         
     </div>
-    <div class="button">
+    <!--<div class="button">
         <button type="button"><a href="addAirportHotel.php">Add new Airport/Hotel</a></button>
-    </div>
+    </div>-->
     <div class="table">
         <table>
             <thead>

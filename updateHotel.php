@@ -37,6 +37,7 @@ if(isset($_POST['submit'])){
     $stmt->bind_param("sss", $hotel,$hotelcity,$hotelcountry); 
     $stmt->execute();
     header("Location:airportshotels.php");
+    exit;
 }
 ?>
 
@@ -63,7 +64,7 @@ if(isset($_POST['submit'])){
             <input type="text" name="cityHotel" id="city" required value="<?php echo $hotelcity?>"><br><br>
             <label for="country">Country:</label><br>
             <input type="text" name="countryHotel" required value="<?php echo $hotelcountry?>"><br><br>
-            <button type="submit" class="submit">Update</button>
+            <button type="submit" class="submit" name="submit">Update</button>
             <br>
             <br>
             <br>
