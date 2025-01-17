@@ -15,7 +15,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AddAirportsHotels</title>
-    <link rel="stylesheet" href="addairportshotels.css">
+    <link rel="stylesheet" href="airportshotels.css">
 </head>
 <body>
     <div class="button">
@@ -25,7 +25,7 @@
         <h2>Available Airports</h2>
     </div>
     <div class="button">
-        <button type="button"><a href="add.php">Add new Airport/Hotel</a></button>
+        <button type="button"><a href="addAirportHotel.php">Add new Airport/Hotel</a></button>
     </div>
     <div class="table">
         <table>
@@ -64,13 +64,13 @@
                                 <td >{$row['City']}</td>
                                 <td >{$row['Country']}</td>
                                 <td>
-                                <a href='edit.php?ID={['ID']}'>Edit</a>
-                                <a href='delete.php?ID={['ID']}'>Delete</a>
+                                <a href='updateAirportHotel.php?AirportID={$row['AirportID']}'>Edit</a>
+                                <a href='deleteAirportHotel.php?AirportID={$row['AirportID']}'>Delete</a>
                                 </td>
                             </tr>
     
                         
-                        </tr>
+                        
     
                         
                         ";
@@ -127,8 +127,8 @@
                                 <td>{$row['Country']}</td>
                                 <td>{$row['City']}</td>
                                <td>
-                                <a href='edit.php?ID={['ID']}'>Edit</a>
-                                <a href='delete.php?ID={['ID']}'>Delete</a>
+                                <a href='updateAirportHotel.php?HotelID={$row['ID']}'>Edit</a>
+                                <a href='deleteAirportHotel.php?HotelID={$row['ID']}'>Delete</a>
                                </td>
                                  
     
