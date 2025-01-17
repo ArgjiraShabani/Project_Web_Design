@@ -12,6 +12,22 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="admin.css">
+
+    <style>
+        button {
+        background-color: #002349;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    
+
+    a {
+        text-decoration: none;
+    }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -92,6 +108,12 @@
                                         <td>{$row['Email']}</td>
                                         <td>{$row['Password']}</td>
                                         <td>{$row['registration_date']}</td>
+                                        <td><a href='updateUsers.php?id=" . $row['ID'] . "'>
+                                     <button>Update</button>
+                                    </a> </td>
+                                        <td><a href='deleteUsers.php?id=" . $row['ID'] . "'>
+                                       <button>Delete</button>
+                                    </a> </td>
                                     </tr>";
                             }
                         }else{
