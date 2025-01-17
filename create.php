@@ -13,19 +13,35 @@ include "connect.php";
         if(empty($Name) || empty($Email) || empty($Password)){
             $errorMessage="Ju lutem plotesoni te gjitha fushat!";
         }else{
-            $sql="INSERT INTO users(Name,Email,Password) VALUES('$Name','$Email','$Password')";
-            $result=$connection->query($sql);
+            $hashedPassword=password_hash($Password,PASSWORD_BCRYPT);
+            $sql="INSERT INTO users(Name,Email,Password) VALUES(?,?,?)";
+            $statement=$connection->prepare($sql);
 
-            if(!$result){
-                $errorMessage="Gabim,perdoruesi nuk u shtua!";
+            if($statement){
+                $statement->bind_param("sss",$Name,$Email,$hashedPassword);
+                $executeResult = $stmt->execute();
+
+                
+                if($executeResult){
+                    $Name="";
+                    $Email="";
+                    $Password="";
+                    $successMessage="Perdoruesi u shtua me sukses!";
+                    header("Location: admin.php");
+                    exit; 
+    
+                }else{
+                    $errorMessage="Gabim,perdoruesi nuk u shtua!";
+
+                }
+                $statement->close();
             }else{
-                $Name="";
-                $Email="";
-                $Password="";
-                $successMessage="Perdoruesi u shtua me sukses!";
-                header("Location: admin.php");
-                exit; 
+                $errorMessage="Gabim ne pergatitjen e query!";
+
+
             }
+            
+            
         }
     }
 ?>
