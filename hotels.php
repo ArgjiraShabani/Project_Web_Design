@@ -36,7 +36,7 @@
 
 
     if($checkin>$checkout){
-      echo "Kontrolloni daten e rezervimit!";
+      echo "<script>alert(\"Kontrolloni daten e rezervimit!\");</script>";
     }else{
 
     $insert_stmt = $conn->prepare("INSERT INTO hotelbook (HotelID, CheckIn, CheckOut, Rooms, Guests ) VALUES (?, ?, ?, ?, ?)");

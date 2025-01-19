@@ -97,8 +97,8 @@
                 <tr>
                     <th>ID</th>
                     <th>Hotel</th>
-                    <th>Country</th>
                     <th>City</th>
+                    <th>Country</th>
                     <th>Action</th>
                     
                </tr>
@@ -126,8 +126,8 @@
                             
                                 <td>{$row['ID']}</td>
                                 <td>{$row['HotelName']}</td>
-                                <td>{$row['Country']}</td>
                                 <td>{$row['City']}</td>
+                                <td>{$row['Country']}</td>
                                <td>
                                 <a href='updateHotel.php?HotelID={$row['ID']}'>Edit</a>
                                 <a href='deleteAirportHotel.php?HotelID={$row['ID']}'>Delete</a>
