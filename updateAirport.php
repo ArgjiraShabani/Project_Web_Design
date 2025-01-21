@@ -51,6 +51,7 @@ if(isset($_POST['submit'])){
 <body>
     <div class="button">
         <button type="button" ><a href="admin.php">Dashboard</a></button>
+        <button type="button"><a href="airportshotels.php">Airport/Hotel</a></button>
     </div>
     <div class="form">
       <form class="form1" method="POST">
