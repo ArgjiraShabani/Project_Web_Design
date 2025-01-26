@@ -1,6 +1,8 @@
 <?php
     include "connect.php";
+    session_start();
     $errorMessage="";
+    
 
     if($_SERVER['REQUEST_METHOD']=='POST'){
         if(isset($_POST['Email']) && isset( $_POST['Password'])){
@@ -18,10 +20,17 @@
                     $row=$result->fetch_assoc();
 
                     if(password_verify($password,$row['Password'])){
-                        session_start();
+                        
                         $_SESSION['Email']=$row['Email'];
-                        header("Location: Home.php");
-                        exit();
+
+                        if(isset($_SESSION['Email'])){
+                            header("Location:Home.php");
+                            exit();
+
+                        }else{
+                            echo "Session is not set";
+                        }
+                        
                     }
                     else{
                         $errorMessage="Incorrect password!";
