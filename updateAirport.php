@@ -37,6 +37,7 @@ if(isset($_POST['submit'])){
     $stmt->bind_param("sss", $airport,$city,$country); 
     $stmt->execute();
     header("Location:airportshotels.php");
+    exit;
 }
 
 ?>
