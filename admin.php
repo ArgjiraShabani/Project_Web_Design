@@ -39,11 +39,9 @@
                 <h3>Menu</h3>
                 <ul>
                     <li><a href="#dashboard">Dashboard</a></li>
-                    <li><a href="#bookings">Bookings</a></li>
-                    <li><a href="#destinations">Destinations</a></li>
-                    <li><a href="#customers">Customers</a></li>
-                    <li><a href="#reports">Reports</a></li>
-                    <li><a href="#settings">Settings</a></li>
+                    
+                    <li><a href="contactadmin.php">User Contact</a></li>
+                    
                     <li><a href="airportshotels.php">Airport/Hotel</a></li>
                     <li><a href="adminflightshotels.php">Flight Booking/Hotel Reservations</a></li>
                     
