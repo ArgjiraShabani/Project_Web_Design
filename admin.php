@@ -36,6 +36,7 @@
         <aside id="side-bar">
             <div class="side-bar">
             
+            
                 <h3>Menu</h3>
                 <ul>
                     <li><a href="#dashboard">Dashboard</a></li>
@@ -44,6 +45,7 @@
                     
                     <li><a href="airportshotels.php">Airport/Hotel</a></li>
                     <li><a href="adminflightshotels.php">Flight Booking/Hotel Reservations</a></li>
+                    
                     
                 </ul>
                
@@ -111,7 +113,7 @@
 
 
     </div>
-    <script src="login.js"></script>
+    <script src="login.js"> </script>
     
 </body>
 </html>

@@ -26,10 +26,17 @@
             background-color: rgb(253, 251, 240);
             margin: 0;
         }
+        .main{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
         h1{
             font-size: 22px;
-            margin: 20px;
+            margin-bottom: 30px;
+            margin: 30px;
+           
         }
         button {
             background-color: #002349;
@@ -37,6 +44,7 @@
             padding: 10px 20px;
             border: none;
             cursor: pointer;
+            margin: 30px;
         }
         button a{
             text-decoration: none;
@@ -44,11 +52,12 @@
         }
 
         table{
-            width: 100%;
+            width: 90%;
             border-collapse: collapse;
             background-color: #fff;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 30px;
 
         }
         table th,table td{
@@ -65,8 +74,10 @@
     </style>
 </head>
 <body>
-    <h1>User Contact</h1>
-    <button><a href="admin.php">Dashboard</a></button>
+    <div class="main">
+        <h1>User Contact</h1>
+        <button><a href="admin.php">Dashboard</a></button>
+    </div>
 <table>
                     <thead>
                         <tr>
