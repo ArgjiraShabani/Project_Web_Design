@@ -71,6 +71,12 @@
                     
                     
                 </div>
+                <div class="input-box">
+                    <select name="role" id="role" style="width: 100%;padding:10px;border:none;border-bottom: 1.5px solid#000080;font-size:15px;">
+                        <option value="user">User</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
                 <div class="button">
                     
                     <button  type="submit" name="register">Register</button>

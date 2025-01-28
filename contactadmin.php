@@ -103,7 +103,7 @@
 
         }
         table th,table td{
-            padding: 10px;
+            padding: 20px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }

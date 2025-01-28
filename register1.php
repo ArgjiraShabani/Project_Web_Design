@@ -7,6 +7,7 @@ if(isset($_POST['name']) && $_POST['email'] && $_POST['password']){
     $name=$_POST['name'];
     $email=$_POST['email'];
     $password=password_hash($_POST['password'],PASSWORD_DEFAULT);
+    $role=isset($_POST['Role'])? $_POST['Role'] : 'User';
    
 
     $checkEmail="SELECT * From users where email=?";
@@ -18,10 +19,10 @@ if(isset($_POST['name']) && $_POST['email'] && $_POST['password']){
         echo "Email adress already exists!";
     }
     else{
-        $insertQuery="INSERT INTO users(name,email,password)
-                       VALUES (?,?,?)";
+        $insertQuery="INSERT INTO users(name,email,password,role)
+                       VALUES (?,?,?,?)";
         $stmt=$conn->prepare($insertQuery);
-        $stmt->bind_param("sss",$name,$email,$password);
+        $stmt->bind_param("ssss",$name,$email,$password,$role);
 
         if($stmt->execute()){
             header("Location: Home.php");

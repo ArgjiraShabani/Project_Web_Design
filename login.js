@@ -119,7 +119,7 @@ function getLogInFormErrors(event) {
     else {
         password.classList.remove('error');
     }
-
+/*
    if(errors.length===0){
     if(email.value ==='admin@gmail.com' && password.value==='adminpassword'){
         
@@ -128,7 +128,7 @@ function getLogInFormErrors(event) {
     }else{
         errors.push("Invalid email or password");
     }
-   }
+   }*/
 
    
     if (errors.length > 0) {

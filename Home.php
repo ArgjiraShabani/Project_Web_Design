@@ -1,6 +1,14 @@
 <?php
 session_start();
 include("connect.php"); 
+
+   
+    if(!isset($_SESSION['Email']) || $_SESSION['Role']!=='user'){
+        header("Location:login.php");
+        exit();
+    }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -10,7 +10,7 @@
                 $email=$_POST['Email'];
                 $password=$_POST['Password'];
 
-                $sql="SELECT * From users Where Email=?";
+                $sql="SELECT * From users Where Email=? ";
                 $statement=$conn->prepare($sql);
                 $statement->bind_param("s",$email);
                 $statement->execute();
@@ -18,18 +18,25 @@
 
                 if($result->num_rows>0){
                     $row=$result->fetch_assoc();
+                    
 
                     if(password_verify($password,$row['Password'])){
-                        
+
+                        $_SESSION['user_id']=$row['id'];
                         $_SESSION['Email']=$row['Email'];
+                        $_SESSION['Role']=$row['Role'];
 
-                        if(isset($_SESSION['Email'])){
-                            header("Location:Home.php");
-                            exit();
-
+                        if($row['Role']==='admin'){
+                            header("Location: admin.php");
                         }else{
-                            echo "Session is not set";
+                            header("Location:Home.php");
+
                         }
+
+                        
+                        
+                        exit();
+
                         
                     }
                     else{
@@ -44,5 +51,7 @@
         }else{
             $errorMessage="Please fill in all the fields!";
         }
+        $statement->close();
     }
+    $conn->close();
 ?>
