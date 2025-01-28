@@ -29,44 +29,25 @@
         
         .container{
             display: flex;
-            flex-wrap: nowrap;
-            margin-left: 220px;
-            padding-top: 30px;
+            
+            height: 100vh;
         }
-            .side-bar{
-               /* margin: 16px;
-                padding: 0;
-                width: 200px;
-                background: #002349;
-                position: fixed;
-                height: 100%;
-                color: white;
-                display: flex;
-                flex-direction: column;*/
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 200px;
-                height: 100%;
-                color: white;
-                display: flex;
-                flex-direction: column;
-                padding: 20px 0;
+        .side-bar{
+            
+            width: 200px;
+            background: #002349;
+            position: fixed;
+            height: 100%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+                    
+         .side-bar h3{
+            padding: 20px;
 
-
-
-
-
-
-                
-
-                
-            }
-            .side-bar h3{
-                padding: 20px;
-
-            }
-            .side-bar li {
+        }
+        .side-bar li {
                 display: block;
                 color: white;
                 padding: 16px;
@@ -74,20 +55,28 @@
                 background-color: #002349;
                 width: 100%;
             
-            }
+        }
 
-            .side-bar a{
-                text-decoration: none;
-                color: white;
-                font-size: 16px;
-                width: 100%;
-            }
-            .side-bar li:hover {
-                background-color: #005f7f;
-}
+        .side-bar a{
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            width: 100%;
+        }
+        .side-bar li:hover {
+            background-color:rgb(5, 53, 103);
+        }
+        .main-content{
+            margin-left: 200px;
+            width: calc(100%-200px);
+            padding: 20px;
+        }
 
         h1{
             font-size: 22px;
+            
+            padding: 20px;
+            color: #002349;
             
            
         }
@@ -97,7 +86,7 @@
             padding: 10px 20px;
             border: none;
             cursor: pointer;
-            margin: 30px;
+            margin: 30px 0;
         }
         button a{
             text-decoration: none;
@@ -110,7 +99,7 @@
             background-color: #fff;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin: 150px;
+            margin: 30px auto;
 
         }
         table th,table td{
@@ -127,7 +116,7 @@
     </style>
 </head>
 <body>
-<h1>User Contact</h1>
+
 
 <div class="container">
    
@@ -152,9 +141,11 @@
         
                 </div>
             </aside>
-   
+        <div class="main-content">
 
-    <table>
+            <h1>User Contact</h1>
+
+            <table>
                         <thead>
                             <tr>
                                 <th>ID</th>
@@ -191,6 +182,7 @@
                             ?>
                         </tbody>
                     </table>
+        </div>
 </div>
     
 </body>
