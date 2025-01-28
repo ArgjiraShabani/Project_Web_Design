@@ -3,14 +3,8 @@
     $sql="SELECT ID,Name,Email,Password,registration_date FROM users";
     $result=$conn->query($sql);
 ?>
-<?php
-    session_start();
-    if(!isset($_SESSION['Email']) || $_SESSION['Role']!=='admin'){
-        header("Location:login.php");
-        exit();
-    }
 
-?>
+
 
 
 <!DOCTYPE html>
