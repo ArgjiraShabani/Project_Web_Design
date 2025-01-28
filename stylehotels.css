@@ -111,24 +111,26 @@ body {
 }
 
 .box {
+    flex-direction: column;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 300px;
-    height: 300px;
-    justify-content: space-around;
-    
+    margin-top: 200px;
+    height: 49vh;
+    justify-content: center;
+    background: rgba(172, 172, 172, 0.3);
 }
 
 .box h1 {
     font-weight: 100;
-    margin: auto;
+    padding-top: 55px;
+    padding-bottom: 20px;
     color: #ffffff;
     font-size: 40px;
 
 }
 
-.box2 {
+/*.box2 {
     background: rgba(172, 172, 172, 0.3);
     padding: 90px;
     border-radius: 10px;
@@ -142,9 +144,9 @@ body {
     height: 300px;
     
     
-}
+}*/
 
-#f1 {
+.f1 {
     justify-content:space-around;
     display: flex;
     align-items: center;
@@ -153,15 +155,22 @@ body {
     
     
 }
-
+label{
+    font-weight: bold;
+    color: #ffffff;
+    font-size: larger;
+}
 .dep {
     padding: 10px;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
-    width: 200px;
+    width: 250px;
+    height: 50;
     outline: none;
     font-weight: bold;
+    background: rgba(255, 255, 255, 0.6);
+
 }
 
 input[type="date"], .guests, .rooms {
@@ -169,16 +178,20 @@ input[type="date"], .guests, .rooms {
     font-size: 1rem;
     border: none;
     border-radius: 5px;
-    width: 200px;
+    width: 250px;
+    height:50 ;
     outline: none;
     font-weight: bold;
+    background: rgba(255, 255, 255, 0.6);
+    
 }
 
 .b {
-    padding: 10px 20px;
+    width: 250;
+    height: 50px;
     font-size: 1rem;
     font-weight: bold;
-    background-color: rgb(244, 244, 245);
+    background: rgba(255, 255, 255, 0.6);
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;

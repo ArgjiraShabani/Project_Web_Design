@@ -110,29 +110,29 @@
     
 }
 .box{
-    flex-direction: column;
-    display:block;
+    flex-direction:column;
+    /*display: block;*/
+    display:flex;
     flex-wrap: wrap;
     
     background: rgba(172, 172, 172, 0.2);
     justify-content:center;
-    align-items: center;
+    align-items:center;
     
     margin-top: 200px;
     height: 49vh;
     
 }
-.box p{
+.box h1{
     
     text-align: center;
-    font-size:30px;
-    font-weight: bold;
+    font-size:40px;
     padding-top: 55px;
     padding-bottom: 20px;
     color: #f5f5f5;
     
 }
-.box2{
+/*.box2{
     
     display: flex;
     flex-wrap: wrap;
@@ -143,8 +143,15 @@
     height: 380px;
 
     
+}*/
+.form2{
+    flex-direction: row;
+    display:flex;
+    flex-wrap: wrap;
+   gap: 20px;
+    justify-content:center;
+    align-items:center
 }
-
 .dep{
     
     width: 300px;
@@ -203,12 +210,13 @@
     text-align: center;
     border-color: rgb(204, 202, 202);
     border-radius: 5px;
+
    
 }
 
- button{
-    background: rgba(255, 255, 255, 0.3);
-    width: 150px;
+ .bt3{
+    background: rgba(255, 255, 255, 0.6);
+    width: 250px;
     height:50px;
     border-radius: 5px;
     border-color: #efefef;
@@ -266,7 +274,7 @@
     color: #002349;
     text-decoration:none;
 }
-@media (max-width: 768px){
+/*@media (max-width: 768px){
     .navbar{
         flex-direction: column;
         align-items: center;
@@ -323,4 +331,103 @@
         }
         
       }
-      
+      */
+      /* Responsive Design for max-width 768px */
+@media(max-width: 768px) {
+    
+    /* Navbar adjustments */
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    .navbar .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .menu li {
+        margin: 10px 0;
+    }
+
+    .navbar .menu li a {
+        font-size: 18px;
+    }
+
+    .navbar .button2 {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .navbar .search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar .search input {
+        width: 100%;
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .navbar .search button {
+        width: 100%;
+        max-width: 120px;
+    }
+
+    /* Main content box adjustments */
+    .box {
+        height: auto;
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .box p {
+        font-size: 24px;
+    }
+
+    .box2 {
+        display: block;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .dep, .des, .date, .s1, .people {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .bt3 {
+        width: 100%;
+        max-width: 350px;
+        font-size: 16px;
+    }
+
+    /* Footer adjustments */
+    .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .footer .follow, .footer .services {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer .follow p a, .footer .services p a {
+        font-size: 16px;
+    }
+
+    .footer h3 {
+        font-size: 18px;
+    }
+}
+

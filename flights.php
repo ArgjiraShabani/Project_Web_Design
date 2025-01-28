@@ -152,11 +152,11 @@ $conn->close();
                 
               <div class="box">
               
-                    <p>Flights</p>
-                
-                <div class="box2">
+                    <!--<p>Flights</p>-->
+                  <h1>Flights</h1>
+               <!-- <div class="box2">-->
                     
-                    <form id="f1" method="POST">
+                    <form id="f1" method="POST" class="form2">
                                     <select class="dep" size="1" id="dep" required name="departure">
                                       <option value="" disabled selected>Departure Airport</option>
                                       <?php
@@ -174,7 +174,7 @@ $conn->close();
                                         }
                                       ?>                                
                                     </select>
-                                    <br>
+                                    
                                    <!-- <label for="date" class="labeld">&nbsp;&nbsp; Date&nbsp;&nbsp;</label>-->
                                     <input type="date" id="date" name="dateDep" class="date" >
                                     <select class="s1" id="roundtrip" required name="trip">
@@ -191,7 +191,7 @@ $conn->close();
                   </form>
                   
                       
-             </div>
+            <!-- </div>-->
         </div>
     
            

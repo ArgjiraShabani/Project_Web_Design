@@ -163,9 +163,24 @@
             
                <h1>Find the Right Hotel</h1>
             
-            <div class="box2">
-                <form id="f1" method="POST">
-                  <select class="dep" size="1" id="des" required name="hotel">
+           <!-- <div class="box2">-->
+                <form id="f1" method="POST" class="f1">
+                  <!--<select class="dep" size="1" id="des" required name="hotel">
+                    <option value="" disabled selected>Hotels</option>
+                    <?php
+                             foreach($hotels as $hotel){
+                                echo "<option value=\"$hotel\">$hotel</option>";
+                              }
+                    ?>                   
+                  </select>-->
+                
+                    <label for="check-in">Check-in:</label>
+                    <input type ="date" id="check-in" name="checkin" required >
+
+                    <label for="check-out">Check-out:</label>
+                    <input type="date" id="check-out" name="checkout" required>
+                   
+                    <select class="dep" size="1" id="des" required name="hotel">
                     <option value="" disabled selected>Hotels</option>
                     <?php
                              foreach($hotels as $hotel){
@@ -173,12 +188,7 @@
                               }
                     ?>                   
                   </select>
-                
-                    <label for="check-in">Check-in:</label>
-                    <input type ="date" id="check-in" name="checkin" required >
-                    <label for="check-out">Check-out:</label>
-                    <input type="date" id="check-out" name="checkout" required>
-                   
+
                     <input type="number" min="1" placeholder="Guests" class="guests" id="guests" name="guests" required>
                     <input type="number" min="1" placeholder="Rooms" class="rooms" id="rooms" name="rooms" required>
 
@@ -186,7 +196,7 @@
                     <button type="submit" class="b">Book</button>
                     
                 </form>
-            </div>
+            <!--</div>-->
         </div>
     </div>
     <div class="footer">
