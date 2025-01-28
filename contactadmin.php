@@ -33,7 +33,7 @@
             height: 100vh;
         }
         .side-bar{
-            
+            margin: 16px;
             width: 200px;
             background: #002349;
             position: fixed;
@@ -67,7 +67,7 @@
             background-color:rgb(5, 53, 103);
         }
         .main-content{
-            margin-left: 200px;
+            margin-left: 220px;
             width: calc(100%-200px);
             padding: 20px;
         }
