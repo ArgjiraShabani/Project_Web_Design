@@ -28,14 +28,16 @@
 
                         if($row['Role']==='admin'){
                             header("Location: admin.php");
+                            exit();
                         }else{
                             header("Location:Home.php");
+                            exit();
 
                         }
 
                         
                         
-                        exit();
+                        
 
                         
                     }
