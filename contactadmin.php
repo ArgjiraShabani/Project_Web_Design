@@ -33,7 +33,7 @@
             height: 100vh;
         }
         .side-bar{
-            margin: 16px;
+           /* margin: 16px;*/
             width: 200px;
             background: #002349;
             position: fixed;

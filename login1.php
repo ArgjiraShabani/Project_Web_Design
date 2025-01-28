@@ -30,7 +30,7 @@
                             header("Location: admin.php");
                             exit();
                         }else{
-                            header("Location:Home.php");
+                            header("Location: Home.php");
                             exit();
 
                         }

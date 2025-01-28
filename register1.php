@@ -25,7 +25,7 @@ if(isset($_POST['name']) && $_POST['email'] && $_POST['password']){
         $stmt->bind_param("ssss",$name,$email,$password,$role);
 
         if($stmt->execute()){
-            header("Location: admin.php");
+            header("Location: Home.php");
             exit();
         }else{
             echo "Error: " .$conn->error;
