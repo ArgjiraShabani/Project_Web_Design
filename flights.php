@@ -116,7 +116,116 @@ $conn->close();
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hermes Flights</title>
   <link rel="stylesheet" href="styleflights.css">
+<style>
 
+  .box{
+    flex-direction:column;
+    
+    display:flex;
+    flex-wrap: wrap;
+    
+    background: rgba(172, 172, 172, 0.2);
+    justify-content:center;
+    align-items:center;
+    
+    margin-top: 200px;
+    height: 49vh;
+    
+}
+.box h1{
+    
+    text-align: center;
+    font-size:40px;
+    padding-top: 55px;
+    padding-bottom: 20px;
+    color: #f5f5f5;
+    
+}
+
+.form2{
+    flex-direction: row;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content:center;
+    align-items:center
+}
+.dep{
+    
+    width: 300px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.des{
+    width: 300px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    font-weight:bold;
+    text-align: center;
+    
+}
+.date{
+    
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    border-radius: 5px;
+    border-color: #efefef;
+}
+.labeld{
+    font-size: 20px;
+    color: #010101;
+    background: rgba(255, 255, 255, 0.3);
+    font-weight:600;
+
+}
+
+
+.s1{
+    height: 50px;
+    width: 300px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    border-radius: 5px;
+    
+    
+}
+
+
+.people{
+    height: 50px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.6);
+    font-weight: bold;
+    text-align: center;
+    border-color: rgb(204, 202, 202);
+    border-radius: 5px;
+
+   
+}
+
+ .bt3{
+    background: rgba(255, 255, 255, 0.6);
+    width: 250px;
+    height:50px;
+    border-radius: 5px;
+    border-color: #efefef;
+    cursor: pointer;
+    border-style: outset;
+    font-weight: bold;
+    
+    
+
+}
+</style>
   
 </head>
 <body>

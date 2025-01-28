@@ -109,7 +109,7 @@ body {
     
     
 }
-
+/*
 .box {
     flex-direction: column;
     display: flex;
@@ -130,7 +130,7 @@ body {
 
 }
 
-/*.box2 {
+.box2 {
     background: rgba(172, 172, 172, 0.3);
     padding: 90px;
     border-radius: 10px;
@@ -144,7 +144,8 @@ body {
     height: 300px;
     
     
-}*/
+}
+
 
 .f1 {
     justify-content:space-around;
@@ -197,7 +198,7 @@ input[type="date"], .guests, .rooms {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
-}
+}*/
 .footer{
     display:flex;
     flex-wrap: wrap;

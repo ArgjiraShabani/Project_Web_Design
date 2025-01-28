@@ -68,8 +68,81 @@
     <title>Hotels</title>
     <link rel="stylesheet" href="stylehotels.css">
 
-    <style>
-      @media (max-width: 768px){
+<style>
+.box {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 200px;
+    height: 49vh;
+    justify-content: center;
+    background: rgba(172, 172, 172, 0.3);
+}
+
+.box h1 {
+    font-weight: 100;
+    padding-top: 55px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    font-size: 40px;
+
+}
+
+.f1 {
+    justify-content:space-around;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    
+    
+}
+label{
+    font-weight: bold;
+    color: #ffffff;
+    font-size: larger;
+}
+.dep {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+    outline: none;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.6);
+
+}
+
+input[type="date"], .guests, .rooms {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+    height:50px ;
+    outline: none;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.6);
+    
+}
+
+.b {
+    width: 250px;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.6);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+@media (max-width: 768px){
     .navbar{
         flex-direction: column;
         align-items: center;
@@ -91,7 +164,7 @@
         gap: 20px;
       }
     }
-      @media(max-width: 480px){
+  @media(max-width: 480px){
         .navbar{
           flex-direction: column;
           align-items: center;
@@ -120,12 +193,6 @@
             max-width: 100%;
         }
         }
-        
-        
-        
-      
-      
-
     </style>
   
    
