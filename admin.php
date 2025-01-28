@@ -39,7 +39,7 @@
             
                 <h3>Menu</h3>
                 <ul>
-                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li style="background-color: rgb(253, 251, 240);"><a href="#dashboard" style="color: #002349;">Dashboard</a></li>
                     
                     <li><a href="contactadmin.php">User Contact</a></li>
                     

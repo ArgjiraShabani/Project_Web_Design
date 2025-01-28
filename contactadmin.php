@@ -26,16 +26,69 @@
             background-color: rgb(253, 251, 240);
             margin: 0;
         }
-        .main{
+        
+        .container{
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            flex-wrap: nowrap;
+            margin-left: 220px;
+            padding-top: 30px;
         }
+            .side-bar{
+               /* margin: 16px;
+                padding: 0;
+                width: 200px;
+                background: #002349;
+                position: fixed;
+                height: 100%;
+                color: white;
+                display: flex;
+                flex-direction: column;*/
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 200px;
+                height: 100%;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                padding: 20px 0;
+
+
+
+
+
+
+                
+
+                
+            }
+            .side-bar h3{
+                padding: 20px;
+
+            }
+            .side-bar li {
+                display: block;
+                color: white;
+                padding: 16px;
+                text-decoration: none;
+                background-color: #002349;
+                width: 100%;
+            
+            }
+
+            .side-bar a{
+                text-decoration: none;
+                color: white;
+                font-size: 16px;
+                width: 100%;
+            }
+            .side-bar li:hover {
+                background-color: #005f7f;
+}
 
         h1{
             font-size: 22px;
-            margin-bottom: 30px;
-            margin: 30px;
+            
            
         }
         button {
@@ -52,12 +105,12 @@
         }
 
         table{
-            width: 90%;
+            width: 100%;
             border-collapse: collapse;
             background-color: #fff;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin: 30px;
+            margin: 150px;
 
         }
         table th,table td{
@@ -74,47 +127,71 @@
     </style>
 </head>
 <body>
-    <div class="main">
-        <h1>User Contact</h1>
-        <button><a href="admin.php">Dashboard</a></button>
-    </div>
-<table>
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Message</th>
-                            <th>Date</th>
-                            
-                        </tr>
-                    </thead>
-                    <tbody >
-                        <?php
-                        if($result->num_rows>0){
-                            while($row=$result->fetch_assoc()){
+<h1>User Contact</h1>
+
+<div class="container">
+   
+    <aside id="side-bar">
+                <div class="side-bar">
+                
+                
+                    <h3>Menu</h3>
+                    <ul>
+                        <li ><a href="admin.php" style="color: #fff">Dashboard</a></li>
+                        
+                        <li style="background-color: rgb(253, 251, 240);" ><a href="contactadmin.php" style="color: #002349;">User Contact</a></li>
+                        
+                        
+                        <li><a href="airportshotels.php">Airport/Hotel</a></li>
+                        <li><a href="adminflightshotels.php">Flight Booking/Hotel Reservations</a></li>
+                        
+                        
+                    </ul>
+                
+                
+        
+                </div>
+            </aside>
+   
+
+    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Message</th>
+                                <th>Date</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody >
+                            <?php
+                            if($result->num_rows>0){
+                                while($row=$result->fetch_assoc()){
+                                    echo "<tr>
+                                            <td>{$row['ID']}</td>
+                                            <td>{$row['first_name']}</td>
+                                            <td>{$row['last_name']}</td>
+                                            <td>{$row['email']}</td>
+                                            <td>{$row['phone']}</td>
+                                            <td>{$row['message']}</td>
+                                            <td>{$row['date']}</td>
+                                            
+                                            
+                                        </tr>";
+                                }
+                            }else{
                                 echo "<tr>
-                                        <td>{$row['ID']}</td>
-                                        <td>{$row['first_name']}</td>
-                                        <td>{$row['last_name']}</td>
-                                        <td>{$row['email']}</td>
-                                        <td>{$row['phone']}</td>
-                                        <td>{$row['message']}</td>
-                                        <td>{$row['date']}</td>
-                                        
-                                        
-                                    </tr>";
+                                        <td colspan='4' >No users found</td>
+                                </tr>";
                             }
-                        }else{
-                            echo "<tr>
-                                    <td colspan='4' >No users found</td>
-                            </tr>";
-                        }
-                        ?>
-                    </tbody>
-                </table>
+                            ?>
+                        </tbody>
+                    </table>
+</div>
     
 </body>
 </html>
