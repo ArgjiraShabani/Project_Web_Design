@@ -1,6 +1,7 @@
 <?php
-    include "connect.php";
     session_start();
+    include "connect.php";
+    
     $errorMessage="";
     
 
@@ -9,6 +10,9 @@
             
                 $email=$_POST['Email'];
                 $password=$_POST['Password'];
+
+                error_log("Email: $email");
+                error_log("Password: $password");
 
                 $sql="SELECT * From users Where Email=? ";
                 $statement=$conn->prepare($sql);
@@ -48,12 +52,13 @@
                     $errorMessage="No user found with this email!";
 
                 }
+                $statement->close();
                 
             
         }else{
             $errorMessage="Please fill in all the fields!";
         }
-        $statement->close();
+        
     }
     $conn->close();
 ?>

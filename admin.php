@@ -1,5 +1,7 @@
 <?php
+    session_start();
     include "connect.php";
+    
     $sql="SELECT ID,Name,Email,Password,registration_date FROM users";
     $result=$conn->query($sql);
 ?>
