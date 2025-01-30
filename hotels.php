@@ -179,7 +179,7 @@ input[type="date"], .guests, .rooms {
           width: 90%;
         }
         .box2{
-          margin-bottom: 50px;
+          margin-bottom: 150px;
         }
       
         .footer{
