@@ -1,7 +1,8 @@
 <?php
     session_start();
     include "connect.php";
-    
+    if(isset($_SESSION['Email'])){
+
     $sql="SELECT ID,Name,Email,Password,registration_date FROM users";
     $result=$conn->query($sql);
 ?>
@@ -35,6 +36,11 @@
     a {
         text-decoration: none;
     }
+    .logout_btn{
+        text-decoration: none;
+        color: #ffff;
+        font: size 16px;
+    }
     </style>
 </head>
 <body>
@@ -63,8 +69,9 @@
        <div class="main_content">
              <header>
                   <h1>Welcome Admin!</h1>
-                  <button class="logout_btn"><a href="logout.php" style="text-decoration: none;color: #fff;font: size 16px;">Logout</a></button>
-                  
+                  <?php
+                     echo "<button class='logout_btn'><a href='logout.php' style='color:white;'>Logout</a></button>";
+                  ?>
             </header>
            
             <section id="bookings" class="section">
@@ -126,4 +133,5 @@
 </html>
 <?php
 $conn->close();
+                    }
 ?>

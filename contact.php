@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    include "connect.php";
+    if(isset($_SESSION['Email'])){
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +30,10 @@
                 </ul>
             </div>
             <div class="button2">
-                <a href="login.php" id="loginLink"><button class="bt2" id="lButton" onclick="loginButtonClicked()">Login</button></a>
+                <?php
+                echo '<a href="logout.php" id="loginLink"><button class="bt2" id="lButton" onclick="loginButtonClicked()">Login</button></a>';
+                    }
+                ?>
               </div>
             <div class="search">
                 <input class="src" type="text" placeholder="Search" id="sInput">
@@ -32,11 +41,7 @@
                 
             </div>
         </div>
-        
-       <!-- <div class="image">
-            <img src="contact.jpg" alt="Travel Inspiration" class="background-image">
-
-        </div>  --> 
+       
         
     <div class="container">
         

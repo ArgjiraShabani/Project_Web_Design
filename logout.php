@@ -1,7 +1,11 @@
 <?php
-session_start();
-$_SESSION=array();
+session_start();  
+if(isset($_SESSION['Email'])){
 session_destroy();
+
 header("Location: login.php");
-exit();
+}else{
+    header('Location:login.php');
+}
+
 ?>

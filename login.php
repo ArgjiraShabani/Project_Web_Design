@@ -1,3 +1,61 @@
+<?php
+include 'connect.php';
+session_start(); 
+
+$email = "";
+$password = "";
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['Email']) && isset($_POST['Password'])) {
+        $email = $_POST['Email'];
+        $password = $_POST['Password'];
+
+        $query = 'SELECT * FROM users WHERE Email = ?';
+
+        if ($stmt = $conn->prepare($query)) {
+            $stmt->bind_param('s', $email);
+            
+            if ($stmt->execute()) {
+                $result = $stmt->get_result();
+
+                if ($result->num_rows > 0) {
+                    $user = $result->fetch_assoc();
+
+                    if (password_verify($password, $user['Password'])) {
+                        
+                        $_SESSION['Email'] = $email;
+                        $_SESSION['role'] = $user['role']; 
+
+                       
+                        if ($_SESSION['role'] == 'user') {
+                            header('Location: home.php');  
+                        } else {
+                            header('Location: admin.php');   
+                        }
+                        exit();  
+                    } else {
+                      
+                        echo "<script>alert('Invalid email or password.');</script>";
+                    }
+                } else {
+                   
+                    echo "<script>alert('Invalid email or password.');</script>";
+                }
+            } else {
+                echo "Error executing query: " . $stmt->error;
+            }
+
+            $stmt->close();
+        } else {
+            echo "Error preparing the statement: " . $conn->error;
+        }
+    } else {
+        echo "<script>alert('Please provide both email and password.');</script>";
+    }
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,7 +96,7 @@
        
         <div class="form_container-login">
            
-            <form id="form" onsubmit="return getLogInFormErrors(event)" method="POST" action="login1.php">
+            <form id="form" onsubmit="return getLogInFormErrors(event)" method="POST" action="login.php" >
                 <h1 style="font-weight: bold;">Login</h1>
                 <p id="error-message"></p>
                 <div class="input-box">                   

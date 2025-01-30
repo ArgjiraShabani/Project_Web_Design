@@ -1,11 +1,6 @@
 <?php
 session_start();
 
-include("connect.php"); 
-
-   
-   
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,8 +31,10 @@ include("connect.php");
                             
                           </div>
                           <div class="button2">
-                            <a href="login.php" id="loginLink"><button class="bt2" id="lButton" type="submit" onclick="loginButtonClicked()">Login</button></a>
-                          </div>
+                            
+                             <a href="logout.php" id="loginLink"><button class="bt2" id="lButton" type="submit" onclick="loginButtonClicked()">Login</button></a>;
+                            
+                            </div>
                            <div class="search">
                             <form>
                               <input class="sr" type="text" placeholder="Search" id="sInput" required>
