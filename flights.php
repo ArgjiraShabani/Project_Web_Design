@@ -128,16 +128,18 @@ $conn->close();
     justify-content:center;
     align-items:center;
     
-    margin-top: 200px;
+    margin-top: 50px;
     height: 49vh;
     
 }
-.box h1{
+.h1 h1{
     
     text-align: center;
     font-size:40px;
     padding-top: 55px;
-    padding-bottom: 20px;
+    padding-bottom: 2px;
+    margin-top: 150px;
+  
     color: #f5f5f5;
     
 }
@@ -148,7 +150,9 @@ $conn->close();
     flex-wrap: wrap;
     gap: 20px;
     justify-content:center;
-    align-items:center
+    align-items:center;
+  
+    
 }
 .dep{
     
@@ -225,6 +229,107 @@ $conn->close();
     
 
 }
+@media (max-width: 768px) {
+    
+    .navbar{
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 250px;
+    }
+    .navbar .menu{
+      flex-direction: column;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+  
+    }
+    .navbar .search input{
+      width: 75px;
+    }
+    .box{
+      margin-top: 20px;
+      height: auto;
+      padding: 20px;
+    }
+    .form2{
+      width: 100%;
+      max-width: 400px;
+      gap: 10px;
+    }
+    
+    .footer{
+        margin-top: 250px;
+        height: auto;
+      }
+      
+    }
+    @media (max-width: 480px){
+      body{
+        display: flex;
+        flex-direction: column;
+        
+        min-height: 100vh;
+
+      }
+     
+      .navbar{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 0px;
+        
+      }
+      .navbar .menu ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+      } 
+      .box{
+        margin-top: 10px;
+        padding: 10px;
+      }
+      .form2{
+        width: 90%;
+        max-width: 90%;
+        padding: 10px;
+      }
+    
+
+     
+      .navbar .search input{
+        width: 90%;
+      }
+
+      .h1 {
+        font-size: 24px;
+       
+      }
+    
+     
+
+      .dep,.des,.date,.s1,.people,.bt3{
+        width: 90%;
+      }
+
+      .footer{
+        flex-direction: column;
+        
+        text-align: center;
+        margin-top: auto;
+        padding: 15px;
+        height: auto;
+      }
+      .footer h1{
+        font-size: 25px;
+      }
+      .footer,.follow{
+        font-size: 10px;
+      }
+
+     
+    }
+   
 </style>
   
 </head>
@@ -258,12 +363,15 @@ $conn->close();
                       </div>
                    
                 </div>
+                <div class="h1">
+                  <h1>Flights</h1>
+                </div>
                 
               <div class="box">
               
-                    <!--<p>Flights</p>-->
+                    <!--<p>Flights</p>
                   <h1>Flights</h1>
-               <!-- <div class="box2">-->
+               <div class="box2">-->
                     
                     <form id="f1" method="POST" class="form2">
                                     <select class="dep" size="1" id="dep" required name="departure">
