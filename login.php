@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['Email']) && isset($_POST['Password'])) {
         $email = $_POST['Email'];
         $password = $_POST['Password'];
-
+        
         $query = 'SELECT * FROM users WHERE Email = ?';
 
         if ($stmt = $conn->prepare($query)) {
@@ -24,8 +24,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     if (password_verify($password, $user['Password'])) {
                         
                         $_SESSION['Email'] = $email;
-                        $_SESSION['role'] = $user['role']; 
-
+                        $_SESSION['role'] = $user['role'];
+                         
+                        setcookie('login', $email,time()+3600);
                        
                         if ($_SESSION['role'] == 'user') {
                             header('Location: home.php');  
