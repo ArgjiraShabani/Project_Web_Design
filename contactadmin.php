@@ -112,6 +112,44 @@
             color: #fff;
             font-weight: bold;
         }
+        @media(max-width: 768px){
+            .container{
+                flex-direction: column;
+            }
+            .side-bar{
+                width: 100%;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            .side-bar ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                width: 100%;
+            }
+            .side-bar li{
+                display: inline-block;
+                padding: 10px;
+            }
+            .main-content{
+                margin-left: 0;
+                width: 100%;
+                padding: 15px;
+            }
+        }
+        @media(max-width: 480px){
+            .side-bar{
+                flex-direction: column;
+                align-items: center;
+            }
+            .side-bar li{
+                text-align: center;
+                width: 100%;
+            }
+        }
 
     </style>
 </head>
@@ -145,6 +183,7 @@
 
             <h1>User Contact</h1>
 
+        <div style="overflow-x:auto;">
             <table>
                         <thead>
                             <tr>
@@ -182,6 +221,7 @@
                             ?>
                         </tbody>
                     </table>
+                </div>
         </div>
 </div>
     

@@ -1,7 +1,7 @@
 <?php
     session_start();
     include "connect.php";
-    if(isset($_SESSION['Email'])){
+   if(isset($_SESSION['Email'])){
 
     $sql="SELECT ID,Name,Email,Password,registration_date FROM users";
     $result=$conn->query($sql);
@@ -41,6 +41,44 @@
         color: #ffff;
         font: size 16px;
     }
+    @media(max-width: 768px){
+            .container{
+                flex-direction: column;
+            }
+            .side-bar{
+                width: 100%;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            .side-bar ul{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                width: 100%;
+            }
+            .side-bar li{
+                display: inline-block;
+                padding: 10px;
+            }
+            .main-content{
+                margin-left: 0;
+                width: 100%;
+                padding: 15px;
+            }
+        }
+        @media(max-width: 480px){
+            .side-bar{
+                flex-direction: column;
+                align-items: center;
+            }
+            .side-bar li{
+                text-align: center;
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -84,6 +122,7 @@
                         cursor: pointer;
                         background-color:  #002349;margin-bottom: 40px;
                         "><a style="text-decoration: none;font: size 16px;color: #fff;" href="create.php">Add a user</a></button>
+            <div style="overflow-x:auto;">
                 <table>
                     <thead>
                         <tr>
@@ -121,6 +160,7 @@
                         ?>
                     </tbody>
                 </table>
+            </div>
 
             </section>
         </div>
