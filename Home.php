@@ -32,7 +32,14 @@ session_start();
                           </div>
                           <div class="button2">
                             
-                             <a href="logout.php" id="loginLink"><button class="bt2" id="lButton" type="submit" onclick="loginButtonClicked()">Login</button></a>;
+                             <!--<a href="logout.php" id="loginLink"><button class="bt2" id="lButton" type="submit" onclick="loginButtonClicked()">Login</button></a>;-->
+                             <?php
+                              if(isset($_SESSION['Email'])){
+                                echo '<a href="logout.php" id="loginLink"><button class="bt2" id="lButton" type="submit" >Logout</button></a>';
+                              }else{
+                                echo '<a href="login.php" id="loginLink"><button class="bt2" id="lButton" type="submit" onclick="loginButtonClicked()">Login</button></a>';
+                              }
+                             ?>
                             
                             </div>
                            <div class="search">

@@ -134,7 +134,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </div>
   
      
-    <script type="text/javascript" src="login.js" defer></script>
+    <script type="text/javascript" src="login.js" defer>
+    
+        document.querySelector("form").addEventListener("submit", function(event) {
+            console.log("Form submitted");
+        });
+</script>
     
 </body>
 </html>

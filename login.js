@@ -1,3 +1,4 @@
+console.log("JavaScript file loaded");
 function searchButtonClicked() {
     const searchTerm = document.getElementById('sr').value.trim();
     if (searchTerm === "") {
@@ -82,6 +83,7 @@ function getRegisterFormErrors(event) {
 
 
 function getLogInFormErrors(event) {
+
     
     event.preventDefault();
 
