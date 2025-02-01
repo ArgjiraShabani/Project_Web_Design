@@ -128,7 +128,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     echo "<strong>$errorMessage</strong>";
                 }
             ?>
-            <p>New here?<a href="register.php"> Create Account</a></p>
+            <p>New here?<a href="register.php"> Create a new account</a></p>
             
         </div>
     </div>
