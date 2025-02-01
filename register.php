@@ -14,9 +14,9 @@
     <div class="navbar">
         <div class="icon">
             <a href="Home.php"><h2 class="logo">HERMES</h2></a>
-            <h5 class="l1" style="text-align:center;">TRAVEL</h5>
+            <h5 class="l1">TRAVEL</h5>
         </div>
-       <!-- <div class="menu">
+        <div class="menu">
           <ul>
                <li><a href="Home.php">HOME</a></li>
                <li><a href="flights.php" class="flights">FLIGHTS</a></li>
@@ -32,7 +32,7 @@
       
           
 
-        </div>-->
+        </div>
   </div>
 
     <div class="container">

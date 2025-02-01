@@ -1,10 +1,7 @@
 <?php
     session_start();
     include "connect.php";
-    if (!isset($_SESSION['Email'])) {
-        header('Location: login.php');
-        exit();
-    }
+    
 
 ?>
 <!DOCTYPE html>
