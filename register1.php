@@ -27,6 +27,7 @@ if(isset($_POST['name']) && $_POST['email'] && $_POST['password']){
         if($stmt->execute()){
             $_SESSION['Email'] = $email; 
             $_SESSION['Name']=$name;
+            setcookie('login', $email,time()+3600);
             header("Location: Home.php");
             exit();
         }else{
