@@ -109,7 +109,7 @@
 
         }
         table th,table td{
-            padding: 20px;
+            padding: 15px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
@@ -118,6 +118,15 @@
             color: #fff;
             font-weight: bold;
         }
+        table button{
+            
+        background-color: #002349;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+         }
+        
         @media(max-width: 768px){
             .container{
                 flex-direction: column;
@@ -215,6 +224,9 @@
                                             <td>{$row['phone']}</td>
                                             <td>{$row['message']}</td>
                                             <td>{$row['date']}</td>
+                                            <td><a href='deleteUserContact.php?ID=" . $row['ID'] . "'>
+                                            <button>Delete</button>
+                                            </a> </td>
                                             
                                             
                                         </tr>";
