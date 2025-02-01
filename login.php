@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
       <div class="icon">
             <a href="Home.php"><h2 class="logo">HERMES</h2></a>
-            <h5 class="l1">TRAVEL</h5>
+            <h5 class="l1" style="text-align:center;">TRAVEL</h5>
         </div>
         <!--<div class="menu">
           <ul>

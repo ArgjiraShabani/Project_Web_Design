@@ -14,7 +14,7 @@
     <div class="navbar">
         <div class="icon">
             <a href="Home.php"><h2 class="logo">HERMES</h2></a>
-            <h5 class="l1">TRAVEL</h5>
+            <h5 class="l1" style="text-align:center;">TRAVEL</h5>
         </div>
        <!-- <div class="menu">
           <ul>
@@ -59,7 +59,7 @@
                 
                     <input id="password" class="password-login" type="password" placeholder="Enter your password" name="password">
                     <i class="fa-solid fa-lock" ></i>
-                    <!--<i class="fa-solid fa-eye-slash" id="hide-pw"></i>-->
+                
                   
                 </div>
                 
@@ -67,16 +67,10 @@
                 
                     <input id="password2" class="password-login" type="password" placeholder="Confirm your password" name="password-confirm">
                     <i class="fa-solid fa-lock" ></i>
-                <!--<i class="fa-solid fa-eye-slash" id="hide-pw"></i>-->
+            
                     
                     
                 </div>
-                <!--<div class="input-box">
-                    <select name="Role" id="role" style="width: 100%;padding:10px;border:none;border-bottom: 1.5px solid#000080;font-size:15px;">
-                        <option value="user">User</option>
-                        <option value="admin">Admin</option>
-                    </select>
-                </div>-->
                 <div class="button">
                     
                     <button  type="submit" name="register">Register</button>
