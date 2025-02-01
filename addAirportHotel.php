@@ -1,6 +1,11 @@
 <?php  
-  include 'connect.php';
 
+  session_start();
+  include "connect.php";
+  if (!isset($_SESSION['Email'])) {
+      header('Location: login.php');
+      exit();
+  }
 if($_SERVER['REQUEST_METHOD']=='POST'){
   if(isset($_POST['airportname']) && $_POST['city'] && $_POST['country']){
   $airport = $_POST['airportname'];

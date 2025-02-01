@@ -1,6 +1,10 @@
 <?php
     session_start();
     include "connect.php";
+    if (!isset($_SESSION['Email'])) {
+        header('Location: login.php');
+        exit();
+    }
    if(isset($_SESSION['Email'])){
 
     $sql="SELECT ID,Name,Email,Password,registration_date FROM users";

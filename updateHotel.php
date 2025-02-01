@@ -1,6 +1,10 @@
 <?php
-include "connect.php";
-
+session_start();
+    include "connect.php";
+    if (!isset($_SESSION['Email'])) {
+        header('Location: login.php');
+        exit();
+    }
 $hotel="";
 $hotelcountry="";
 $hotelcity="";

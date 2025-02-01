@@ -1,7 +1,12 @@
 <?php
 session_start();
+include "connect.php";
 
-    include "connect.php";
+if (!isset($_SESSION['Email'])) {
+  header('Location: login.php');
+  exit();
+}
+  
 
     $query = "SELECT HotelName from hotels";
   

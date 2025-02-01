@@ -1,5 +1,11 @@
 <?php
+    
+    session_start();
     include "connect.php";
+    if (!isset($_SESSION['Email'])) {
+        header('Location: login.php');
+        exit();
+    }
     $sql="SELECT ID,first_name,last_name,email,phone,message,date FROM contact_us";
     $result=$conn->query($sql);
 ?>
