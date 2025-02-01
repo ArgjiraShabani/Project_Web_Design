@@ -67,6 +67,7 @@ include "connect.php";
 body{
     background-color: rgb(253, 251, 240);
     margin: 0;
+    
 }
 form{
 position: relative;

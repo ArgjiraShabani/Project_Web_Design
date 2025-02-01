@@ -72,11 +72,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <div class="navbar">
         
-        <div class="icon">
+      <div class="icon">
             <a href="Home.php"><h2 class="logo">HERMES</h2></a>
             <h5 class="l1">TRAVEL</h5>
         </div>
-        <div class="menu">
+        <!--<div class="menu">
           <ul>
                 <li><a href="Home.php">HOME</a></li>
                 <li><a href="flights.php" class="flights">FLIGHTS</a></li>
@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input class="sr" id="sr" type="text" placeholder="Search" required>
             <button class="bt1" onclick="searchButtonClicked()">Search</button>       
             </form>
-        </div>
+        </div>-->
   </div>
     
     <div class="container" id="container">

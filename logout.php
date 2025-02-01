@@ -19,6 +19,6 @@ header("Location: login.php");
         setcookie('login','',time()-3600,'/');
     }
 
-    header('Location: Home.php');
+    header('Location: login.php');
     exit();
 ?>

@@ -144,15 +144,7 @@ body{
     color: #000080;
 
 }
-/*#hide-pw{
-    position: absolute;
-    top: 50%;
-    margin-left: 340px;
-    
-    font-size: 15px;
-    color: #000080;
 
-}*/
 .input-box button{
     position: relative;
     display: inline-block;

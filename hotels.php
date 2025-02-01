@@ -24,7 +24,7 @@ session_start();
         $rooms=$_POST['rooms'];
 
         $stmt = $conn->prepare("SELECT * FROM hotels WHERE HotelName = ?");
-        $stmt->bind_param("s", $hotel);  // "ss" means two strings are being passed
+        $stmt->bind_param("s", $hotel); 
         $stmt->execute();
         $result = $stmt->get_result();
 
@@ -239,16 +239,10 @@ input[type="date"], .guests, .rooms {
             
                <h1>Find the Right Hotel</h1>
             
-           <!-- <div class="box2">-->
+          
                 <form id="f1" method="POST" class="f1">
-                  <!--<select class="dep" size="1" id="des" required name="hotel">
-                    <option value="" disabled selected>Hotels</option>
-                    <?php
-                             foreach($hotels as $hotel){
-                                echo "<option value=\"$hotel\">$hotel</option>";
-                              }
-                    ?>                   
-                  </select>-->
+                 
+                   
                 
                     <label for="check-in">Check-in:</label>
                     <input type ="date" id="check-in" name="checkin" required >
@@ -272,7 +266,7 @@ input[type="date"], .guests, .rooms {
                     <button type="submit" class="b">Book</button>
                     
                 </form>
-            <!--</div>-->
+            
         </div>
     </div>
     <div class="footer">

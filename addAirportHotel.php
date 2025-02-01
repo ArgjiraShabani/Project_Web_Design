@@ -10,7 +10,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
   
   $sql1='insert into airports(AirportName,City,Country)values(?,?,?)';
   if ($stmt = $conn->prepare($sql1)) {
-    // Bind the parameters
+  
     $stmt->bind_param("sss", $airport, $city, $country);
 
     if ($stmt->execute()) {
@@ -35,7 +35,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
   
   $sql='insert into hotels(HotelName,City,Country)values(?,?,?)';
   if ($stmt = $conn->prepare($sql)) {
-    // Bind the parameters
+
     $stmt->bind_param("sss", $hotel, $cityHotel, $countryHotel);
     
     if ($stmt->execute()) {

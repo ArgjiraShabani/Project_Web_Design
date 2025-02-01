@@ -48,45 +48,38 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 
   
 $stmt = $conn->prepare("SELECT * FROM airports WHERE AirportName = ? OR AirportName = ?");
-$stmt->bind_param("ss", $destination, $departure);  // "ss" means two strings are being passed
+$stmt->bind_param("ss", $destination, $departure); 
 $stmt->execute();
 $result = $stmt->get_result();
 
-//$destination_found = false;
-//$departure_found = false;
 $dep_id = null;
 $destination_id = null;
 
 while ($row = $result->fetch_assoc()) {
     if ($row['AirportName'] == $destination) {
-       // $destination_found = true;
-        $destination_id = $row['AirportID'];  // Assuming the column for airport ID is AirportID
+       
+        $destination_id = $row['AirportID']; 
     }
 
     if ($row['AirportName'] == $departure) {
-       // $departure_found = true;
-        $dep_id = $row['AirportID'];  // Assuming the column for airport ID is AirportID
+       
+        $dep_id = $row['AirportID']; 
     }
 
 }
-// Output the results
-//$trip_valid = false;
 $trip_stmt = $conn->prepare("SELECT * FROM trip WHERE TripName = ?");
 $trip_stmt->bind_param("s", $trip);
 $trip_stmt->execute();
 $trip_result = $trip_stmt->get_result();
 $trip_id = null;
 if ($trip_result->num_rows > 0) {
-    //$trip_valid = true;  // Trip type exists in the database
+  
     $row = $trip_result->fetch_assoc();
     $trip_id = $row['TripID'];
 }
 
 $trip_stmt->close();
 
-
-//if ($destination_found && $departure_found) {
-    // Prepare SQL to insert the flight
     $insert_stmt = $conn->prepare("INSERT INTO flight (DepID, ArrivalID, Depature_date, People, TripID ) VALUES (?, ?, ?, ?, ?)");
     $insert_stmt->bind_param("sssss", $dep_id, $destination_id, $dateDep, $people, $trip_id);
 
@@ -96,15 +89,6 @@ $trip_stmt->close();
 
 
     $insert_stmt->close();
-
-/*}  elseif ($destination_found) {
-    echo "Destination airport '$destination' found, but departure airport '$dep' is not found.";
-} elseif ($departure_found) {
-    echo "Departure airport '$dep' found, but destination airport '$destination' is not found.";
-} else {
-    echo "Neither the destination nor departure airport is found in the database.";
-}*/
-
 
 $conn->close();
 }
@@ -377,10 +361,7 @@ $conn->close();
                 </div>
                 
               <div class="box">
-              
-                    <!--<p>Flights</p>
-                  <h1>Flights</h1>
-               <div class="box2">-->
+            
                     
                     <form id="f1" method="POST" class="form2">
                                     <select class="dep" size="1" id="dep" required name="departure">
@@ -400,8 +381,6 @@ $conn->close();
                                         }
                                       ?>                                
                                     </select>
-                                    
-                                   <!-- <label for="date" class="labeld">&nbsp;&nbsp; Date&nbsp;&nbsp;</label>-->
                                     <input type="date" id="date" name="dateDep" class="date" >
                                     <select class="s1" id="roundtrip" required name="trip">
                                       <option value="" disabled selected>Trip</option>
@@ -415,9 +394,7 @@ $conn->close();
                                   <input type="number" min="1" placeholder="How many people?" class="people" id="people" required name="people"><br><br>
                                   <button class="bt3" id="sFlight" type="submit">Book Now</button>
                   </form>
-                  
-                      
-            <!-- </div>-->
+                
         </div>
     
            
