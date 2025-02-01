@@ -45,7 +45,13 @@
         color: #ffff;
         font: size 16px;
     }
-    @media(max-width: 768px){
+    .main_content{
+            margin-left: 220px;
+            width: calc(100%-200px);
+            padding: 20px;
+        }
+
+   @media(max-width: 768px){
             .container{
                 flex-direction: column;
             }
@@ -56,18 +62,24 @@
                 flex-direction: row;
                 overflow-x: auto;
                 white-space: nowrap;
+                padding: 0;
+                margin: 0;
             }
             .side-bar ul{
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-around;
+                justify-content: flex-start;
                 width: 100%;
+                padding: 0;
+                margin: 0;
             }
             .side-bar li{
                 display: inline-block;
                 padding: 10px;
+                margin: 0;
             }
-            .main-content{
+            .main_content{
+                
                 margin-left: 0;
                 width: 100%;
                 padding: 15px;
@@ -77,12 +89,19 @@
             .side-bar{
                 flex-direction: column;
                 align-items: center;
+                padding: 0;
+                margin: 0;
             }
             .side-bar li{
                 text-align: center;
                 width: 100%;
+                padding: 10px 0;
+                margin: 0;
             }
         }
+       
+    
+
     </style>
 </head>
 <body>

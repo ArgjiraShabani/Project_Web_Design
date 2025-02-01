@@ -137,6 +137,43 @@ a{
     color: rgb(253, 251, 240);
     text-decoration: none;
 }
+@media(max-width: 768px){
+    form{
+        margin: 50px 20px;
+    }
+    form label{
+        font-size: 19px;
+    }
+    form input{
+        font-size: 19px;
+        padding: 12px;
+    }
+    button{
+        font-size: 19px;
+    }
+
+}
+@media(max-width: 480px){
+    form{
+        margin: 20px 10px;
+        padding: 15px;
+    }
+    form label{
+        font-size: 15px;
+    }
+    form input{
+        font-size: 15px;
+        padding: 10px;
+    }
+    button{
+        font-size: 15px;
+    }
+    h2{
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+}
 
     </style>
 </head>

@@ -59,18 +59,7 @@ body{
     background-color:rgb(5, 53, 103);
 }
 
-.main_content{
 
-    
-    margin-top: 16px;
-    margin-left: 250px;
-   
-    padding: 20px;
-    width: 100%;
-   
-    height: 100vh;
-    overflow-y: auto;
-}
 
 .main-title p{
     font-size: 36px;
