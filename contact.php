@@ -1,7 +1,7 @@
 <?php
     session_start();
     include "connect.php";
-    if(isset($_SESSION['Email'])){
+    //if(isset($_SESSION['Email'])){
 
 ?>
 <!DOCTYPE html>
@@ -31,8 +31,13 @@
             </div>
             <div class="button2">
                 <?php
-                echo '<a href="logout.php" id="loginLink"><button class="bt2" id="lButton" onclick="loginButtonClicked()">Login</button></a>';
-                    }
+                if(isset($_SESSION['Email'])){
+                    echo '<a href="logout.php" id="loginLink"><button class="bt2" id="lButton" type="submit" >Logout</button></a>';
+                }else{
+                    echo '<a href="login.php" id="loginLink"><button class="bt2" id="lButton" type="submit" onclick="loginButtonClicked()">Login</button></a>';
+                }
+                /*echo '<a href="logout.php" id="loginLink"><button class="bt2" id="lButton" onclick="loginButtonClicked()">Login</button></a>';
+                    }*/
                 ?>
               </div>
             <div class="search">
