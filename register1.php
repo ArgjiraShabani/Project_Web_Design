@@ -1,5 +1,5 @@
 <?php
-
+    session_start(); 
 include 'connect.php';
 
 if($_SERVER['REQUEST_METHOD']==='POST'){
@@ -25,6 +25,8 @@ if(isset($_POST['name']) && $_POST['email'] && $_POST['password']){
         $stmt->bind_param("sss",$name,$email,$password);
 
         if($stmt->execute()){
+            $_SESSION['Email'] = $email; 
+            $_SESSION['Name']=$name;
             header("Location: Home.php");
             exit();
         }else{
