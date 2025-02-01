@@ -17,6 +17,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="adminflightshotels.css" rel="stylesheet" >
+    <style>
+             @media(max-width: 768px){
+            
+            body{
+                
+                margin-left: 0;
+                width: 100%;
+                padding: 15px;
+            }
+            table{
+                width: 100%;
+                display: block;
+                overflow-x: auto;
+            }
+        }
+        @media(max-width: 480px){
+            table{
+                width: 100%;
+                display: block ;
+                overflow-x: auto;
+            }
+        } 
+    </style>
 </head>
 <body>
     <div class="button">
@@ -28,7 +51,7 @@
   </div>
 
 
-<div class="table">
+<div class="table" >
     <table>
         <thead>
             <tr >
