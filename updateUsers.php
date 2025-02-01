@@ -37,16 +37,26 @@
    $Name=$user['Name'];
    $Email=$user['Email'];
    $Password="";
+   
 
    if($_SERVER['REQUEST_METHOD']=='POST'){
         $Name=$_POST['Name'];
         $Email=$_POST['Email'];
         $Password=$_POST['Password'];
+        $Password_confirm=$_POST['Password_confirm'];
 
-        if(empty($Name) || empty($Email) || empty($Password)){
+        if(empty($Name) || empty($Email)){
             $errorMessage= "Please fill all the fields!";
+        }elseif($Password !== "" && $Password!==$Password_confirm){
+            $errorMessage="Passwords do not match!";
         }else{
-            $hashedPassword=password_hash($Password,PASSWORD_BCRYPT);
+            if(!empty($Password)){
+                $hashedPassword=password_hash($Password,PASSWORD_BCRYPT);
+
+            }else{
+                $hashedPassword=$user['Password'];
+            }
+            
 
             $sql="UPDATE users SET Name=?,Email=?,Password=? Where ID=?";
             $statement=$conn->prepare($sql);
@@ -197,7 +207,10 @@ a{
     <input type="email" name="Email" value="<?php echo $Email?>">
       <br><br>
       <label for="Password">Password:</label>
-    <input type="password" name="Password" value="<?php echo $Password?>">
+    <input type="password" name="Password" placeholder="Enter a new password if you want to change it.">
+    <br><br>
+    <label for="Password_confirm">Confirm password:</label>
+    <input type="password" name="Password_confirm"placeholder="Confirm password">
     <br><br>
     <button type="submit">Submit</button>
         <a href="admin.php" role="button">Cancel</a>

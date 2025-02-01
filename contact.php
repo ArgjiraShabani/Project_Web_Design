@@ -36,8 +36,7 @@
                 }else{
                     echo '<a href="login.php" id="loginLink"><button class="bt2" id="lButton" type="submit" onclick="loginButtonClicked()">Login</button></a>';
                 }
-                /*echo '<a href="logout.php" id="loginLink"><button class="bt2" id="lButton" onclick="loginButtonClicked()">Login</button></a>';
-                    }*/
+                
                 ?>
               </div>
             <div class="search">

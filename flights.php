@@ -343,7 +343,7 @@ $conn->close();
                         }
                         
                     ?>
-                     <!-- <a href="login.php" id="loginLink"><button class="bt2" type="sumbit" id="lButton" onclick="loginButtonClicked()">Login</button></a>-->
+                     
                       </div>
                       <div class="search">
                        

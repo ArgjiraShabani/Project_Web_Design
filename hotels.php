@@ -217,7 +217,7 @@ input[type="date"], .guests, .rooms {
                 
             </div>
             <div class="button2">
-              <!--<a href="login.php" id="loginLink"><button class="bt2" type="submit" id="lButton" onclick="loginButtonClicked()">Login</button></a> -->
+              
               <?php
                         if(isset($_SESSION['Email'])){
                             echo '<a href="logout.php" id="loginLink"><button class="bt2" id="lButton" type="submit" >Logout</button></a>';

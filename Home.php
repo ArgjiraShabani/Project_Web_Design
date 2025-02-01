@@ -34,7 +34,7 @@
                           </div>
                           <div class="button2">
                             
-                             <!--<a href="logout.php" id="loginLink"><button class="bt2" id="lButton" type="submit" onclick="loginButtonClicked()">Login</button></a>;-->
+                             
                              <?php
                               if(isset($_SESSION['Email'])){
                                 echo '<a href="logout.php" id="loginLink"><button class="bt2" id="lButton" type="submit" >Logout</button></a>';
@@ -77,8 +77,8 @@
                       <div class="gallery-section">
                           <div class="galleryh2">
                           <h2>The start of a new adventure</h2>
-                          <p>Our collection of more than 2,000 luxury hotels, private properties, cruise lines, and tour operators has been carefully curated. Our Travel Advisors are constantly reviewing every new offering to make sure you get the best recommendation for your next journey.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                          <p>At HERMES Travel, we believe that every journey should be as seamless and memorable as the destination itself. Specializing in curated luxury tours and customized travel packages, we take pride in creating unforgettable travel experiences tailored to your desires.</p>
+                          <p>From booking international flights and exclusive accommodations to organizing tailored sightseeing tours, our full-service travel agency takes care of every detail, allowing you to relax and enjoy your trip. With our extensive network of global partners and expert knowledge, you'll enjoy the best deals and insider tips, ensuring that your journey is affordable, hassle-free, and memorable. Let us craft the perfect travel itinerary for your next adventure. Contact us today to start planning! </p>
                           </div>
                           
                       
