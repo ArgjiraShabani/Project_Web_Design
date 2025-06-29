@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Italiana&display=swap');
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,20 +8,17 @@
     font-style: normal;
 }
 
-body {
-    font-family: Luna;
-}
-
-.main {
-
+.main{
+    flex-wrap: wrap;
     width: 100%;
-    height: 150vh;
-    background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url('hotels.jpg') ;
-    background-position: center;
-    background-size: cover;
-    
-}
+    background:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(photo.jpg);
+   background-position: center;
+   background-size: cover;
+   height: 170vh;
+   
+  
 
+}
 .navbar{
    
     display:flex;
@@ -55,7 +52,7 @@ body {
     font-size:20px
     
 }
-.navbar .menu .hotel{
+.navbar .menu li .flights{
     text-decoration: underline;
 }
 .navbar .menu li a:hover{
@@ -69,6 +66,7 @@ body {
     
     
 }
+
 .navbar .search input{
     height: 39px;
     width: 200px;
@@ -80,14 +78,16 @@ body {
     padding-left: 10px;
     
 }
+
 .navbar .search button{
     height: 38px;
     width: 60px;
-    font-weight: bold;
+    font-weight:bold;
     border-radius: 5px;
     background-color: #ffffff;
     border-color: #cccaca;
     cursor: pointer;
+
     
 }
 .navbar .button2{
@@ -113,9 +113,9 @@ body {
 .footer{
     display:flex;
     flex-wrap: wrap;
-    height: 40vh;
+    height: 50vh;
     background-color: rgb(255, 255, 255);
-    margin-top: 110px;
+    margin-top: 450px;
      justify-content: space-around;
      align-items: center;
      color: #002349;
@@ -132,8 +132,7 @@ body {
 .follow p a{
     color: #002349;
     text-decoration:none;
-  }
-
+}
 .services{
     font-weight:200;
     font-size: large;
@@ -142,7 +141,6 @@ body {
     font-weight:bold ;
 }
 .services p a{
-    
     color: #002349;
     text-decoration:none;
 }
@@ -159,3 +157,6 @@ body {
     color: #002349;
     text-decoration:none;
 }
+
+  
+  

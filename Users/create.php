@@ -1,91 +1,66 @@
 <?php
-  
-    session_start();
-    include "connect.php";
+
+session_start();
+    include "../connect.php";
     if (!isset($_SESSION['Email'])) {
         header('Location: login.php');
         exit();
     }
+    $Name="";
+    $Email="";
+    $Password="";
     $errorMessage="";
     $successMessage="";
 
-   
-    
-    if(isset($_GET['ID'])){
-
-        $ID=$_GET['ID'];
-
-        $sql="SELECT * From users where ID=?";
-        $statement=$conn->prepare($sql);
-        $statement->bind_param("i",$ID);
-        $statement->execute();
-        $result=$statement->get_result();
-        if($result && $result->num_rows>0){
-            $user=$result->fetch_assoc();
-
-         }else{
-             header("Location: admin.php");
-            exit;
-         }
-    }else{
-        header("Location: admin.php");
-    }
-    
-    
-
-    
-   $Name=$user['Name'];
-   $Email=$user['Email'];
-   $Password="";
-   
-
-   if($_SERVER['REQUEST_METHOD']=='POST'){
+    if($_SERVER['REQUEST_METHOD']=='POST'){
         $Name=$_POST['Name'];
         $Email=$_POST['Email'];
         $Password=$_POST['Password'];
-        $Password_confirm=$_POST['Password_confirm'];
-
-        if(empty($Name) || empty($Email)){
-            $errorMessage= "Please fill all the fields!";
-        }elseif($Password !== "" && $Password!==$Password_confirm){
-            $errorMessage="Passwords do not match!";
+        if(empty($Name) || empty($Email) || empty($Password)){
+            $errorMessage="Ju lutem plotesoni te gjitha fushat!";
         }else{
-            if(!empty($Password)){
-                $hashedPassword=password_hash($Password,PASSWORD_BCRYPT);
+            $hashedPassword=password_hash($Password,PASSWORD_BCRYPT);
+            $sql="INSERT INTO users(Name,Email,Password) VALUES(?,?,?)";
+            $statement=$conn->prepare($sql);
 
+            if($statement){
+                $statement->bind_param("sss",$Name,$Email,$hashedPassword);
+                $executeResult = $statement->execute();
+
+                
+                if($executeResult){
+                    $Name="";
+                    $Email="";
+                    $Password="";
+                    $successMessage="Perdoruesi u shtua me sukses!";
+                    header("Location: admin.php");
+                    exit; 
+    
+                }else{
+                    $errorMessage="Gabim,perdoruesi nuk u shtua!";
+
+                }
+                $statement->close();
             }else{
-                $hashedPassword=$user['Password'];
+                $errorMessage="Gabim ne pergatitjen e query!";
+
+
             }
             
-
-            $sql="UPDATE users SET Name=?,Email=?,Password=? Where ID=?";
-            $statement=$conn->prepare($sql);
-            $statement->bind_param("sssi",$Name,$Email,$hashedPassword,$ID);
-
-            if($statement->execute()){
-                $successMessage="User updated successfully";
-                header("Location: admin.php");
-                exit;
-            }
-            else{
-                $errorMessage="User could not be updated";
-            }
+            
         }
-
-   }
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update user</title>
+    <title>Document</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Forum&family=Italiana&display=swap');
-        
-        
 
-        *{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -98,6 +73,7 @@
 body{
     background-color: rgb(253, 251, 240);
     margin: 0;
+    
 }
 form{
 position: relative;
@@ -184,11 +160,10 @@ a{
     }
 
 }
-
     </style>
 </head>
 <body>
-    <h2>Update user</h2>
+    <h2>Add a user</h2>
     <?php
         if(!empty($errorMessage)){
             echo "<strong>$errorMessage</strong>";
@@ -207,13 +182,12 @@ a{
     <input type="email" name="Email" value="<?php echo $Email?>">
       <br><br>
       <label for="Password">Password:</label>
-    <input type="password" name="Password" placeholder="Enter a new password if you want to change it.">
-    <br><br>
-    <label for="Password_confirm">Confirm password:</label>
-    <input type="password" name="Password_confirm"placeholder="Confirm password">
+    <input type="password" name="Password" value="<?php echo $Password?>">
     <br><br>
     <button type="submit">Submit</button>
-        <a href="admin.php" role="button">Cancel</a>
+        <a href="../Admin/admin.php" role="button">Cancel</a>
+
+
     </form>
     
 </body>

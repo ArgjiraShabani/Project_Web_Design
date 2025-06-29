@@ -1,6 +1,6 @@
 <?php
 session_start();
-  include "connect.php";
+  include "../connect.php";
   
   $query = "SELECT AirportName from airports";
   
@@ -100,7 +100,7 @@ $conn->close();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hermes Flights</title>
-  <link rel="stylesheet" href="styleflights.css">
+  <link rel="stylesheet" href="CSS/styleflights.css">
 <style>
 
   .box{
@@ -322,24 +322,24 @@ $conn->close();
       <div class="main">
                 <div class="navbar">
                       <div class="icon">
-                          <a href="Home.php"><h2 class="logo">HERMES</h2></a>
+                          <a href="../HomePage/Home.php"><h2 class="logo">HERMES</h2></a>
                           <h5 class="l1">TRAVEL</h5>
                       </div>
                       <div class="menu">
                         <ul>
-                             <li><a href="Home.php">HOME</a></li>
+                             <li><a href="../HomePage/Home.php">HOME</a></li>
                              <li><a href="#" class="flights">FLIGHTS</a></li>
                              <li><a href="hotels.php">HOTELS</a></li>
-                             <li><a href="contact.php">CONTACT US</a></li>
+                             <li><a href="../Users/contact.php">CONTACT US</a></li>
                             
                         </ul>
                       </div>
                       <div class="button2">
                     <?php
                         if(isset($_SESSION['Email'])){
-                            echo '<a href="logout.php" id="loginLink"><button class="bt2" id="lButton" type="submit" >Logout</button></a>';
+                            echo '<a href="../Users/logout.php" id="loginLink"><button class="bt2" id="lButton" type="submit" >Logout</button></a>';
                         }else{
-                            echo '<a href="login.php" id="loginLink"><button class="bt2" id="lButton" type="submit" onclick="loginButtonClicked()">Login</button></a>';
+                            echo '<a href="../Users/login.php" id="loginLink"><button class="bt2" id="lButton" type="submit" onclick="loginButtonClicked()">Login</button></a>';
                         }
                         
                     ?>

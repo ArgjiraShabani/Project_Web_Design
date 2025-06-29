@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Register</title>
-    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="stylesheet" href="CSS/stylelogin.css">
   
     
     
@@ -13,14 +13,14 @@
 <body>
     <div class="navbar">
         <div class="icon">
-            <a href="Home.php"><h2 class="logo">HERMES</h2></a>
+            <a href="../HomePage/Home.php"><h2 class="logo">HERMES</h2></a>
             <h5 class="l1">TRAVEL</h5>
         </div>
         <div class="menu">
           <ul>
-               <li><a href="Home.php">HOME</a></li>
-               <li><a href="flights.php" class="flights">FLIGHTS</a></li>
-               <li><a href="hotels.php">HOTELS</a></li>
+               <li><a href="../HomePage/Home.php">HOME</a></li>
+               <li><a href="../FlightsHotels/flights.php" class="flights">FLIGHTS</a></li>
+               <li><a href="../FlightsHotels/hotels.php">HOTELS</a></li>
                <li><a href="contact.php">CONTACT US</a></li>
           </ul>
           

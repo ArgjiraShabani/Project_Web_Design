@@ -1,7 +1,7 @@
 <?php
    session_start();
 
-    include "connect.php";
+    include "../connect.php";
     
 ?>
 <!DOCTYPE html>
@@ -26,9 +26,9 @@
                           <div class="menu"> 
                             <ul>
                                   <li><a href="#" class="home">HOME</a></li>
-                                  <li><a href="flights.php">FLIGHTS</a></li>
-                                  <li><a href="hotels.php">HOTELS</a></li>
-                                  <li><a href="contact.php">CONTACT US</a></li>
+                                  <li><a href="../FlightsHotels/flights.php">FLIGHTS</a></li>
+                                  <li><a href="../FlightsHotels/hotels.php">HOTELS</a></li>
+                                  <li><a href="../Users/contact.php">CONTACT US</a></li>
                             </ul>
                             
                           </div>
@@ -37,9 +37,9 @@
                              
                              <?php
                               if(isset($_SESSION['Email'])){
-                                echo '<a href="logout.php" id="loginLink"><button class="bt2" id="lButton" type="submit" >Logout</button></a>';
+                                echo '<a href="../Users/logout.php" id="loginLink"><button class="bt2" id="lButton" type="submit" >Logout</button></a>';
                               }else{
-                                echo '<a href="login.php" id="loginLink"><button class="bt2" id="lButton" type="submit" onclick="loginButtonClicked()">Login</button></a>';
+                                echo '<a href="../Users/login.php" id="loginLink"><button class="bt2" id="lButton" type="submit" onclick="loginButtonClicked()">Login</button></a>';
                               }
                              ?>
                             
@@ -95,7 +95,7 @@
                    
                       <div class="slider">
                         <div class="img-box">
-                          <img src="gettyimages-1089728672-scaled.jpg" class="slider-img">
+                          <img src="../Images/gettyimages-1089728672-scaled.jpg" class="slider-img">
                         </div>
 
                         <button class="btn1" onclick="prev()">&#10094</button>

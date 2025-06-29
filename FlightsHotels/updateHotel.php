@@ -1,8 +1,8 @@
 <?php
 session_start();
-    include "connect.php";
+    include "../connect.php";
     if (!isset($_SESSION['Email'])) {
-        header('Location: login.php');
+        header('Location: ../Users/login.php');
         exit();
     }
 $hotel="";
@@ -55,7 +55,7 @@ if(isset($_POST['submit'])){
 </head>
 <body>
     <div class="button">
-        <button type="button" ><a href="admin.php">Dashboard</a></button>
+        <button type="button" ><a href="../Admin/admin.php">Dashboard</a></button>
         <button type="button"><a href="airportshotels.php">Airport/Hotel</a></button>
     </div>
     <div class="form">

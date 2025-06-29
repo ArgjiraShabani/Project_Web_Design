@@ -1,6 +1,6 @@
 <?php
 session_start(); 
-include 'connect.php';
+include '../connect.php';
 
 
 $email = "";
@@ -30,9 +30,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         setcookie('login', $email,time()+3600);
                        
                         if ($_SESSION['role'] == 'user') {
-                            header('Location: home.php');  
+                            header('Location: ../HomePage/home.php');  
                         } else {
-                            header('Location: admin.php');   
+                            header('Location: ../Admin/admin.php');   
                         }
                         exit();  
                     } else {
@@ -66,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     
     <title>LogIn</title>
-    <link rel="stylesheet" href="stylelogin.css">
+    <link rel="stylesheet" href="CSS/stylelogin.css">
     
 </head>
     
@@ -74,14 +74,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div class="navbar">
         
       <div class="icon">
-            <a href="Home.php"><h2 class="logo">HERMES</h2></a>
+            <a href="../HomePage/Home.php"><h2 class="logo">HERMES</h2></a>
             <h5 class="l1">TRAVEL</h5>
         </div>
         <div class="menu">
           <ul>
-                <li><a href="Home.php">HOME</a></li>
-                <li><a href="flights.php" class="flights">FLIGHTS</a></li>
-                <li><a href="hotels.php">HOTELS</a></li>
+                <li><a href="../HomePage/Home.php">HOME</a></li>
+                <li><a href="../FlightsHotels/flights.php" class="flights">FLIGHTS</a></li>
+                <li><a href="../FlightsHotels/hotels.php">HOTELS</a></li>
                 <li><a href="contact.php">CONTACT US</a></li>
               
           

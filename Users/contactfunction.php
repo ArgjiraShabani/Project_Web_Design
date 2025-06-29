@@ -1,5 +1,5 @@
 <?php
-include 'connect.php';
+include '../connect.php';
 if($_SERVER['REQUEST_METHOD']=='POST'){
     if(isset($_POST['firstname']) && isset($_POST['lastname'])
     && isset($_POST['email']) && isset($_POST['number']) && isset($_POST['message'])){

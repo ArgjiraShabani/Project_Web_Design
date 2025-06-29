@@ -3,7 +3,7 @@
     session_start();
     include "connect.php";
     if (!isset($_SESSION['Email'])) {
-        header('Location: login.php');
+        header('Location: ../Users/login.php');
         exit();
     }
     $sql="SELECT ID,first_name,last_name,email,phone,message,date FROM contact_us";
@@ -184,8 +184,8 @@
                         <li style="background-color: rgb(253, 251, 240);" ><a href="contactadmin.php" style="color: #002349;">User Contact</a></li>
                         
                         
-                        <li><a href="airportshotels.php">Airport/Hotel</a></li>
-                        <li><a href="adminflightshotels.php">Flight Booking/Hotel Reservations</a></li>
+                        <li><a href="../FlightsHotels/airportshotels.php">Airport/Hotel</a></li>
+                        <li><a href="../FlightsHotels/adminflightshotels.php">Flight Booking/Hotel Reservations</a></li>
                         
                         
                     </ul>
@@ -224,7 +224,7 @@
                                             <td>{$row['phone']}</td>
                                             <td>{$row['message']}</td>
                                             <td>{$row['date']}</td>
-                                            <td><a href='deleteUserContact.php?ID=" . $row['ID'] . "'>
+                                            <td><a href='../Users/deleteUserContact.php?ID=" . $row['ID'] . "'>
                                             <button>Delete</button>
                                             </a> </td>
                                             

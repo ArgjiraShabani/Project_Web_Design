@@ -1,6 +1,6 @@
 <?php
     session_start(); 
-include 'connect.php';
+include '../connect.php';
 
 if($_SERVER['REQUEST_METHOD']==='POST'){
 if(isset($_POST['name']) && $_POST['email'] && $_POST['password']){
@@ -28,7 +28,7 @@ if(isset($_POST['name']) && $_POST['email'] && $_POST['password']){
             $_SESSION['Email'] = $email; 
             $_SESSION['Name']=$name;
             setcookie('login', $email,time()+3600);
-            header("Location: Home.php");
+            header("Location: ../HomePage/Home.php");
             exit();
         }else{
             echo "Error: " .$conn->error;

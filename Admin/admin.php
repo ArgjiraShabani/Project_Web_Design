@@ -1,8 +1,8 @@
 <?php
     session_start();
-    include "connect.php";
+    include "../connect.php";
     if (!isset($_SESSION['Email'])) {
-        header('Location: login.php');
+        header('Location: ../Users/login.php');
         exit();
     }
    if(isset($_SESSION['Email'])){
@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="CSS/admin.css">
 
     <style>
         button {
@@ -167,10 +167,10 @@
                                         <td>{$row['Email']}</td>
                                         <td>{$row['Password']}</td>
                                         <td>{$row['registration_date']}</td>
-                                        <td><a href='updateUsers.php?ID=" . $row['ID'] . "'>
+                                        <td><a href='../Users/updateUsers.php?ID=" . $row['ID'] . "'>
                                      <button>Update</button>
                                     </a> </td>
-                                        <td><a href='deleteUsers.php?ID=" . $row['ID'] . "'>
+                                        <td><a href='../Users/deleteUsers.php?ID=" . $row['ID'] . "'>
                                        <button>Delete</button>
                                     </a> </td>
                                     </tr>";
@@ -190,7 +190,7 @@
 
 
     </div>
-    <script src="login.js"> </script>
+    <script src="../Users/login.js"> </script>
     
 </body>
 </html>

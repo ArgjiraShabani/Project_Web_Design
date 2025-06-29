@@ -2,9 +2,9 @@
 <?php
 
 session_start();
-    include "connect.php";
+    include "../connect.php";
     if (!isset($_SESSION['Email'])) {
-        header('Location: login.php');
+        header('Location: ../Users/login.php');
         exit();
     }
 $airport="";
@@ -52,11 +52,11 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="CSS/add.css">
 </head>
 <body>
     <div class="button">
-        <button type="button" ><a href="admin.php">Dashboard</a></button>
+        <button type="button" ><a href="../Admin/admin.php">Dashboard</a></button>
         <button type="button"><a href="airportshotels.php">Airport/Hotel</a></button>
     </div>
     <div class="form">

@@ -1,5 +1,5 @@
 <?php
-    include "connect.php";
+    include "../connect.php";
     $errorMessage="";
     $successMessage="";
 
@@ -14,7 +14,7 @@
         $statement->bind_param("i",$ID);
 
         if($statement->execute()){
-            header("Location: admin.php?message=User deleted successfully!");
+            header("Location: ../Admin/admin.php?message=User deleted successfully!");
             exit;
         }
         else{

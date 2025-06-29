@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "connect.php";
+include "../connect.php";
 
   
 
@@ -68,7 +68,7 @@ include "connect.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotels</title>
-    <link rel="stylesheet" href="stylehotels.css">
+    <link rel="stylesheet" href="CSS/stylehotels.css">
 
 <style>
 .box {
@@ -204,15 +204,15 @@ input[type="date"], .guests, .rooms {
     <div class="main">
         <div class="navbar">
             <div class="icon">
-              <a href="Home.php"><h2 class="logo">HERMES</h2></a>
+              <a href="../HomePage/Home.php"><h2 class="logo">HERMES</h2></a>
               <h5 class="l1">TRAVEL</h5>
             </div>
             <div class="menu">
                 <ul>
-                    <li><a href="Home.php">HOME</a></li>
+                    <li><a href="../HomePage/Home.php">HOME</a></li>
                     <li><a href="flights.php">FLIGHTS</a></li>
                     <li><a href="#" class="hotel">HOTELS</a></li>
-                    <li><a href="contact.php">CONTACT US</a></li>
+                    <li><a href="../Users/contact.php">CONTACT US</a></li>
                 </ul>
                 
             </div>
@@ -220,9 +220,9 @@ input[type="date"], .guests, .rooms {
               
               <?php
                         if(isset($_SESSION['Email'])){
-                            echo '<a href="logout.php" id="loginLink"><button class="bt2" id="lButton" type="submit" >Logout</button></a>';
+                            echo '<a href="../Users/logout.php" id="loginLink"><button class="bt2" id="lButton" type="submit" >Logout</button></a>';
                         }else{
-                            echo '<a href="login.php" id="loginLink"><button class="bt2" id="lButton" type="submit" onclick="loginButtonClicked()">Login</button></a>';
+                            echo '<a href="../Users/login.php" id="loginLink"><button class="bt2" id="lButton" type="submit" onclick="loginButtonClicked()">Login</button></a>';
                         }
                         
                     ?>
